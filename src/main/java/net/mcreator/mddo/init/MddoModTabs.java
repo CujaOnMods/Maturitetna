@@ -27,5 +27,9 @@ public class MddoModTabs {
 			tabData.accept(MddoModItems.BETTERZOMBIE_SPAWN_EGG.get());
 			tabData.accept(MddoModItems.BETTER_SPIDER_SPAWN_EGG.get());
 		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(MddoModItems.WOODEN_HAMMER.get());
+		}
 	}
 }
