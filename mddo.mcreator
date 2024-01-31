@@ -130,6 +130,20 @@
           "src/main/resources/data/mddo/recipes/spider_into_redstone.json"
         ]
       }
+    },
+    {
+      "name": "Wwslab",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wwslab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/wwslab.json"
+        ]
+      },
+      "path": "~/WW_C_B_recepies"
     }
   ],
   "variable_elements": [],
@@ -146,7 +160,20 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "WW_C_B_Procedures",
+        "children": []
+      },
+      {
+        "name": "WW_C_B_recepies",
+        "children": []
+      },
+      {
+        "name": "WW_C_B_GUI",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "mddo",
