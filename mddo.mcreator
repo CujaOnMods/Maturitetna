@@ -158,6 +158,41 @@
           "src/main/resources/assets/mddo/models/item/wooden_hammer.json"
         ]
       }
+    },
+    {
+      "name": "WWBCtakeout",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wwb_ctakeout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBCtakeoutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_GUI"
+    },
+    {
+      "name": "WWBC",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wwbc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/client/gui/WWBCScreen.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
+          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

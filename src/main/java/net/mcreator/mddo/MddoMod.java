@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.mddo.init.MddoModTabs;
+import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.init.MddoModItems;
 import net.mcreator.mddo.init.MddoModEntities;
 
@@ -56,6 +57,7 @@ public class MddoMod {
 
 		MddoModTabs.REGISTRY.register(bus);
 
+		MddoModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
