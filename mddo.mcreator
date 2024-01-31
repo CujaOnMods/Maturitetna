@@ -1,0 +1,173 @@
+{
+  "mod_elements": [
+    {
+      "name": "Betterzombie",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "betterzombie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
+          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json",
+          "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BetterSkeleton",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_skeleton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
+          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java",
+          "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java"
+        ]
+      }
+    },
+    {
+      "name": "BetterSpider",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_spider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
+          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java",
+          "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
+          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Despawnzombie",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "despawnzombie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/DespawnzombieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DespawnSkeleton",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "despawn_skeleton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/DespawnSkeletonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DespawnSpider",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "despawn_spider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/DespawnSpiderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpiderINTOredstone",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_int_oredstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/spider_into_redstone.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
+      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
+      "entity.mddo.betterzombie": "Betterzombie",
+      "entity.mddo.better_skeleton": "Better Skeleton",
+      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
+      "entity.mddo.better_spider": "Better Spider"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mddo",
+    "modName": "mddo",
+    "version": "1.0.0",
+    "author": "Uporabnik, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "mcreator_link",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.mddo",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}
