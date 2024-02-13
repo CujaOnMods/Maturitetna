@@ -22,7 +22,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.procedures.InputChangeWBProcedure;
+import net.mcreator.mddo.procedures.WWRecepiesProcedure;
 import net.mcreator.mddo.network.WWBCSlotMessage;
 import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.MddoMod;
@@ -106,12 +106,6 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 			private final int slot = 2;
 
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(2, 0, 0);
-			}
-
-			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
 				slotChanged(2, 1, 0);
@@ -190,6 +184,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+		WWRecepiesProcedure.execute(entity);
 	}
 
 	@Override
@@ -348,7 +343,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			InputChangeWBProcedure.execute(entity);
+			WWRecepiesProcedure.execute(entity);
 		}
 	}
 }
