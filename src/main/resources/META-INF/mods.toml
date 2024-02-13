@@ -25,10 +25,4 @@ authors="Uporabnik, MCreator"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.mddo]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

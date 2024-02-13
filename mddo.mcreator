@@ -14,7 +14,8 @@
           "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json",
           "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java"
         ]
-      }
+      },
+      "path": "~/Better_mobs"
     },
     {
       "name": "BetterSkeleton",
@@ -31,7 +32,8 @@
           "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
           "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java"
         ]
-      }
+      },
+      "path": "~/Better_mobs"
     },
     {
       "name": "BetterSpider",
@@ -47,7 +49,8 @@
           "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
           "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Better_mobs"
     },
     {
       "name": "Despawnzombie",
@@ -70,7 +73,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Better_mobs"
     },
     {
       "name": "DespawnSkeleton",
@@ -93,7 +97,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Better_mobs"
     },
     {
       "name": "DespawnSpider",
@@ -116,7 +121,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Better_mobs"
     },
     {
       "name": "SpiderINTOredstone",
@@ -177,7 +183,7 @@
           }
         ]
       },
-      "path": "~/WW_C_B_GUI"
+      "path": "~/WW_C_B_Procedures"
     },
     {
       "name": "WWBC",
@@ -192,6 +198,64 @@
           "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
           "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
         ]
+      },
+      "path": "~/WW_C_B_GUI"
+    },
+    {
+      "name": "WwOakSlab",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_oak_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WwOakSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "InputChangeWB",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "input_change_wb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/InputChangeWBProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWWB",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wwwb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/assets/mddo/models/block/wwwb.json",
+          "src/main/resources/assets/mddo/models/item/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/wwwb.json"
+        ]
       }
     }
   ],
@@ -204,6 +268,7 @@
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "entity.mddo.betterzombie": "Betterzombie",
       "entity.mddo.better_skeleton": "Better Skeleton",
+      "block.mddo.wwwb": "WWWB",
       "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
       "entity.mddo.better_spider": "Better Spider"
     }
@@ -221,6 +286,10 @@
       },
       {
         "name": "WW_C_B_GUI",
+        "children": []
+      },
+      {
+        "name": "Better_mobs",
         "children": []
       }
     ]

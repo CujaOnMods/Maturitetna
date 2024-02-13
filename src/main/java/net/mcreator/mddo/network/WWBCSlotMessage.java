@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.WWBCMenu;
 import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
+import net.mcreator.mddo.procedures.InputChangeWBProcedure;
 import net.mcreator.mddo.MddoMod;
 
 import java.util.function.Supplier;
@@ -70,6 +71,46 @@ public class WWBCSlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (slot == 0 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 1 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 2 && changeType == 0) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 2 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 3 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 4 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 5 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 6 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 7 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
+		if (slot == 8 && changeType == 1) {
+
+			InputChangeWBProcedure.execute(entity);
+		}
 		if (slot == 10 && changeType == 1) {
 
 			WWBCtakeoutProcedure.execute(entity);

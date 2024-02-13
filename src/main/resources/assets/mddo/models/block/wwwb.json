@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mddo:block/drowned",
+    "up": "mddo:block/drowned",
+    "north": "mddo:block/drowned",
+    "east": "mddo:block/drowned",
+    "south": "mddo:block/drowned",
+    "west": "mddo:block/drowned",
+    "particle": "mddo:block/drowned"
+  },
+  "render_type": "solid"
+}

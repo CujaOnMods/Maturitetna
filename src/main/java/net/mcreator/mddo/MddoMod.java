@@ -33,6 +33,8 @@ import net.mcreator.mddo.init.MddoModTabs;
 import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.init.MddoModItems;
 import net.mcreator.mddo.init.MddoModEntities;
+import net.mcreator.mddo.init.MddoModBlocks;
+import net.mcreator.mddo.init.MddoModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,6 +54,8 @@ public class MddoMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		MddoModBlocks.REGISTRY.register(bus);
+		MddoModBlockEntities.REGISTRY.register(bus);
 		MddoModItems.REGISTRY.register(bus);
 		MddoModEntities.REGISTRY.register(bus);
 

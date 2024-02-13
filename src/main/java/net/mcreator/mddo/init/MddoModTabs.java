@@ -22,6 +22,10 @@ public class MddoModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(MddoModBlocks.WWWB.get().asItem());
+		}
+
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MddoModItems.BETTER_SKELETON_SPAWN_EGG.get());
 			tabData.accept(MddoModItems.BETTERZOMBIE_SPAWN_EGG.get());
