@@ -12,7 +12,7 @@ public class RemoveOutputProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(10)).remove(1);
+			((Slot) _slots.get(10)).remove(64);
 			_player.containerMenu.broadcastChanges();
 		}
 	}

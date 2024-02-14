@@ -22,7 +22,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.procedures.WWRecepiesProcedure;
+import net.mcreator.mddo.procedures.WWBCWhileThisGUIIsOpenTickProcedure;
 import net.mcreator.mddo.network.WWBCSlotMessage;
 import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.MddoMod;
@@ -86,83 +86,65 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 20, 19) {
 			private final int slot = 0;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(0, 1, 0);
-			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 38, 19) {
 			private final int slot = 1;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(1, 1, 0);
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 56, 19) {
 			private final int slot = 2;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
-			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 20, 37) {
 			private final int slot = 3;
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(3, 1, 0);
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(3, 0, 0);
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 38, 37) {
 			private final int slot = 4;
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(4, 1, 0);
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(4, 0, 0);
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 56, 37) {
 			private final int slot = 5;
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(5, 1, 0);
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(5, 0, 0);
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 20, 54) {
 			private final int slot = 6;
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(6, 1, 0);
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(6, 0, 0);
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 38, 54) {
 			private final int slot = 7;
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(7, 1, 0);
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(7, 0, 0);
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 56, 54) {
 			private final int slot = 8;
 
 			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(8, 1, 0);
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(8, 0, 0);
 			}
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 107, 36) {
@@ -184,7 +166,6 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
-		WWRecepiesProcedure.execute(entity);
 	}
 
 	@Override
@@ -343,7 +324,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			WWRecepiesProcedure.execute(entity);
+			WWBCWhileThisGUIIsOpenTickProcedure.execute(entity);
 		}
 	}
 }

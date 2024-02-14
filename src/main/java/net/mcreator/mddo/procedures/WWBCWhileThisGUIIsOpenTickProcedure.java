@@ -7,7 +7,7 @@ import net.minecraft.world.entity.Entity;
 import java.util.function.Supplier;
 import java.util.Map;
 
-public class WWRecepiesProcedure {
+public class WWBCWhileThisGUIIsOpenTickProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
@@ -16,14 +16,5 @@ public class WWRecepiesProcedure {
 			_player.containerMenu.broadcastChanges();
 		}
 		WwOakSlabProcedure.execute(entity);
-		WWSpruceSlabProcedure.execute(entity);
-		WWBirchSlabProcedure.execute(entity);
-		WWJungleSlabProcedure.execute(entity);
-		WWAcaciaSlabProcedure.execute(entity);
-		WwDarkOakSlabProcedure.execute(entity);
-		WwMangroveSlabProcedure.execute(entity);
-		WWCherrySlabProcedure.execute(entity);
-		WwCrimsonSlabProcedure.execute(entity);
-		WwWarpedSlabProcedure.execute(entity);
 	}
 }

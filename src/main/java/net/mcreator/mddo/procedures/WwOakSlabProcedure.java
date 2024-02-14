@@ -13,10 +13,6 @@ public class WwOakSlabProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(10)).remove(1);
-			_player.containerMenu.broadcastChanges();
-		}
 		if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
 			if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
 				if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
@@ -251,6 +247,8 @@ public class WwOakSlabProcedure {
 							}
 						}
 					}
+				} else {
+					WWSpruceSlabProcedure.execute(entity);
 				}
 			}
 		}
