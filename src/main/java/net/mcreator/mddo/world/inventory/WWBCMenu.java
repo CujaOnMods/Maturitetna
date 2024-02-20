@@ -86,12 +86,30 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 20, 19) {
 			private final int slot = 0;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 38, 19) {
 			private final int slot = 1;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 56, 19) {
 			private final int slot = 2;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 20, 37) {
 			private final int slot = 3;
@@ -154,6 +172,12 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
 				slotChanged(10, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(10, 2, b.getCount() - a.getCount());
 			}
 
 			@Override
@@ -324,7 +348,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			WWBCWhileThisGUIIsOpenTickProcedure.execute(entity);
+			WWBCWhileThisGUIIsOpenTickProcedure.execute(world, entity);
 		}
 	}
 }

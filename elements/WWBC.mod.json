@@ -24,6 +24,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveOutput"
+          },
           "x": 145,
           "y": 55
         }
@@ -42,6 +45,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveOutput"
+          },
           "x": 163,
           "y": 55
         }
@@ -60,6 +66,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveOutput"
+          },
           "x": 181,
           "y": 55
         }
@@ -199,6 +208,9 @@
           },
           "dropItemsWhenNotBound": true,
           "onTakenFromSlot": {
+            "name": "WWBCtakeout"
+          },
+          "onStackTransfer": {
             "name": "WWBCtakeout"
           },
           "x": 232,

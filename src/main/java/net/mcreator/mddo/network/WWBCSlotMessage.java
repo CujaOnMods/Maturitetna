@@ -71,6 +71,18 @@ public class WWBCSlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (slot == 0 && changeType == 0) {
+
+			RemoveOutputProcedure.execute(entity);
+		}
+		if (slot == 1 && changeType == 0) {
+
+			RemoveOutputProcedure.execute(entity);
+		}
+		if (slot == 2 && changeType == 0) {
+
+			RemoveOutputProcedure.execute(entity);
+		}
 		if (slot == 3 && changeType == 0) {
 
 			RemoveOutputProcedure.execute(entity);
@@ -96,6 +108,11 @@ public class WWBCSlotMessage {
 			RemoveOutputProcedure.execute(entity);
 		}
 		if (slot == 10 && changeType == 1) {
+
+			WWBCtakeoutProcedure.execute(entity);
+		}
+		if (slot == 10 && changeType == 2) {
+			int amount = meta;
 
 			WWBCtakeoutProcedure.execute(entity);
 		}

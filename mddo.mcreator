@@ -209,6 +209,7 @@
       "locked_code": false,
       "registry_name": "ww_oak_slab",
       "metadata": {
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/mddo/procedures/WwOakSlabProcedure.java"
         ],
@@ -216,6 +217,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -259,186 +264,6 @@
       "path": "~/WW_C_B_Procedures"
     },
     {
-      "name": "WWSpruceSlab",
-      "type": "procedure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_spruce_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WWSpruceSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WWBirchSlab",
-      "type": "procedure",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_birch_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WWBirchSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WWJungleSlab",
-      "type": "procedure",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_jungle_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WWJungleSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WWAcaciaSlab",
-      "type": "procedure",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_acacia_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WWAcaciaSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WwDarkOakSlab",
-      "type": "procedure",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_dark_oak_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WwDarkOakSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WwMangroveSlab",
-      "type": "procedure",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_mangrove_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WwMangroveSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WWCherrySlab",
-      "type": "procedure",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_cherry_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WWCherrySlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WwCrimsonSlab",
-      "type": "procedure",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_crimson_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WwCrimsonSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
-      "name": "WwWarpedSlab",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ww_warped_slab",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/WwWarpedSlabProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/WW_C_B_Procedures"
-    },
-    {
       "name": "WWBCWhileThisGUIIsOpenTick",
       "type": "procedure",
       "sortid": 25,
@@ -453,13 +278,824 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWSpruceSlab",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_spruce_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWSpruceSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWBirchSlab",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_birch_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBirchSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWJungleSlab",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_jungle_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWJungleSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWAcaciaSlab",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_acacia_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWAcaciaSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWDarkOakSlab",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_dark_oak_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWDarkOakSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWMangroveSlab",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_mangrove_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWMangroveSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWCherrySlab",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_cherry_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWCherrySlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWCrimsonSlab",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_crimson_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWCrimsonSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWWarpedSlab",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_warped_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWWarpedSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWBamboSlab",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_bambo_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBamboSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWOakStair",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_oak_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWOakStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWSpruceStair",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_spruce_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWSpruceStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWBirchStair",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_birch_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBirchStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWJungleStair",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_jungle_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWJungleStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWAcaciaStair",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_acacia_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWAcaciaStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWDarkOakStair",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_dark_oak_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWDarkOakStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWMangroveStair",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_mangrove_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWMangroveStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWCherryStair",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_cherry_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWCherryStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWCrimsonStair",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_crimson_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWCrimsonStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWWarpedStair",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_warped_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWWarpedStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWBamboStair",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_bambo_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBamboStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWOakDoor",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_oak_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWOakDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWSpruceDoor",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_spruce_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWSpruceDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWBirchDoor",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_birch_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBirchDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWJungleDoor",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_jungle_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWJungleDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWAcaciaDoor",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_acacia_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWAcaciaDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWDarkOakDoor",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_dark_oak_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWDarkOakDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWMangroveDoor",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_mangrove_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWMangroveDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWCherryDoor",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_cherry_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWCherryDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWCrimsonDoor",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_crimson_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWCrimsonDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWWarpedDoor",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_warped_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWWarpedDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWBamboDoor",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_bambo_door",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWBamboDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/WW_C_B_Procedures"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "nadaljuj",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
