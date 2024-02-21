@@ -113,6 +113,9 @@ public class WWBCWhileThisGUIIsOpenTickProcedure {
 			WWWarpedDoorProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWOakFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WWBamboDoorProcedure.execute(world, entity);
 		}
 	}

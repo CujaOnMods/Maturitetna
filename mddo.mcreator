@@ -1086,6 +1086,31 @@
         ]
       },
       "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWOakFence",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_oak_fence",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWOakFenceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
     }
   ],
   "variable_elements": [
