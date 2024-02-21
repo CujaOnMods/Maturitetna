@@ -235,11 +235,11 @@
       "registry_name": "wwwb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/blockstates/wwwb.json",
-          "src/main/resources/assets/mddo/models/block/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/assets/mddo/models/block/wwwb.json",
+          "src/main/resources/assets/mddo/models/item/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
-          "src/main/resources/assets/mddo/models/item/wwwb.json"
+          "src/main/resources/assets/mddo/blockstates/wwwb.json"
         ]
       }
     },
