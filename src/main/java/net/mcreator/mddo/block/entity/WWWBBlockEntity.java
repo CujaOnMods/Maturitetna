@@ -94,7 +94,7 @@ public class WWWBBlockEntity extends RandomizableContainerBlockEntity implements
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("WWWB");
+		return Component.literal("woodworking workbench");
 	}
 
 	@Override
