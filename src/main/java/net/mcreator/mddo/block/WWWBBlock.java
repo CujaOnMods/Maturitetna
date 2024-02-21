@@ -3,6 +3,9 @@ package net.mcreator.mddo.block;
 
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -38,7 +41,7 @@ import io.netty.buffer.Unpooled;
 
 public class WWWBBlock extends Block implements EntityBlock {
 	public WWWBBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -54,6 +57,17 @@ public class WWWBBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.or(box(-16, 14, 0, 16, 16, 16), box(-15, 9, 1, 0, 14, 15), box(-8, 16, 3, -7, 17, 13), box(-8, 17, 3, -7, 18, 13), box(-8, 18, 4, -7, 19, 12), box(-8, 19, 6, -7, 20, 10), box(-15, 0, 13, -13, 9, 15), box(13, 0, 1, 15, 15, 3),
+				box(-15, 0, 1, -13, 9, 3), box(13, 0, 13, 15, 15, 15));
 	}
 
 	@Override
