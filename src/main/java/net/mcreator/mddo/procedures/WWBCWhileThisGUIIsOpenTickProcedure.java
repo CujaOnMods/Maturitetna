@@ -113,10 +113,40 @@ public class WWBCWhileThisGUIIsOpenTickProcedure {
 			WWWarpedDoorProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWBamboDoorProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WWOakFenceProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
-			WWBamboDoorProcedure.execute(world, entity);
+			WWSpruceFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWBirchFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWJungleFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWAcaciaFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWDarkOakFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWMangroveFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWCherryFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWCrimsonFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWWarpedFenceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWBamboFenceProcedure.execute(world, entity);
 		}
 	}
 }
