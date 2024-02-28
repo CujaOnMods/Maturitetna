@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "mddo:block/wwwb"
+    },
+    "facing=east": {
+      "model": "mddo:block/wwwb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mddo:block/wwwb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mddo:block/wwwb",
+      "y": 270
     }
   }
 }

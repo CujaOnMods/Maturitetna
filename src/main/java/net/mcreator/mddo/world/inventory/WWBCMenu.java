@@ -138,7 +138,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 				slotChanged(5, 0, 0);
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 20, 54) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 20, 55) {
 			private final int slot = 6;
 
 			@Override
@@ -147,7 +147,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 				slotChanged(6, 0, 0);
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 38, 54) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 38, 55) {
 			private final int slot = 7;
 
 			@Override
@@ -156,7 +156,7 @@ public class WWBCMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 				slotChanged(7, 0, 0);
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 56, 54) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 56, 55) {
 			private final int slot = 8;
 
 			@Override

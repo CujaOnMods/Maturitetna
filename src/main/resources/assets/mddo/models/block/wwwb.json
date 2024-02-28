@@ -1,8 +1,8 @@
 {
   "parent": "mddo:custom/woodworkingtable",
   "textures": {
-    "all": "mddo:block/woodbench",
-    "particle": "mddo:block/woodbench",
+    "all": "mddo:block/woodworking2",
+    "particle": "mddo:block/woodworking2",
     "0": "mddo:block/woodworking2"
   },
   "render_type": "solid"

@@ -151,5 +151,8 @@ public class WWBCWhileThisGUIIsOpenTickProcedure {
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WWOakFenceGateProcedure.execute(world, entity);
 		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWSpruceFenceGateProcedure.execute(world, entity);
+		}
 	}
 }

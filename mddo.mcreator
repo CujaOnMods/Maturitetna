@@ -235,11 +235,11 @@
       "registry_name": "wwwb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/blockstates/wwwb.json",
-          "src/main/resources/assets/mddo/models/block/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/assets/mddo/models/block/wwwb.json",
+          "src/main/resources/assets/mddo/models/item/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
-          "src/main/resources/assets/mddo/models/item/wwwb.json"
+          "src/main/resources/assets/mddo/blockstates/wwwb.json"
         ]
       }
     },
@@ -1373,6 +1373,31 @@
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/mddo/procedures/WWOakFenceGateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "WWSpruceFenceGate",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ww_spruce_fence_gate",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WWSpruceFenceGateProcedure.java"
         ],
         "dependencies": [
           {
