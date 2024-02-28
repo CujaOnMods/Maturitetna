@@ -154,5 +154,32 @@ public class WWBCWhileThisGUIIsOpenTickProcedure {
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WWSpruceFenceGateProcedure.execute(world, entity);
 		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWBirchFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWJungleFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWAcaciaFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWDarkOakFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWMangroveFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWCherryFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWCrimsonFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWWarpedFenceGateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WWBamboFenceGateProcedure.execute(world, entity);
+		}
 	}
 }
