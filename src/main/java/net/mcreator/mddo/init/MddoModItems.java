@@ -23,6 +23,7 @@ public class MddoModItems {
 	public static final RegistryObject<Item> BETTER_SPIDER_SPAWN_EGG = REGISTRY.register("better_spider_spawn_egg", () -> new ForgeSpawnEggItem(MddoModEntities.BETTER_SPIDER, -13421773, -10066330, new Item.Properties()));
 	public static final RegistryObject<Item> WOODEN_HAMMER = REGISTRY.register("wooden_hammer", () -> new WoodenHammerItem());
 	public static final RegistryObject<Item> WWWB = block(MddoModBlocks.WWWB);
+	public static final RegistryObject<Item> STONEWORKING_BENCH = block(MddoModBlocks.STONEWORKING_BENCH);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

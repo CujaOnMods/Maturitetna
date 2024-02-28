@@ -2111,6 +2111,22 @@
         ]
       },
       "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "StoneworkingBench",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoneworking_bench",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
+          "src/main/resources/assets/mddo/models/item/stoneworking_bench.json",
+          "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2124,6 +2140,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.mddo.stoneworking_bench": "Stoneworking Bench",
       "item.mddo.wooden_hammer": "Wooden Hammer",
       "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",

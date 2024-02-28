@@ -1,0 +1,9 @@
+{
+  "parent": "mddo:custom/stoneworking",
+  "textures": {
+    "all": "mddo:block/stoneworking",
+    "particle": "mddo:block/stoneworking",
+    "0": "mddo:block/stoneworking"
+  },
+  "render_type": "solid"
+}

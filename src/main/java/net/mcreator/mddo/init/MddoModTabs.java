@@ -24,6 +24,7 @@ public class MddoModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(MddoModBlocks.WWWB.get().asItem());
+			tabData.accept(MddoModBlocks.STONEWORKING_BENCH.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
