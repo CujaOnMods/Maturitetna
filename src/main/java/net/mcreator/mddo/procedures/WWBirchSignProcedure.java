@@ -46,7 +46,7 @@ public class WWBirchSignProcedure {
 												}
 												return 0;
 											}
-										}.getAmount(7) == 0) {
+										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 												ItemStack _setstack = new ItemStack(Items.BIRCH_SIGN);
 												_setstack.setCount(6);
