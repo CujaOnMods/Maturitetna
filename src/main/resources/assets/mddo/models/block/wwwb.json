@@ -3,7 +3,7 @@
   "textures": {
     "all": "mddo:block/woodbench",
     "particle": "mddo:block/woodbench",
-    "0": "mddo:block/woodbench"
+    "0": "mddo:block/woodworking2"
   },
   "render_type": "solid"
 }
