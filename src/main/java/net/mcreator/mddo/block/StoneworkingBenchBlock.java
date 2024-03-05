@@ -9,14 +9,20 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -29,6 +35,7 @@ import net.minecraft.world.Containers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.StoneworkingGuiMenu;
@@ -40,8 +47,11 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 public class StoneworkingBenchBlock extends Block implements EntityBlock {
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+
 	public StoneworkingBenchBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -66,8 +76,34 @@ public class StoneworkingBenchBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(2, 18, 11, 6, 19, 13), box(1, 16, 10, 6, 18, 14), box(2, 17.61732, 4.50967, 4, 18.61732, 10.50967), box(9, 16, 3, 10, 17, 7), box(6, 16, 11, 9, 18, 14),
-				box(1, 0, 13, 3, 9, 15), box(13, 0, 1, 15, 9, 3), box(1, 0, 1, 3, 9, 3), box(13, 0, 13, 15, 9, 15));
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(10, 18, 3, 14, 19, 5), box(10, 16, 2, 15, 18, 6), box(12, 17.61732, 5.49033, 14, 18.61732, 11.49033), box(6, 16, 9, 7, 17, 13), box(7, 16, 2, 10, 18, 5),
+					box(13, 0, 1, 15, 9, 3), box(1, 0, 13, 3, 9, 15), box(13, 0, 13, 15, 9, 15), box(1, 0, 1, 3, 9, 3));
+			case NORTH -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(2, 18, 11, 6, 19, 13), box(1, 16, 10, 6, 18, 14), box(2, 17.61732, 4.50967, 4, 18.61732, 10.50967), box(9, 16, 3, 10, 17, 7), box(6, 16, 11, 9, 18, 14),
+					box(1, 0, 13, 3, 9, 15), box(13, 0, 1, 15, 9, 3), box(1, 0, 1, 3, 9, 3), box(13, 0, 13, 15, 9, 15));
+			case EAST -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(3, 18, 2, 5, 19, 6), box(2, 16, 1, 6, 18, 6), box(5.49033, 17.61732, 2, 11.49033, 18.61732, 4), box(9, 16, 9, 13, 17, 10), box(2, 16, 6, 5, 18, 9),
+					box(1, 0, 1, 3, 9, 3), box(13, 0, 13, 15, 9, 15), box(13, 0, 1, 15, 9, 3), box(1, 0, 13, 3, 9, 15));
+			case WEST -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(11, 18, 10, 13, 19, 14), box(10, 16, 10, 14, 18, 15), box(4.50967, 17.61732, 12, 10.50967, 18.61732, 14), box(3, 16, 6, 7, 17, 7), box(11, 16, 7, 14, 18, 10),
+					box(13, 0, 13, 15, 9, 15), box(1, 0, 1, 3, 9, 3), box(1, 0, 13, 3, 9, 15), box(13, 0, 1, 15, 9, 3));
+		};
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(FACING);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+	}
+
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
 	@Override
