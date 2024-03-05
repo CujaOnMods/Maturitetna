@@ -2121,12 +2121,78 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
           "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
+          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
           "src/main/resources/assets/mddo/models/item/stoneworking_bench.json",
           "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json"
         ]
       }
+    },
+    {
+      "name": "StoneworkingGui",
+      "type": "gui",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoneworking_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/world/inventory/StoneworkingGuiMenu.java",
+          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
+          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java"
+        ]
+      },
+      "path": "~/WWStoneworkingBenchGUI"
+    },
+    {
+      "name": "StoneGuiOpen",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/StoneGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "StoneFurnace",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_furnace",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/StoneFurnaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
     }
   ],
   "variable_elements": [
@@ -2168,6 +2234,14 @@
       },
       {
         "name": "Better_mobs",
+        "children": []
+      },
+      {
+        "name": "WWStoneworkingBenchGUI",
+        "children": []
+      },
+      {
+        "name": "StoneWorkingProcedures",
         "children": []
       }
     ]

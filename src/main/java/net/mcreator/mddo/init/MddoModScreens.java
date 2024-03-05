@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.mddo.client.gui.WWBCScreen;
+import net.mcreator.mddo.client.gui.StoneworkingGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class MddoModScreens {
@@ -19,6 +20,7 @@ public class MddoModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(MddoModMenus.WWBC.get(), WWBCScreen::new);
+			MenuScreens.register(MddoModMenus.STONEWORKING_GUI.get(), StoneworkingGuiScreen::new);
 		});
 	}
 }
