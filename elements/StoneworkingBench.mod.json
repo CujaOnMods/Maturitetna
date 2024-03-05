@@ -303,7 +303,7 @@
     "hasInventory": true,
     "guiBoundTo": "StoneworkingGui",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 11,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -329,6 +329,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "RemoveOutput"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

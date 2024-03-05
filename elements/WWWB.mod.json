@@ -329,6 +329,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "RemoveOutput"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

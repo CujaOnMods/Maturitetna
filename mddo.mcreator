@@ -2170,16 +2170,16 @@
       "path": "~/StoneWorkingProcedures"
     },
     {
-      "name": "StoneFurnace",
+      "name": "StoneFurnacE1",
       "type": "procedure",
-      "sortid": 102,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stone_furnace",
+      "registry_name": "stone_furnac_e_1",
       "metadata": {
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/mddo/procedures/StoneFurnaceProcedure.java"
+          "src/main/java/net/mcreator/mddo/procedures/StoneFurnacE1Procedure.java"
         ],
         "dependencies": [
           {
@@ -2192,7 +2192,107 @@
           }
         ]
       },
-      "path": "~/WW_C_B_Procedures"
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "StoneSmoker",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_smoker",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/StoneSmokerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "StoneBlastFurnace",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_blast_furnace",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/StoneBlastFurnaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "StoneBrewingStand",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_brewing_stand",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/StoneBrewingStandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "StoneStoneCuter",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_stone_cuter",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/StoneStoneCuterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
     }
   ],
   "variable_elements": [

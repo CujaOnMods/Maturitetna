@@ -8,6 +8,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -39,6 +40,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.StoneworkingGuiMenu;
+import net.mcreator.mddo.procedures.RemoveOutputProcedure;
 import net.mcreator.mddo.block.entity.StoneworkingBenchBlockEntity;
 
 import java.util.List;
@@ -112,6 +114,13 @@ public class StoneworkingBenchBlock extends Block implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		RemoveOutputProcedure.execute(entity);
+		return retval;
 	}
 
 	@Override

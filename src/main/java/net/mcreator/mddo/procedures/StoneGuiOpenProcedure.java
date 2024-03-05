@@ -18,9 +18,18 @@ public class StoneGuiOpenProcedure {
 			((Slot) _slots.get(10)).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
-		StoneFurnaceProcedure.execute(world, entity);
+		StoneFurnacE1Procedure.execute(world, entity);
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
-			StoneFurnaceProcedure.execute(world, entity);
+			StoneSmokerProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			StoneBlastFurnaceProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			StoneBrewingStandProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			StoneStoneCuterProcedure.execute(world, entity);
 		}
 	}
 }

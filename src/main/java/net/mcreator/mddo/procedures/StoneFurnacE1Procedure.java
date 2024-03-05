@@ -12,7 +12,7 @@ import net.mcreator.mddo.network.MddoModVariables;
 import java.util.function.Supplier;
 import java.util.Map;
 
-public class StoneFurnaceProcedure {
+public class StoneFurnacE1Procedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return false;
@@ -38,7 +38,7 @@ public class StoneFurnaceProcedure {
 												}
 												return 0;
 											}
-										}.getAmount(0) == 0) {
+										}.getAmount(4) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 												ItemStack _setstack = new ItemStack(Blocks.FURNACE);
 												_setstack.setCount(1);
