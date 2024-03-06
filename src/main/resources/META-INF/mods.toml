@@ -25,4 +25,10 @@ authors="Uporabnik, MCreator"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.mddo]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
