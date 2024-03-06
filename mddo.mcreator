@@ -160,8 +160,8 @@
       "registry_name": "wooden_hammer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java",
-          "src/main/resources/assets/mddo/models/item/wooden_hammer.json"
+          "src/main/resources/assets/mddo/models/item/wooden_hammer.json",
+          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java"
         ]
       }
     },
@@ -2318,6 +2318,20 @@
         "files": [
           "src/main/resources/data/mddo/recipes/stone_working_recepie.json"
         ]
+      }
+    },
+    {
+      "name": "HammerRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/HammerRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": []
       }
     }
   ],
