@@ -1,9 +1,9 @@
 {
-  "parent": "mddo:custom/stoneworking",
+  "parent": "mddo:custom/oreworking",
   "textures": {
-    "all": "mddo:block/drowned",
-    "particle": "mddo:block/drowned",
-    "0": "mddo:block/stoneworking"
+    "all": "mddo:block/oretabletexture",
+    "particle": "mddo:block/oretabletexture",
+    "0": "mddo:block/oretabletexture"
   },
   "render_type": "solid"
 }

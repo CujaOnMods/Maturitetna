@@ -1,12 +1,48 @@
 
 package net.mcreator.mddo.block;
 
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.mddo.procedures.RemoveOutputProcedure;
+import net.mcreator.mddo.block.entity.MetalWorkingBenchBlockEntity;
+
+import java.util.List;
+import java.util.Collections;
 
 public class MetalWorkingBenchBlock extends Block implements EntityBlock {
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+
 	public MetalWorkingBenchBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -31,8 +67,34 @@ public class MetalWorkingBenchBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(2, 18, 11, 6, 19, 13), box(1, 16, 10, 6, 18, 14), box(2, 17.61732, 4.50967, 4, 18.61732, 10.50967), box(9, 16, 3, 10, 17, 7), box(6, 16, 11, 9, 18, 14),
-				box(1, 0, 13, 3, 9, 15), box(13, 0, 1, 15, 9, 3), box(1, 0, 1, 3, 9, 3), box(13, 0, 13, 15, 9, 15));
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(1, 16, 3, 8, 17, 13), box(10, 16, 4, 15, 17, 6), box(12, 16, 6, 13, 17, 12), box(12, 16, 3, 13, 17, 4), box(13, 0, 1, 15, 9, 3), box(1, 0, 13, 3, 9, 15),
+					box(13, 0, 13, 15, 9, 15), box(1, 0, 1, 3, 9, 3));
+			case NORTH -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(8, 16, 3, 15, 17, 13), box(1, 16, 10, 6, 17, 12), box(3, 16, 4, 4, 17, 10), box(3, 16, 12, 4, 17, 13), box(1, 0, 13, 3, 9, 15), box(13, 0, 1, 15, 9, 3),
+					box(1, 0, 1, 3, 9, 3), box(13, 0, 13, 15, 9, 15));
+			case EAST -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(3, 16, 8, 13, 17, 15), box(4, 16, 1, 6, 17, 6), box(6, 16, 3, 12, 17, 4), box(3, 16, 3, 4, 17, 4), box(1, 0, 1, 3, 9, 3), box(13, 0, 13, 15, 9, 15),
+					box(13, 0, 1, 15, 9, 3), box(1, 0, 13, 3, 9, 15));
+			case WEST -> Shapes.or(box(0, 14, 0, 16, 16, 16), box(1, 9, 1, 15, 14, 15), box(3, 16, 1, 13, 17, 8), box(10, 16, 10, 12, 17, 15), box(4, 16, 12, 10, 17, 13), box(12, 16, 12, 13, 17, 13), box(13, 0, 13, 15, 9, 15), box(1, 0, 1, 3, 9, 3),
+					box(1, 0, 13, 3, 9, 15), box(13, 0, 1, 15, 9, 3));
+		};
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(FACING);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+	}
+
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
 	@Override
