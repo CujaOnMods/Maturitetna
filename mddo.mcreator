@@ -2319,6 +2319,17 @@
           "src/main/resources/data/mddo/recipes/stone_working_recepie.json"
         ]
       }
+    },
+    {
+      "name": "EpiCraft",
+      "type": "tab",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "epi_craft",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -2333,6 +2344,7 @@
   "language_map": {
     "en_us": {
       "block.mddo.stoneworking_bench": "Stoneworking Bench",
+      "item_group.mddo.epi_craft": "Epi Craft",
       "item.mddo.wooden_hammer": "Wooden Hammer",
       "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
