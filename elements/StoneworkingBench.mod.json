@@ -240,7 +240,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "TRANSPORTATION"
+      "value": "CUSTOM:EpiCraft"
     },
     "destroyTool": "axe",
     "customDrop": {
