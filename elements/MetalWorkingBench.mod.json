@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "stoneworking",
+    "texture": "drowned",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "stoneworking:default",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -231,7 +231,7 @@
         "subtract": false
       }
     ],
-    "name": "Stoneworking Bench",
+    "name": "Metal Working Bench",
     "specialInformation": {
       "fixedValue": []
     },
@@ -301,8 +301,8 @@
     "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "StoneworkingGui",
-    "openGUIOnRightClick": true,
+    "guiBoundTo": "MetalWorkbench",
+    "openGUIOnRightClick": false,
     "inventorySize": 11,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

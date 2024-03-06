@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "mddo:wwwb",
-    "mddo:stoneworking_bench"
+    "mddo:stoneworking_bench",
+    "mddo:metal_working_bench"
   ]
 }

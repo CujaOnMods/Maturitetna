@@ -1,5 +1,7 @@
 {
+  "block.mddo.metal_working_bench": "Metal Working Bench",
   "block.mddo.stoneworking_bench": "Stoneworking Bench",
+  "item_group.mddo.epi_craft": "Epi Craft",
   "item.mddo.wooden_hammer": "Wooden Hammer",
   "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
   "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",

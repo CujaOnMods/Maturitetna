@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "tab",
   "definition": {
-    "name": "EpiCraft",
+    "name": "Epi Craft",
     "icon": {
       "value": "Blocks.AMETHYST_CLUSTER"
     },
-    "showSearch": false
+    "showSearch": true
   }
 }

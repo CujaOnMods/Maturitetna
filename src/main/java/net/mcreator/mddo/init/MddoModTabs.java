@@ -4,13 +4,17 @@
  */
 package net.mcreator.mddo.init;
 
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.mddo.MddoMod;
@@ -18,14 +22,15 @@ import net.mcreator.mddo.MddoMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MddoModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MddoMod.MODID);
+	public static final RegistryObject<CreativeModeTab> EPI_CRAFT = REGISTRY.register("epi_craft",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mddo.epi_craft")).icon(() -> new ItemStack(Blocks.AMETHYST_CLUSTER)).displayItems((parameters, tabData) -> {
+				tabData.accept(MddoModBlocks.WWWB.get().asItem());
+				tabData.accept(MddoModBlocks.STONEWORKING_BENCH.get().asItem());
+				tabData.accept(MddoModBlocks.METAL_WORKING_BENCH.get().asItem());
+			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
-		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
-			tabData.accept(MddoModBlocks.WWWB.get().asItem());
-			tabData.accept(MddoModBlocks.STONEWORKING_BENCH.get().asItem());
-		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MddoModItems.BETTER_SKELETON_SPAWN_EGG.get());

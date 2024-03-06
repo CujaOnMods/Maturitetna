@@ -24,6 +24,7 @@ public class MddoModItems {
 	public static final RegistryObject<Item> WOODEN_HAMMER = REGISTRY.register("wooden_hammer", () -> new WoodenHammerItem());
 	public static final RegistryObject<Item> WWWB = block(MddoModBlocks.WWWB);
 	public static final RegistryObject<Item> STONEWORKING_BENCH = block(MddoModBlocks.STONEWORKING_BENCH);
+	public static final RegistryObject<Item> METAL_WORKING_BENCH = block(MddoModBlocks.METAL_WORKING_BENCH);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
