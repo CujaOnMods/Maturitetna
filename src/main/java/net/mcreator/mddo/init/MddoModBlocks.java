@@ -12,10 +12,12 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.mddo.block.WWWBBlock;
 import net.mcreator.mddo.block.StoneworkingBenchBlock;
+import net.mcreator.mddo.block.MetalWorkingBenchBlock;
 import net.mcreator.mddo.MddoMod;
 
 public class MddoModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, MddoMod.MODID);
 	public static final RegistryObject<Block> WWWB = REGISTRY.register("wwwb", () -> new WWWBBlock());
 	public static final RegistryObject<Block> STONEWORKING_BENCH = REGISTRY.register("stoneworking_bench", () -> new StoneworkingBenchBlock());
+	public static final RegistryObject<Block> METAL_WORKING_BENCH = REGISTRY.register("metal_working_bench", () -> new MetalWorkingBenchBlock());
 }

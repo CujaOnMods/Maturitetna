@@ -2321,14 +2321,221 @@
       }
     },
     {
+      "name": "MetalWorkbench",
+      "type": "gui",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_workbench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java",
+          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java"
+        ]
+      },
+      "path": "~/WW_C_B_GUI"
+    },
+    {
+      "name": "M3talAnvil",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "m_3tal_anvil",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/M3talAnvilProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "MetalGUIOpen",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/MetalGUIOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "MetalIronBars",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_iron_bars",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/MetalIronBarsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "MetalLantern",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_lantern",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/MetalLanternProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "Metalbucket",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalbucket",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/MetalbucketProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "MetalCauldron",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_cauldron",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/MetalCauldronProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
+      "name": "MetalMinecart",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_minecart",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/MetalMinecartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WW_C_B_Procedures"
+    },
+    {
       "name": "EpiCraft",
       "type": "tab",
-      "sortid": 110,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "epi_craft",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "MetalWorkingBench",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_working_bench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
+          "src/main/resources/assets/mddo/models/item/metal_working_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
+          "src/main/resources/assets/mddo/models/block/metal_working_bench.json"
+        ]
       }
     }
   ],
@@ -2343,6 +2550,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.mddo.metal_working_bench": "Metal Working Bench",
       "block.mddo.stoneworking_bench": "Stoneworking Bench",
       "item_group.mddo.epi_craft": "Epi Craft",
       "item.mddo.wooden_hammer": "Wooden Hammer",
