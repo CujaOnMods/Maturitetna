@@ -2417,11 +2417,11 @@
       "registry_name": "metal_working_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/block/metal_working_bench.json",
-          "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
+          "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
           "src/main/resources/assets/mddo/models/item/metal_working_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
-          "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java"
+          "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
+          "src/main/resources/assets/mddo/models/block/metal_working_bench.json"
         ]
       }
     },

@@ -257,7 +257,7 @@
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "MetalWorkbench",
-    "openGUIOnRightClick": false,
+    "openGUIOnRightClick": true,
     "inventorySize": 11,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
