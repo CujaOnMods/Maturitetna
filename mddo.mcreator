@@ -2293,6 +2293,32 @@
         ]
       },
       "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "WoodworkingBench",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woodworking_bench",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/woodworking_bench.json"
+        ]
+      }
+    },
+    {
+      "name": "StoneWorkingRecepie",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_working_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/stone_working_recepie.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2359,7 +2385,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "mcreator_link"
+      "mcreator_link",
+      "jei"
     ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",

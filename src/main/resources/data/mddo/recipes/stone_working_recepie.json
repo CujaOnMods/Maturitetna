@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "ab",
+    "cd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cobblestone"
+    },
+    "b": {
+      "item": "minecraft:crafting_table"
+    },
+    "c": {
+      "item": "minecraft:andesite"
+    },
+    "d": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "mddo:stoneworking_bench",
+    "count": 1
+  }
+}
