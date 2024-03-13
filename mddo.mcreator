@@ -235,11 +235,11 @@
       "registry_name": "wwwb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/blockstates/wwwb.json",
-          "src/main/resources/assets/mddo/models/block/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/assets/mddo/models/block/wwwb.json",
+          "src/main/resources/assets/mddo/models/item/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
-          "src/main/resources/assets/mddo/models/item/wwwb.json"
+          "src/main/resources/assets/mddo/blockstates/wwwb.json"
         ]
       }
     },
@@ -2808,6 +2808,206 @@
           "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json"
         ]
       }
+    },
+    {
+      "name": "WeaponArmorDiamondHelmet",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_helmet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondHelmetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorDiamondChestplate",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_chestplate",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondChestplateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorDiamondLeggings",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_leggings",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondLeggingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorDiamondFeet",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_feet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondFeetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorWoodPick",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_wood_pick",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorWoodPickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorStonePick",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_stone_pick",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorStonePickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorIronPick",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_iron_pick",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorIronPickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorDiamondPick",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_pick",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondPickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
     }
   ],
   "variable_elements": [

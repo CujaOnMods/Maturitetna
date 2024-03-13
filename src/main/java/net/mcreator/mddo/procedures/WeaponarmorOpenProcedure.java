@@ -40,5 +40,29 @@ public class WeaponarmorOpenProcedure {
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WeaponArmorIronFeetProcedure.execute(world, entity);
 		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorDiamondHelmetProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorDiamondChestplateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorDiamondLeggingsProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorDiamondFeetProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorWoodPickProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorStonePickProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorIronPickProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorDiamondPickProcedure.execute(world, entity);
+		}
 	}
 }
