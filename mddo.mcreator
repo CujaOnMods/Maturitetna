@@ -2666,6 +2666,148 @@
         ]
       },
       "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorLeatherFeet",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_leather_feet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorLeatherFeetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponAromrIronHelmet",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_aromr_iron_helmet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponAromrIronHelmetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorIronChestplate",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_iron_chestplate",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorIronChestplateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorIronLeggings",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_iron_leggings",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorIronLeggingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorIronFeet",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_iron_feet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorIronFeetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorWorkBench",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_work_bench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java",
+          "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
+          "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json",
+          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2679,17 +2821,18 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.mddo.wooden_hammer": "Wooden Hammer",
+      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
+      "entity.mddo.betterzombie": "Betterzombie",
+      "entity.mddo.better_spider": "Better Spider",
       "block.mddo.metal_working_bench": "Metal Working Bench",
       "block.mddo.stoneworking_bench": "Stoneworking Bench",
       "item_group.mddo.epi_craft": "Epi Craft",
-      "item.mddo.wooden_hammer": "Wooden Hammer",
       "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
-      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
-      "entity.mddo.betterzombie": "Betterzombie",
       "entity.mddo.better_skeleton": "Better Skeleton",
+      "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
       "block.mddo.wwwb": "woodworking workbench",
-      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
-      "entity.mddo.better_spider": "Better Spider"
+      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg"
     }
   },
   "foldersRoot": {

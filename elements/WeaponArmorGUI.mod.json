@@ -215,6 +215,9 @@
         }
       }
     ],
+    "onTick": {
+      "name": "WeaponarmorOpen"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

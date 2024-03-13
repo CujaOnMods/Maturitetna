@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.mddo.block.WeaponArmorWorkBenchBlock;
 import net.mcreator.mddo.block.WWWBBlock;
 import net.mcreator.mddo.block.StoneworkingBenchBlock;
 import net.mcreator.mddo.block.MetalWorkingBenchBlock;
@@ -20,4 +21,5 @@ public class MddoModBlocks {
 	public static final RegistryObject<Block> WWWB = REGISTRY.register("wwwb", () -> new WWWBBlock());
 	public static final RegistryObject<Block> STONEWORKING_BENCH = REGISTRY.register("stoneworking_bench", () -> new StoneworkingBenchBlock());
 	public static final RegistryObject<Block> METAL_WORKING_BENCH = REGISTRY.register("metal_working_bench", () -> new MetalWorkingBenchBlock());
+	public static final RegistryObject<Block> WEAPON_ARMOR_WORK_BENCH = REGISTRY.register("weapon_armor_work_bench", () -> new WeaponArmorWorkBenchBlock());
 }

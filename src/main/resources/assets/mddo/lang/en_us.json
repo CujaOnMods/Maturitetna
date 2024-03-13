@@ -1,13 +1,14 @@
 {
+  "item.mddo.wooden_hammer": "Wooden Hammer",
+  "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
+  "entity.mddo.betterzombie": "Betterzombie",
+  "entity.mddo.better_spider": "Better Spider",
   "block.mddo.metal_working_bench": "Metal Working Bench",
   "block.mddo.stoneworking_bench": "Stoneworking Bench",
   "item_group.mddo.epi_craft": "Epi Craft",
-  "item.mddo.wooden_hammer": "Wooden Hammer",
   "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
-  "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
-  "entity.mddo.betterzombie": "Betterzombie",
   "entity.mddo.better_skeleton": "Better Skeleton",
+  "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
   "block.mddo.wwwb": "woodworking workbench",
-  "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
-  "entity.mddo.better_spider": "Better Spider"
+  "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg"
 }

@@ -25,5 +25,20 @@ public class WeaponarmorOpenProcedure {
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WeaponArmorLeatherLeggingsProcedure.execute(world, entity);
 		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorLeatherFeetProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponAromrIronHelmetProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorIronChestplateProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorIronLeggingsProcedure.execute(world, entity);
+		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorIronFeetProcedure.execute(world, entity);
+		}
 	}
 }
