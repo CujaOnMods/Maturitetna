@@ -1,9 +1,9 @@
 {
-  "parent": "mddo:custom/oreworking",
+  "parent": "mddo:custom/weaponbench",
   "textures": {
-    "all": "mddo:block/drowned",
-    "particle": "mddo:block/drowned",
-    "0": "mddo:block/oretabletexture"
+    "all": "mddo:block/weapontabletexture",
+    "particle": "mddo:block/weapontabletexture",
+    "0": "mddo:block/weapontabletexture"
   },
   "render_type": "solid"
 }
