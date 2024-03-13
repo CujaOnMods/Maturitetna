@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.mddo.world.inventory.WeaponArmorGUIMenu;
 import net.mcreator.mddo.world.inventory.WWBCMenu;
 import net.mcreator.mddo.world.inventory.StoneworkingGuiMenu;
 import net.mcreator.mddo.world.inventory.MetalWorkbenchMenu;
@@ -21,4 +22,5 @@ public class MddoModMenus {
 	public static final RegistryObject<MenuType<WWBCMenu>> WWBC = REGISTRY.register("wwbc", () -> IForgeMenuType.create(WWBCMenu::new));
 	public static final RegistryObject<MenuType<StoneworkingGuiMenu>> STONEWORKING_GUI = REGISTRY.register("stoneworking_gui", () -> IForgeMenuType.create(StoneworkingGuiMenu::new));
 	public static final RegistryObject<MenuType<MetalWorkbenchMenu>> METAL_WORKBENCH = REGISTRY.register("metal_workbench", () -> IForgeMenuType.create(MetalWorkbenchMenu::new));
+	public static final RegistryObject<MenuType<WeaponArmorGUIMenu>> WEAPON_ARMOR_GUI = REGISTRY.register("weapon_armor_gui", () -> IForgeMenuType.create(WeaponArmorGUIMenu::new));
 }

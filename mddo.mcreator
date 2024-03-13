@@ -2551,6 +2551,121 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "WeaponArmorGUI",
+      "type": "gui",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java",
+          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java"
+        ]
+      },
+      "path": "~/WW_C_B_GUI"
+    },
+    {
+      "name": "WeaponarmorOpen",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaponarmor_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponarmorOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorLetherHelmet",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_lether_helmet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorLetherHelmetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorLeatherChestplate",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_leather_chestplate",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorLeatherChestplateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorLeatherLeggings",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_leather_leggings",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorLeatherLeggingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
     }
   ],
   "variable_elements": [
@@ -2602,6 +2717,10 @@
       },
       {
         "name": "WWStoneworkingBenchGUI",
+        "children": []
+      },
+      {
+        "name": "WeaponArmorGui",
         "children": []
       }
     ]

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.mddo.client.gui.WeaponArmorGUIScreen;
 import net.mcreator.mddo.client.gui.WWBCScreen;
 import net.mcreator.mddo.client.gui.StoneworkingGuiScreen;
 import net.mcreator.mddo.client.gui.MetalWorkbenchScreen;
@@ -23,6 +24,7 @@ public class MddoModScreens {
 			MenuScreens.register(MddoModMenus.WWBC.get(), WWBCScreen::new);
 			MenuScreens.register(MddoModMenus.STONEWORKING_GUI.get(), StoneworkingGuiScreen::new);
 			MenuScreens.register(MddoModMenus.METAL_WORKBENCH.get(), MetalWorkbenchScreen::new);
+			MenuScreens.register(MddoModMenus.WEAPON_ARMOR_GUI.get(), WeaponArmorGUIScreen::new);
 		});
 	}
 }
