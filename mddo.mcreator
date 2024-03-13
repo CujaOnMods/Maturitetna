@@ -2801,11 +2801,11 @@
       "registry_name": "weapon_armor_work_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java",
           "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java"
+          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json"
         ]
       }
     },
