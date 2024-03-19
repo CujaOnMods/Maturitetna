@@ -3008,6 +3008,31 @@
         ]
       },
       "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorWoodAxe",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_wood_axe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorWoodAxeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
     }
   ],
   "variable_elements": [

@@ -64,5 +64,8 @@ public class WeaponarmorOpenProcedure {
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			WeaponArmorDiamondPickProcedure.execute(world, entity);
 		}
+		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			WeaponArmorWoodAxeProcedure.execute(world, entity);
+		}
 	}
 }
