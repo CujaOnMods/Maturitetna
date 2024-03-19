@@ -138,20 +138,6 @@
       }
     },
     {
-      "name": "Wwslab",
-      "type": "recipe",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wwslab",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/mddo/recipes/wwslab.json"
-        ]
-      },
-      "path": "~/WW_C_B_recepies"
-    },
-    {
       "name": "WoodenHammer",
       "type": "tool",
       "sortid": 8,
@@ -3033,6 +3019,359 @@
         ]
       },
       "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorStoneAxe",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_stone_axe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorStoneAxeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorIronAxe",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_iron_axe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorIronAxeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGoldAxe",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gold_axe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGoldAxeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorDiamondAxe",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_axe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondAxeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGOldHelmet",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_g_old_helmet",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGOldHelmetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGoldChestplate",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gold_chestplate",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGoldChestplateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGoldLeggings",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gold_leggings",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGoldLeggingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGoldFeet",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gold_feet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGoldFeetProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGoldPick",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gold_pick",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGoldPickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorWoodSword",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_wood_sword",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorWoodSwordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorStoneSword",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_stone_sword",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorStoneSwordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorIronSword",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_iron_sword",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorIronSwordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorGoldSword",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_gold_sword",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorGoldSwordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "WeaponArmorDiamondSword",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_armor_diamond_sword",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/WeaponArmorDiamondSwordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "Stonesword",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonesword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/stone_sword.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3063,10 +3402,6 @@
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "WW_C_B_recepies",
-        "children": []
-      },
       {
         "name": "Better_mobs",
         "children": []

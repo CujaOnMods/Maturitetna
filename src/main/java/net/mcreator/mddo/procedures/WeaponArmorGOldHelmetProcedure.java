@@ -1,6 +1,5 @@
 package net.mcreator.mddo.procedures;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -13,15 +12,15 @@ import net.mcreator.mddo.network.MddoModVariables;
 import java.util.function.Supplier;
 import java.util.Map;
 
-public class WeaponArmorWoodAxeProcedure {
+public class WeaponArmorGOldHelmetProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return false;
-		if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
-			if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
-				if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem()) {
-					if (Items.STICK == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem()) {
-						if (Items.STICK == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
+			if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
+				if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
+					if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem()) {
+						if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem()) {
 							if (new Object() {
 								public int getAmount(int sltid) {
 									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -31,7 +30,7 @@ public class WeaponArmorWoodAxeProcedure {
 									}
 									return 0;
 								}
-							}.getAmount(2) == 0) {
+							}.getAmount(4) == 0) {
 								if (new Object() {
 									public int getAmount(int sltid) {
 										if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -41,7 +40,7 @@ public class WeaponArmorWoodAxeProcedure {
 										}
 										return 0;
 									}
-								}.getAmount(5) == 0) {
+								}.getAmount(6) == 0) {
 									if (new Object() {
 										public int getAmount(int sltid) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -51,7 +50,7 @@ public class WeaponArmorWoodAxeProcedure {
 											}
 											return 0;
 										}
-									}.getAmount(6) == 0) {
+									}.getAmount(7) == 0) {
 										if (new Object() {
 											public int getAmount(int sltid) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -63,7 +62,7 @@ public class WeaponArmorWoodAxeProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.WOODEN_AXE);
+												ItemStack _setstack = new ItemStack(Items.GOLDEN_HELMET);
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -80,11 +79,11 @@ public class WeaponArmorWoodAxeProcedure {
 				}
 			}
 		} else {
-			if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
-				if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
-					if (Blocks.OAK_PLANKS.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem()) {
-						if (Items.STICK == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem()) {
-							if (Items.STICK == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY).getItem()) {
+			if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem()) {
+				if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem()) {
+					if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem()) {
+						if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY).getItem()) {
+							if (Items.GOLD_INGOT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY).getItem()) {
 								if (new Object() {
 									public int getAmount(int sltid) {
 										if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -104,7 +103,7 @@ public class WeaponArmorWoodAxeProcedure {
 											}
 											return 0;
 										}
-									}.getAmount(3) == 0) {
+									}.getAmount(1) == 0) {
 										if (new Object() {
 											public int getAmount(int sltid) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -114,7 +113,7 @@ public class WeaponArmorWoodAxeProcedure {
 												}
 												return 0;
 											}
-										}.getAmount(6) == 0) {
+										}.getAmount(2) == 0) {
 											if (new Object() {
 												public int getAmount(int sltid) {
 													if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -124,9 +123,9 @@ public class WeaponArmorWoodAxeProcedure {
 													}
 													return 0;
 												}
-											}.getAmount(8) == 0) {
+											}.getAmount(7) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Items.WOODEN_AXE);
+													ItemStack _setstack = new ItemStack(Items.GOLDEN_HELMET);
 													_setstack.setCount(1);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();

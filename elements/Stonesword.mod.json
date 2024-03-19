@@ -3,13 +3,13 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 6,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "BUILDING",
-    "recipeShapeless": false,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
@@ -24,25 +24,25 @@
         "value": ""
       },
       {
+        "value": "Blocks.BEDROCK"
+      },
+      {
+        "value": ""
+      },
+      {
         "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.PLANKS#0"
-      },
-      {
-        "value": "Blocks.PLANKS#0"
-      },
-      {
-        "value": "Blocks.PLANKS#0"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.WOODEN_SLAB#0"
+      "value": "Items.STONE_SWORD"
     },
-    "name": "wwslab",
-    "namespace": "mod"
+    "name": "stone_sword",
+    "namespace": "minecraft"
   }
 }
