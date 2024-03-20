@@ -2317,7 +2317,28 @@
         "files": [
           "src/main/java/net/mcreator/mddo/procedures/HammerRightclickedOnBlockProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -3585,7 +3606,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.mddo.wooden_hammer": "Wooden Hammer",
+      "item.mddo.wooden_hammer": "Hammer",
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "entity.mddo.betterzombie": "Betterzombie",
       "entity.mddo.better_spider": "Better Spider",
