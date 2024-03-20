@@ -3561,12 +3561,12 @@
       "path": "~/WeaponArmorGui"
     },
     {
-      "name": "WoodSwordOveride",
+      "name": "WoodSwordOverride",
       "type": "recipe",
       "sortid": 165,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wood_sword_overide",
+      "registry_name": "wood_sword_override",
       "metadata": {
         "files": [
           "src/main/resources/data/minecraft/recipes/wooden_sword.json"
