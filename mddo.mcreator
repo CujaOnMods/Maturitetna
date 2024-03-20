@@ -3593,6 +3593,19 @@
           "src/main/resources/data/minecraft/recipes/wooden_sword.json"
         ]
       }
+    },
+    {
+      "name": "Dasd",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dasd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/crafting_table.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
