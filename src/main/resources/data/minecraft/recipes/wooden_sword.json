@@ -3,7 +3,7 @@
   "category": "equipment",
   "ingredients": [
     {
-      "item": "minecraft:bedrock"
+      "item": "minecraft:netherite_block"
     }
   ],
   "result": {
