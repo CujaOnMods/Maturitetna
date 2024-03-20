@@ -3361,19 +3361,6 @@
       "path": "~/WeaponArmorGui"
     },
     {
-      "name": "Stonesword",
-      "type": "recipe",
-      "sortid": 156,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stonesword",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipes/stone_sword.json"
-        ]
-      }
-    },
-    {
       "name": "WeaponArmorWoodShovel",
       "type": "procedure",
       "sortid": 157,
