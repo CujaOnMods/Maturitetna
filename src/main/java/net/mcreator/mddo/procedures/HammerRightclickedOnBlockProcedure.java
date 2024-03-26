@@ -15,7 +15,7 @@ public class HammerRightclickedOnBlockProcedure {
 		double i = 0;
 		double j = 0;
 		String tag = "";
-		if ((world.getFluidState(BlockPos.containing(x, y, z)).createLegacyBlock()).is(BlockTags.create(new ResourceLocation("minecraft:stone")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:stone")))) {
 			world.destroyBlock(BlockPos.containing(x, y, z), false);
 			{
 				ItemStack _ist = itemstack;
@@ -24,7 +24,7 @@ public class HammerRightclickedOnBlockProcedure {
 					_ist.setDamageValue(0);
 				}
 			}
-			if (Math.random() < 0.03) {
+			if (Math.random() < 1) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.GLOWSTONE_DUST));
 					entityToSpawn.setPickUpDelay(0);

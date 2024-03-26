@@ -146,8 +146,8 @@
       "registry_name": "wooden_hammer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/wooden_hammer.json",
-          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java"
+          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java",
+          "src/main/resources/assets/mddo/models/item/wooden_hammer.json"
         ]
       }
     },
@@ -3582,19 +3582,6 @@
       "path": "~/WeaponArmorGui"
     },
     {
-      "name": "WoodSwordOverride",
-      "type": "recipe",
-      "sortid": 165,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wood_sword_override",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipes/wooden_sword.json"
-        ]
-      }
-    },
-    {
       "name": "Dasd",
       "type": "recipe",
       "sortid": 166,
@@ -3604,6 +3591,19 @@
       "metadata": {
         "files": [
           "src/main/resources/data/minecraft/recipes/crafting_table.json"
+        ]
+      }
+    },
+    {
+      "name": "Dsadsa",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dsadsa",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/wooden_shovel.json"
         ]
       }
     }
