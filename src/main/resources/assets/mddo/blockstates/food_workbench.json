@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mddo:block/food_workbench"
+    },
+    "facing=east": {
+      "model": "mddo:block/food_workbench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mddo:block/food_workbench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mddo:block/food_workbench",
+      "y": 270
+    }
+  }
+}

@@ -3,16 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:rooted_dirt"
+      "item": "minecraft:crafting_table"
     },
     {
-      "item": "minecraft:rooted_dirt"
+      "item": "minecraft:crafting_table"
     },
     {
-      "item": "minecraft:rooted_dirt"
+      "item": "minecraft:crafting_table"
     },
     {
-      "item": "minecraft:rooted_dirt"
+      "item": "minecraft:crafting_table"
     }
   ],
   "result": {
