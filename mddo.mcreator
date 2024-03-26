@@ -3595,22 +3595,6 @@
       }
     },
     {
-      "name": "FoodWOrkBenchGui",
-      "type": "gui",
-      "sortid": 167,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "food_w_ork_bench_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/world/inventory/FoodWOrkBenchGuiMenu.java",
-          "src/main/java/net/mcreator/mddo/client/gui/FoodWOrkBenchGuiScreen.java",
-          "src/main/java/net/mcreator/mddo/network/FoodWOrkBenchGuiSlotMessage.java"
-        ]
-      },
-      "path": "~/FoodWorkBenchGui"
-    },
-    {
       "name": "FoodGoldenApple",
       "type": "procedure",
       "sortid": 169,
@@ -3875,6 +3859,22 @@
           "src/main/resources/assets/mddo/models/item/food_workbench.json"
         ]
       }
+    },
+    {
+      "name": "FoodGUI",
+      "type": "gui",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/network/FoodGUISlotMessage.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/FoodGUIMenu.java",
+          "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java"
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
     }
   ],
   "variable_elements": [
@@ -3928,10 +3928,6 @@
       },
       {
         "name": "WeaponArmorGui",
-        "children": []
-      },
-      {
-        "name": "FoodWorkBenchGui",
         "children": []
       }
     ]

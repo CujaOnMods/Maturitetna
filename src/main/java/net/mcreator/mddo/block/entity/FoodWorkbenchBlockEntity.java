@@ -21,7 +21,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.world.inventory.FoodWOrkBenchGuiMenu;
+import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.init.MddoModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -89,7 +89,7 @@ public class FoodWorkbenchBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new FoodWOrkBenchGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new FoodGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

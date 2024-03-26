@@ -23,7 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.FoodGuiOpenProcedure;
-import net.mcreator.mddo.network.FoodWOrkBenchGuiSlotMessage;
+import net.mcreator.mddo.network.FoodGUISlotMessage;
 import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.MddoMod;
 
@@ -32,7 +32,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber
-public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class FoodGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -45,8 +45,8 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public FoodWOrkBenchGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MddoModMenus.FOOD_W_ORK_BENCH_GUI.get(), id);
+	public FoodGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(MddoModMenus.FOOD_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(11);
@@ -84,7 +84,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 15, 15) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 17, 20) {
 			private final int slot = 0;
 
 			@Override
@@ -93,7 +93,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(0, 0, 0);
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 33, 15) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 35, 20) {
 			private final int slot = 1;
 
 			@Override
@@ -102,7 +102,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(1, 0, 0);
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 51, 15) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 53, 20) {
 			private final int slot = 2;
 
 			@Override
@@ -111,7 +111,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(2, 0, 0);
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 15, 33) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 17, 38) {
 			private final int slot = 3;
 
 			@Override
@@ -120,7 +120,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(3, 0, 0);
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 33, 33) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 35, 38) {
 			private final int slot = 4;
 
 			@Override
@@ -129,7 +129,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(4, 0, 0);
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 51, 33) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 53, 38) {
 			private final int slot = 5;
 
 			@Override
@@ -138,7 +138,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(5, 0, 0);
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 15, 51) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 17, 56) {
 			private final int slot = 6;
 
 			@Override
@@ -147,7 +147,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(6, 0, 0);
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 33, 51) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 35, 56) {
 			private final int slot = 7;
 
 			@Override
@@ -156,7 +156,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(7, 0, 0);
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 51, 51) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 53, 56) {
 			private final int slot = 8;
 
 			@Override
@@ -165,7 +165,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 				slotChanged(8, 0, 0);
 			}
 		}));
-		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 106, 33) {
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 106, 37) {
 			private final int slot = 10;
 
 			@Override
@@ -325,8 +325,8 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			MddoMod.PACKET_HANDLER.sendToServer(new FoodWOrkBenchGuiSlotMessage(slotid, x, y, z, ctype, meta));
-			FoodWOrkBenchGuiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
+			MddoMod.PACKET_HANDLER.sendToServer(new FoodGUISlotMessage(slotid, x, y, z, ctype, meta));
+			FoodGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 
@@ -337,7 +337,7 @@ public class FoodWOrkBenchGuiMenu extends AbstractContainerMenu implements Suppl
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof FoodWOrkBenchGuiMenu) {
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof FoodGUIMenu) {
 			Level world = entity.level();
 			double x = entity.getX();
 			double y = entity.getY();

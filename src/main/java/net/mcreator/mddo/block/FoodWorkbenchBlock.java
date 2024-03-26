@@ -39,8 +39,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.world.inventory.FoodWOrkBenchGuiMenu;
+import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
+import net.mcreator.mddo.procedures.FoodGuiOpenProcedure;
 import net.mcreator.mddo.block.entity.FoodWorkbenchBlockEntity;
 
 import java.util.List;
@@ -135,10 +136,18 @@ public class FoodWorkbenchBlock extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new FoodWOrkBenchGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new FoodGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+		FoodGuiOpenProcedure.execute(world, entity);
 		return InteractionResult.SUCCESS;
 	}
 

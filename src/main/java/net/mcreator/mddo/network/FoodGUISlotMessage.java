@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.world.inventory.FoodWOrkBenchGuiMenu;
+import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
 import net.mcreator.mddo.MddoMod;
@@ -20,10 +20,10 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class FoodWOrkBenchGuiSlotMessage {
+public class FoodGUISlotMessage {
 	private final int slotID, x, y, z, changeType, meta;
 
-	public FoodWOrkBenchGuiSlotMessage(int slotID, int x, int y, int z, int changeType, int meta) {
+	public FoodGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) {
 		this.slotID = slotID;
 		this.x = x;
 		this.y = y;
@@ -32,7 +32,7 @@ public class FoodWOrkBenchGuiSlotMessage {
 		this.meta = meta;
 	}
 
-	public FoodWOrkBenchGuiSlotMessage(FriendlyByteBuf buffer) {
+	public FoodGUISlotMessage(FriendlyByteBuf buffer) {
 		this.slotID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
@@ -41,7 +41,7 @@ public class FoodWOrkBenchGuiSlotMessage {
 		this.meta = buffer.readInt();
 	}
 
-	public static void buffer(FoodWOrkBenchGuiSlotMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(FoodGUISlotMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.slotID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
@@ -50,7 +50,7 @@ public class FoodWOrkBenchGuiSlotMessage {
 		buffer.writeInt(message.meta);
 	}
 
-	public static void handler(FoodWOrkBenchGuiSlotMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(FoodGUISlotMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -67,7 +67,7 @@ public class FoodWOrkBenchGuiSlotMessage {
 
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = FoodWOrkBenchGuiMenu.guistate;
+		HashMap guistate = FoodGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -115,6 +115,6 @@ public class FoodWOrkBenchGuiSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MddoMod.addNetworkMessage(FoodWOrkBenchGuiSlotMessage.class, FoodWOrkBenchGuiSlotMessage::buffer, FoodWOrkBenchGuiSlotMessage::new, FoodWOrkBenchGuiSlotMessage::handler);
+		MddoMod.addNetworkMessage(FoodGUISlotMessage.class, FoodGUISlotMessage::buffer, FoodGUISlotMessage::new, FoodGUISlotMessage::handler);
 	}
 }

@@ -15,7 +15,7 @@ import net.mcreator.mddo.world.inventory.WeaponArmorGUIMenu;
 import net.mcreator.mddo.world.inventory.WWBCMenu;
 import net.mcreator.mddo.world.inventory.StoneworkingGuiMenu;
 import net.mcreator.mddo.world.inventory.MetalWorkbenchMenu;
-import net.mcreator.mddo.world.inventory.FoodWOrkBenchGuiMenu;
+import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.MddoMod;
 
 public class MddoModMenus {
@@ -24,5 +24,5 @@ public class MddoModMenus {
 	public static final RegistryObject<MenuType<StoneworkingGuiMenu>> STONEWORKING_GUI = REGISTRY.register("stoneworking_gui", () -> IForgeMenuType.create(StoneworkingGuiMenu::new));
 	public static final RegistryObject<MenuType<MetalWorkbenchMenu>> METAL_WORKBENCH = REGISTRY.register("metal_workbench", () -> IForgeMenuType.create(MetalWorkbenchMenu::new));
 	public static final RegistryObject<MenuType<WeaponArmorGUIMenu>> WEAPON_ARMOR_GUI = REGISTRY.register("weapon_armor_gui", () -> IForgeMenuType.create(WeaponArmorGUIMenu::new));
-	public static final RegistryObject<MenuType<FoodWOrkBenchGuiMenu>> FOOD_W_ORK_BENCH_GUI = REGISTRY.register("food_w_ork_bench_gui", () -> IForgeMenuType.create(FoodWOrkBenchGuiMenu::new));
+	public static final RegistryObject<MenuType<FoodGUIMenu>> FOOD_GUI = REGISTRY.register("food_gui", () -> IForgeMenuType.create(FoodGUIMenu::new));
 }

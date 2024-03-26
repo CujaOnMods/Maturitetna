@@ -8,19 +8,19 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.mcreator.mddo.world.inventory.FoodWOrkBenchGuiMenu;
+import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class FoodWOrkBenchGuiScreen extends AbstractContainerScreen<FoodWOrkBenchGuiMenu> {
-	private final static HashMap<String, Object> guistate = FoodWOrkBenchGuiMenu.guistate;
+public class FoodGUIScreen extends AbstractContainerScreen<FoodGUIMenu> {
+	private final static HashMap<String, Object> guistate = FoodGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public FoodWOrkBenchGuiScreen(FoodWOrkBenchGuiMenu container, Inventory inventory, Component text) {
+	public FoodGUIScreen(FoodGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -31,7 +31,7 @@ public class FoodWOrkBenchGuiScreen extends AbstractContainerScreen<FoodWOrkBenc
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/food_w_ork_bench_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/food_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

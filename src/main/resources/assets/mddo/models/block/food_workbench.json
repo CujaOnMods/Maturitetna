@@ -1,8 +1,8 @@
 {
   "parent": "mddo:custom/weaponbench",
   "textures": {
-    "all": "mddo:block/drowned",
-    "particle": "mddo:block/drowned",
+    "all": "mddo:block/weapontabletexture",
+    "particle": "mddo:block/weapontabletexture",
     "0": "mddo:block/weapontabletexture"
   },
   "render_type": "solid"

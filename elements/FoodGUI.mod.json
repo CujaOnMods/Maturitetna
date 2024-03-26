@@ -27,8 +27,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 140,
-          "y": 51
+          "x": 142,
+          "y": 56
         }
       },
       {
@@ -48,8 +48,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 158,
-          "y": 51
+          "x": 160,
+          "y": 56
         }
       },
       {
@@ -69,8 +69,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 176,
-          "y": 51
+          "x": 178,
+          "y": 56
         }
       },
       {
@@ -90,8 +90,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 140,
-          "y": 69
+          "x": 142,
+          "y": 74
         }
       },
       {
@@ -111,8 +111,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 158,
-          "y": 69
+          "x": 160,
+          "y": 74
         }
       },
       {
@@ -132,8 +132,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 176,
-          "y": 69
+          "x": 178,
+          "y": 74
         }
       },
       {
@@ -153,8 +153,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 140,
-          "y": 87
+          "x": 142,
+          "y": 92
         }
       },
       {
@@ -174,8 +174,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 158,
-          "y": 87
+          "x": 160,
+          "y": 92
         }
       },
       {
@@ -195,8 +195,8 @@
           "onSlotChanged": {
             "name": "RemoveOutput"
           },
-          "x": 176,
-          "y": 87
+          "x": 178,
+          "y": 92
         }
       },
       {
@@ -211,7 +211,7 @@
             "name": "WWBCtakeout"
           },
           "x": 231,
-          "y": 69
+          "y": 73
         }
       }
     ],
