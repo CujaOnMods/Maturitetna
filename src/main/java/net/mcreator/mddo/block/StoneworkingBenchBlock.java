@@ -124,6 +124,12 @@ public class StoneworkingBenchBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
+		super.attack(blockstate, world, pos, entity);
+		RemoveOutputProcedure.execute(entity);
+	}
+
+	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		if (entity instanceof ServerPlayer player) {

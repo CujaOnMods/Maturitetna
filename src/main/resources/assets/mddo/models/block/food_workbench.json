@@ -1,9 +1,13 @@
 {
-  "parent": "mddo:custom/weaponbench",
+  "parent": "block/cube",
   "textures": {
-    "all": "mddo:block/weapontabletexture",
-    "particle": "mddo:block/weapontabletexture",
-    "0": "mddo:block/weapontabletexture"
+    "down": "mddo:block/weapontabletexture",
+    "up": "mddo:block/weapontabletexture",
+    "north": "mddo:block/weapontabletexture",
+    "east": "mddo:block/weapontabletexture",
+    "south": "mddo:block/weapontabletexture",
+    "west": "mddo:block/weapontabletexture",
+    "particle": "mddo:block/weapontabletexture"
   },
   "render_type": "solid"
 }

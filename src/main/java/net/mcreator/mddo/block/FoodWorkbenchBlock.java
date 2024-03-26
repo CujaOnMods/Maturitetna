@@ -8,7 +8,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -41,7 +40,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
-import net.mcreator.mddo.procedures.FoodGuiOpenProcedure;
 import net.mcreator.mddo.block.entity.FoodWorkbenchBlockEntity;
 
 import java.util.List;
@@ -118,10 +116,9 @@ public class FoodWorkbenchBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
+		super.attack(blockstate, world, pos, entity);
 		RemoveOutputProcedure.execute(entity);
-		return retval;
 	}
 
 	@Override
@@ -140,14 +137,6 @@ public class FoodWorkbenchBlock extends Block implements EntityBlock {
 				}
 			}, pos);
 		}
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		double hitX = hit.getLocation().x;
-		double hitY = hit.getLocation().y;
-		double hitZ = hit.getLocation().z;
-		Direction direction = hit.getDirection();
-		FoodGuiOpenProcedure.execute(world, entity);
 		return InteractionResult.SUCCESS;
 	}
 

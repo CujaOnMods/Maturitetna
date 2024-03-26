@@ -8,8 +8,8 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "weaponbench:default",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -329,10 +329,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "FoodGuiOpen"
-    },
-    "onDestroyedByPlayer": {
+    "onStartToDestroy": {
       "name": "RemoveOutput"
     },
     "generateFeature": false,

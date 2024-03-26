@@ -2107,9 +2107,9 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
-          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/mddo/models/item/stoneworking_bench.json",
           "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json"
         ]
@@ -3875,6 +3875,38 @@
         ]
       },
       "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "SaltWater",
+      "type": "fluid",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/fluid/types/SaltWaterFluidType.java",
+          "src/main/resources/assets/mddo/models/item/salt_water_bucket.json",
+          "src/main/java/net/mcreator/mddo/fluid/SaltWaterFluid.java",
+          "src/main/java/net/mcreator/mddo/block/SaltWaterBlock.java",
+          "src/main/resources/assets/mddo/blockstates/salt_water.json",
+          "src/main/java/net/mcreator/mddo/item/SaltWaterItem.java",
+          "src/main/resources/assets/mddo/models/block/salt_water.json"
+        ]
+      }
+    },
+    {
+      "name": "SaltWaterBiome",
+      "type": "biome",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_water_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/worldgen/biome/salt_water_biome.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3890,6 +3922,7 @@
     "en_us": {
       "item.mddo.wooden_hammer": "Hammer",
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
+      "biome.mddo.salt_water_biome": "Salt Water Biome",
       "entity.mddo.betterzombie": "Betterzombie",
       "entity.mddo.better_spider": "Better Spider",
       "block.mddo.metal_working_bench": "Metal Working Bench",
@@ -3899,8 +3932,11 @@
       "block.mddo.food_workbench": "Food Workbench",
       "entity.mddo.better_skeleton": "Better Skeleton",
       "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
+      "fluid.mddo.salt_water": "Salt Water",
+      "item.mddo.salt_water_bucket": "Salt Water Bucket",
       "block.mddo.wwwb": "woodworking workbench",
-      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg"
+      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
+      "block.mddo.salt_water": "Salt Water"
     }
   },
   "foldersRoot": {

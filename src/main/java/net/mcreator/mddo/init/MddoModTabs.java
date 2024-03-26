@@ -29,6 +29,7 @@ public class MddoModTabs {
 				tabData.accept(MddoModBlocks.METAL_WORKING_BENCH.get().asItem());
 				tabData.accept(MddoModBlocks.WEAPON_ARMOR_WORK_BENCH.get().asItem());
 				tabData.accept(MddoModBlocks.FOOD_WORKBENCH.get().asItem());
+				tabData.accept(MddoModItems.SALT_WATER_BUCKET.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
