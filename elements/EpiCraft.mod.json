@@ -6,6 +6,6 @@
     "icon": {
       "value": "Blocks.AMETHYST_CLUSTER"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }
