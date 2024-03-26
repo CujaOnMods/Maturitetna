@@ -7,15 +7,12 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -36,7 +33,7 @@ public class WoodenHammerItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return Stream.of(BlockTags.create(new ResourceLocation("minecraft:stone"))).anyMatch(blockstate::is) ? 4f : 1;
+		return Stream.of(BlockTags.create(new ResourceLocation("minecraft:stone"))).anyMatch(blockstate::is) ? 5f : 1;
 	}
 
 	@Override
@@ -49,13 +46,6 @@ public class WoodenHammerItem extends Item {
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		HammerRightclickedOnBlockProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), ar.getObject());
-		return ar;
 	}
 
 	@Override

@@ -16,7 +16,7 @@
       "value": "TOOLS"
     },
     "harvestLevel": 1,
-    "efficiency": 4.0,
+    "efficiency": 5.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
@@ -33,9 +33,6 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "HammerRightclickedOnBlock"
-    },
     "onRightClickedOnBlock": {
       "name": "HammerRightclickedOnBlock"
     }

@@ -15,20 +15,20 @@ public class HammerRightclickedOnBlockProcedure {
 		double i = 0;
 		double j = 0;
 		String tag = "";
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:stone")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("stone_ore_replaceables")))) {
 			world.destroyBlock(BlockPos.containing(x, y, z), false);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
-			}
-			if (Math.random() < 1) {
+			if (Math.random() < 0.05) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.GLOWSTONE_DUST));
-					entityToSpawn.setPickUpDelay(0);
+					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
+				}
+				{
+					ItemStack _ist = itemstack;
+					if (_ist.hurt(1, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
 				}
 			}
 		}

@@ -146,8 +146,8 @@
       "registry_name": "wooden_hammer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java",
-          "src/main/resources/assets/mddo/models/item/wooden_hammer.json"
+          "src/main/resources/assets/mddo/models/item/wooden_hammer.json",
+          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java"
         ]
       }
     },
@@ -3921,8 +3921,8 @@
   "language_map": {
     "en_us": {
       "item.mddo.wooden_hammer": "Hammer",
-      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "biome.mddo.salt_water_biome": "Salt Water Biome",
+      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "entity.mddo.betterzombie": "Betterzombie",
       "entity.mddo.better_spider": "Better Spider",
       "block.mddo.metal_working_bench": "Metal Working Bench",
