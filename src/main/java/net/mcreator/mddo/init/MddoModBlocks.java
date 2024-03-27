@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.mddo.block.WeaponArmorWorkBenchBlock;
 import net.mcreator.mddo.block.WWWBBlock;
 import net.mcreator.mddo.block.StoneworkingBenchBlock;
+import net.mcreator.mddo.block.RedstoneWorkBenchBlock;
 import net.mcreator.mddo.block.MetalWorkingBenchBlock;
 import net.mcreator.mddo.block.FoodWorkbenchBlock;
 import net.mcreator.mddo.MddoMod;
@@ -24,4 +25,5 @@ public class MddoModBlocks {
 	public static final RegistryObject<Block> METAL_WORKING_BENCH = REGISTRY.register("metal_working_bench", () -> new MetalWorkingBenchBlock());
 	public static final RegistryObject<Block> WEAPON_ARMOR_WORK_BENCH = REGISTRY.register("weapon_armor_work_bench", () -> new WeaponArmorWorkBenchBlock());
 	public static final RegistryObject<Block> FOOD_WORKBENCH = REGISTRY.register("food_workbench", () -> new FoodWorkbenchBlock());
+	public static final RegistryObject<Block> REDSTONE_WORK_BENCH = REGISTRY.register("redstone_work_bench", () -> new RedstoneWorkBenchBlock());
 }

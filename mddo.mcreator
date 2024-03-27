@@ -3582,19 +3582,6 @@
       "path": "~/WeaponArmorGui"
     },
     {
-      "name": "Dasd",
-      "type": "recipe",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dasd",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipes/crafting_table.json"
-        ]
-      }
-    },
-    {
       "name": "FoodGoldenApple",
       "type": "procedure",
       "sortid": 169,
@@ -3875,6 +3862,363 @@
         ]
       },
       "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "RedstoneWorkBenchGuiWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_work_bench_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneWorkBenchGuiWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRedstoneBlock",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_redstone_block",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRedstoneBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstonePiston",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_piston",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstonePistonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneWorkBenchGui",
+      "type": "gui",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_work_bench_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/network/RedstoneWorkBenchGuiSlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/RedstoneWorkBenchGuiScreen.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/RedstoneWorkBenchGuiMenu.java"
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "RedstoneWorkBench",
+      "type": "block",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_work_bench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java",
+          "src/main/resources/assets/mddo/blockstates/redstone_work_bench.json",
+          "src/main/resources/assets/mddo/models/block/redstone_work_bench.json",
+          "src/main/resources/assets/mddo/models/item/redstone_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneHopper",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_hopper",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneHopperProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneObserver",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_observer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneObserverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRedstonerepeater",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_redstonerepeater",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRedstonerepeaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRedstoneComparator",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_redstone_comparator",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRedstoneComparatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneTarget",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_target",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRail",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstonePoweredRail",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_powered_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstonePoweredRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneDetectorRail",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_detector_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneDetectorRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneActivatorRail",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_activator_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneActivatorRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneTripWireHook",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_trip_wire_hook",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneTripWireHookProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
     }
   ],
   "variable_elements": [
@@ -3888,6 +4232,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.mddo.redstone_work_bench": "Redstone Work Bench",
       "item.mddo.wooden_hammer": "Hammer",
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "entity.mddo.betterzombie": "Betterzombie",
@@ -3928,6 +4273,10 @@
       },
       {
         "name": "WeaponArmorGui",
+        "children": []
+      },
+      {
+        "name": "Redstone",
         "children": []
       }
     ]

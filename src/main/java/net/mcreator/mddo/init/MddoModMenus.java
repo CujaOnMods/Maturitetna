@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.mcreator.mddo.world.inventory.WeaponArmorGUIMenu;
 import net.mcreator.mddo.world.inventory.WWBCMenu;
 import net.mcreator.mddo.world.inventory.StoneworkingGuiMenu;
+import net.mcreator.mddo.world.inventory.RedstoneWorkBenchGuiMenu;
 import net.mcreator.mddo.world.inventory.MetalWorkbenchMenu;
 import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.MddoMod;
@@ -25,4 +26,5 @@ public class MddoModMenus {
 	public static final RegistryObject<MenuType<MetalWorkbenchMenu>> METAL_WORKBENCH = REGISTRY.register("metal_workbench", () -> IForgeMenuType.create(MetalWorkbenchMenu::new));
 	public static final RegistryObject<MenuType<WeaponArmorGUIMenu>> WEAPON_ARMOR_GUI = REGISTRY.register("weapon_armor_gui", () -> IForgeMenuType.create(WeaponArmorGUIMenu::new));
 	public static final RegistryObject<MenuType<FoodGUIMenu>> FOOD_GUI = REGISTRY.register("food_gui", () -> IForgeMenuType.create(FoodGUIMenu::new));
+	public static final RegistryObject<MenuType<RedstoneWorkBenchGuiMenu>> REDSTONE_WORK_BENCH_GUI = REGISTRY.register("redstone_work_bench_gui", () -> IForgeMenuType.create(RedstoneWorkBenchGuiMenu::new));
 }

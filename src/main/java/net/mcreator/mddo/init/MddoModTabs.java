@@ -29,9 +29,8 @@ public class MddoModTabs {
 				tabData.accept(MddoModBlocks.METAL_WORKING_BENCH.get().asItem());
 				tabData.accept(MddoModBlocks.WEAPON_ARMOR_WORK_BENCH.get().asItem());
 				tabData.accept(MddoModBlocks.FOOD_WORKBENCH.get().asItem());
-			})
-
-					.build());
+				tabData.accept(MddoModBlocks.REDSTONE_WORK_BENCH.get().asItem());
+			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
