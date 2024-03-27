@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mddo:wwwb",
+    "mddo:stoneworking_bench",
+    "mddo:metal_working_bench",
+    "mddo:weapon_armor_work_bench",
+    "mddo:food_workbench"
+  ]
+}

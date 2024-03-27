@@ -1,6 +1,5 @@
 {
   "item.mddo.wooden_hammer": "Hammer",
-  "biome.mddo.salt_water_biome": "Salt Water Biome",
   "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
   "entity.mddo.betterzombie": "Betterzombie",
   "entity.mddo.better_spider": "Better Spider",
@@ -11,9 +10,6 @@
   "block.mddo.food_workbench": "Food Workbench",
   "entity.mddo.better_skeleton": "Better Skeleton",
   "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
-  "fluid.mddo.salt_water": "Salt Water",
-  "item.mddo.salt_water_bucket": "Salt Water Bucket",
   "block.mddo.wwwb": "woodworking workbench",
-  "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
-  "block.mddo.salt_water": "Salt Water"
+  "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg"
 }

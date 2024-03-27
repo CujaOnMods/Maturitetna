@@ -14,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.mddo.item.WoodenHammerItem;
-import net.mcreator.mddo.item.SaltWaterItem;
 import net.mcreator.mddo.MddoMod;
 
 public class MddoModItems {
@@ -28,7 +27,6 @@ public class MddoModItems {
 	public static final RegistryObject<Item> METAL_WORKING_BENCH = block(MddoModBlocks.METAL_WORKING_BENCH);
 	public static final RegistryObject<Item> WEAPON_ARMOR_WORK_BENCH = block(MddoModBlocks.WEAPON_ARMOR_WORK_BENCH);
 	public static final RegistryObject<Item> FOOD_WORKBENCH = block(MddoModBlocks.FOOD_WORKBENCH);
-	public static final RegistryObject<Item> SALT_WATER_BUCKET = REGISTRY.register("salt_water_bucket", () -> new SaltWaterItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

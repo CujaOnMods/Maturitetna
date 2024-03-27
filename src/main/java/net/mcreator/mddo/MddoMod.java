@@ -32,8 +32,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.mddo.init.MddoModTabs;
 import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.init.MddoModItems;
-import net.mcreator.mddo.init.MddoModFluids;
-import net.mcreator.mddo.init.MddoModFluidTypes;
 import net.mcreator.mddo.init.MddoModEntities;
 import net.mcreator.mddo.init.MddoModBlocks;
 import net.mcreator.mddo.init.MddoModBlockEntities;
@@ -64,8 +62,6 @@ public class MddoMod {
 		MddoModTabs.REGISTRY.register(bus);
 
 		MddoModMenus.REGISTRY.register(bus);
-		MddoModFluids.REGISTRY.register(bus);
-		MddoModFluidTypes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
