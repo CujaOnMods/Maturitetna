@@ -2102,7 +2102,7 @@
       "name": "StoneworkingBench",
       "type": "block",
       "sortid": 99,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "stoneworking_bench",
       "metadata": {
@@ -3913,7 +3913,7 @@
       "name": "FoodWorkbench",
       "type": "block",
       "sortid": 179,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "food_workbench",
       "metadata": {
@@ -3930,7 +3930,7 @@
       "name": "RedstoneWorkBench",
       "type": "block",
       "sortid": 185,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "redstone_work_bench",
       "metadata": {
