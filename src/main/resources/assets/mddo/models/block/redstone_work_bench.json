@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mddo:block/water_je16",
+    "up": "mddo:block/water_je16",
+    "north": "mddo:block/water_je16",
+    "east": "mddo:block/water_je16",
+    "south": "mddo:block/water_je16",
+    "west": "mddo:block/water_je16",
+    "particle": "mddo:block/water_je16"
+  },
+  "render_type": "solid"
+}

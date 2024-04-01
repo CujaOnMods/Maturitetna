@@ -26,6 +26,8 @@ public class MddoModItems {
 	public static final RegistryObject<Item> STONEWORKING_BENCH = block(MddoModBlocks.STONEWORKING_BENCH);
 	public static final RegistryObject<Item> METAL_WORKING_BENCH = block(MddoModBlocks.METAL_WORKING_BENCH);
 	public static final RegistryObject<Item> WEAPON_ARMOR_WORK_BENCH = block(MddoModBlocks.WEAPON_ARMOR_WORK_BENCH);
+	public static final RegistryObject<Item> FOOD_WORKBENCH = block(MddoModBlocks.FOOD_WORKBENCH);
+	public static final RegistryObject<Item> REDSTONE_WORK_BENCH = block(MddoModBlocks.REDSTONE_WORK_BENCH);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

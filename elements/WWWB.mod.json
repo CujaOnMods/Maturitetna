@@ -332,6 +332,9 @@
     "onDestroyedByPlayer": {
       "name": "RemoveOutput"
     },
+    "onStartToDestroy": {
+      "name": "RemoveOutput"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

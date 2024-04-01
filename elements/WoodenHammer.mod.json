@@ -8,7 +8,7 @@
     "texture": "woodhammertecture",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Wooden Hammer",
+    "name": "Hammer",
     "specialInformation": {
       "fixedValue": []
     },
@@ -16,7 +16,7 @@
       "value": "TOOLS"
     },
     "harvestLevel": 1,
-    "efficiency": 4.0,
+    "efficiency": 5.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
@@ -32,6 +32,9 @@
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "HammerRightclickedOnBlock"
+    }
   }
 }

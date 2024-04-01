@@ -9,10 +9,10 @@
       "registry_name": "betterzombie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java",
-          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json"
+          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json",
+          "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java",
+          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -26,10 +26,10 @@
       "registry_name": "better_skeleton",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
-          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json",
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
           "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
+          "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
+          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java"
         ]
       },
@@ -44,10 +44,10 @@
       "registry_name": "better_spider",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
-          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json",
           "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
-          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java"
+          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java",
+          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java"
         ]
       },
       "path": "~/Better_mobs"
@@ -181,8 +181,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/client/gui/WWBCScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
-          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -222,10 +222,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
-          "src/main/resources/assets/mddo/models/item/wwwb.json",
           "src/main/resources/assets/mddo/models/block/wwwb.json",
-          "src/main/resources/assets/mddo/blockstates/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java"
+          "src/main/resources/assets/mddo/models/item/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/wwwb.json"
         ]
       }
     },
@@ -2124,9 +2124,9 @@
       "registry_name": "stoneworking_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/StoneworkingGuiMenu.java",
-          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java"
         ]
       },
       "path": "~/WWStoneworkingBenchGUI"
@@ -2404,10 +2404,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
+          "src/main/resources/assets/mddo/models/item/metal_working_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
-          "src/main/resources/assets/mddo/models/block/metal_working_bench.json",
-          "src/main/resources/assets/mddo/models/item/metal_working_bench.json"
+          "src/main/resources/assets/mddo/models/block/metal_working_bench.json"
         ]
       }
     },
@@ -2445,9 +2445,9 @@
       "registry_name": "metal_workbench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java",
           "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java",
-          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java"
+          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java",
+          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2547,9 +2547,9 @@
       "registry_name": "weapon_armor_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java",
-          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java"
+          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2787,11 +2787,11 @@
       "registry_name": "weapon_armor_work_bench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
+          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java",
           "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
-          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java"
+          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json"
         ]
       }
     },
@@ -3559,6 +3559,645 @@
         ]
       },
       "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "RedstoneRedstoneComparator",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_redstone_comparator",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRedstoneComparatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "FoodBeatrootSoup",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_beatroot_soup",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodBeatrootSoupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "RedstonePiston",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_piston",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstonePistonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "FoodHayBale",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_hay_bale",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodHayBaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "FoodCookies",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_cookies",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodCookiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "FoodNotchApple",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_notch_apple",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodNotchAppleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "RedstoneTarget",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_target",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRail",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRedstoneBlock",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_redstone_block",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRedstoneBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneRedstonerepeater",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_redstonerepeater",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneRedstonerepeaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstonePoweredRail",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_powered_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstonePoweredRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneWorkBenchGuiWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_work_bench_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneWorkBenchGuiWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "FoodGoldenCarrot",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_golden_carrot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodGoldenCarrotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "FoodCake",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_cake",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodCakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "FoodWorkbench",
+      "type": "block",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_workbench",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/blockstates/food_workbench.json",
+          "src/main/java/net/mcreator/mddo/block/FoodWorkbenchBlock.java",
+          "src/main/resources/assets/mddo/models/item/food_workbench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/FoodWorkbenchBlockEntity.java",
+          "src/main/resources/assets/mddo/models/block/food_workbench.json"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneWorkBench",
+      "type": "block",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_work_bench",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/blockstates/redstone_work_bench.json",
+          "src/main/resources/assets/mddo/models/item/redstone_work_bench.json",
+          "src/main/resources/assets/mddo/models/block/redstone_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java",
+          "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneObserver",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_observer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneObserverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneDetectorRail",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_detector_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneDetectorRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "FoodBread",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_bread",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodBreadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "FoodGUI",
+      "type": "gui",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/FoodGUIMenu.java",
+          "src/main/java/net/mcreator/mddo/network/FoodGUISlotMessage.java"
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "RedstoneTripWireHook",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_trip_wire_hook",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneTripWireHookProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "FoodGuiOpen",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodGuiOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "RedstoneWorkBenchGui",
+      "type": "gui",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_work_bench_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/world/inventory/RedstoneWorkBenchGuiMenu.java",
+          "src/main/java/net/mcreator/mddo/network/RedstoneWorkBenchGuiSlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/RedstoneWorkBenchGuiScreen.java"
+        ]
+      },
+      "path": "~/WeaponArmorGui"
+    },
+    {
+      "name": "FoodGoldenApple",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_golden_apple",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodGoldenAppleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "FoodWatermellon",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_watermellon",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/FoodWatermellonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StoneWorkingProcedures"
+    },
+    {
+      "name": "RedstoneHopper",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_hopper",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneHopperProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
+    },
+    {
+      "name": "RedstoneActivatorRail",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_activator_rail",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RedstoneActivatorRailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Redstone"
     }
   ],
   "variable_elements": [
@@ -3607,6 +4246,10 @@
       },
       {
         "name": "WWStoneworkingBenchGUI",
+        "children": []
+      },
+      {
+        "name": "Redstone",
         "children": []
       },
       {
