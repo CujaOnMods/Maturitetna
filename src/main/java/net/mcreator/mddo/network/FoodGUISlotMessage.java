@@ -1,9 +1,26 @@
 
 package net.mcreator.mddo.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.mddo.world.inventory.FoodGUIMenu;
+import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
+import net.mcreator.mddo.procedures.RemoveOutputProcedure;
+import net.mcreator.mddo.MddoMod;
+
+import java.util.function.Supplier;
+import java.util.HashMap;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FoodGUISlotMessage {
-
 	private final int slotID, x, y, z, changeType, meta;
 
 	public FoodGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) {
@@ -43,7 +60,6 @@ public class FoodGUISlotMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
-
 			handleSlotAction(entity, slotID, changeType, meta, x, y, z);
 		});
 		context.setPacketHandled(true);
@@ -52,11 +68,9 @@ public class FoodGUISlotMessage {
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level();
 		HashMap guistate = FoodGUIMenu.guistate;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-
 		if (slot == 0 && changeType == 0) {
 
 			RemoveOutputProcedure.execute(entity);
@@ -103,5 +117,4 @@ public class FoodGUISlotMessage {
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		MddoMod.addNetworkMessage(FoodGUISlotMessage.class, FoodGUISlotMessage::buffer, FoodGUISlotMessage::new, FoodGUISlotMessage::handler);
 	}
-
 }

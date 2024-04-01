@@ -1,8 +1,9 @@
 package net.mcreator.mddo.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.mddo.network.MddoModVariables;
 
 public class RedstoneWorkBenchGuiWhileThisGUIIsOpenTickProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -13,8 +14,10 @@ public class RedstoneWorkBenchGuiWhileThisGUIIsOpenTickProcedure {
 			RedstonePistonProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			RedstoneHopperProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			RedstoneObserverProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
 			RedstoneRedstonerepeaterProcedure.execute(world, entity);
@@ -32,10 +35,13 @@ public class RedstoneWorkBenchGuiWhileThisGUIIsOpenTickProcedure {
 			RedstonePoweredRailProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			RedstoneDetectorRailProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			RedstoneActivatorRailProcedure.execute(world, entity);
 		}
 		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+			RedstoneTripWireHookProcedure.execute(world, entity);
 		}
 	}
 }

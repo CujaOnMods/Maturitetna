@@ -1,8 +1,19 @@
 package net.mcreator.mddo.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 
-import javax.annotation.Nullable;
+import net.mcreator.mddo.network.MddoModVariables;
+
+import java.util.function.Supplier;
+import java.util.Map;
 
 public class RedstonePistonProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
