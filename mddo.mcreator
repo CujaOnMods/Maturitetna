@@ -9,10 +9,10 @@
       "registry_name": "betterzombie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json",
           "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java",
-          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json"
+          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
+          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -26,10 +26,10 @@
       "registry_name": "better_skeleton",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
           "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
           "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java"
         ]
       },
@@ -44,10 +44,10 @@
       "registry_name": "better_spider",
       "metadata": {
         "files": [
-          "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
-          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
           "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json",
-          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java"
+          "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
+          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java"
         ]
       },
       "path": "~/Better_mobs"
@@ -181,8 +181,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/client/gui/WWBCScreen.java",
-          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
+          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -222,10 +222,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
-          "src/main/resources/assets/mddo/models/block/wwwb.json",
           "src/main/resources/assets/mddo/models/item/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
-          "src/main/resources/assets/mddo/blockstates/wwwb.json"
+          "src/main/resources/assets/mddo/models/block/wwwb.json",
+          "src/main/resources/assets/mddo/blockstates/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java"
         ]
       }
     },
@@ -2107,11 +2107,11 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
-          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
-          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/mddo/models/item/stoneworking_bench.json",
-          "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json"
+          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
+          "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java"
         ]
       }
     },
@@ -2124,9 +2124,9 @@
       "registry_name": "stoneworking_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/StoneworkingGuiMenu.java",
-          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java",
-          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java"
+          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java"
         ]
       },
       "path": "~/WWStoneworkingBenchGUI"
@@ -2404,10 +2404,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
-          "src/main/resources/assets/mddo/models/item/metal_working_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
-          "src/main/resources/assets/mddo/models/block/metal_working_bench.json"
+          "src/main/resources/assets/mddo/models/block/metal_working_bench.json",
+          "src/main/resources/assets/mddo/models/item/metal_working_bench.json"
         ]
       }
     },
@@ -2445,9 +2445,9 @@
       "registry_name": "metal_workbench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java",
           "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java",
-          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java",
-          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2547,9 +2547,9 @@
       "registry_name": "weapon_armor_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java",
-          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java",
-          "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java"
+          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2787,11 +2787,11 @@
       "registry_name": "weapon_armor_work_bench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java",
-          "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
+          "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
+          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json",
           "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json",
-          "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json"
+          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java"
         ]
       }
     },
@@ -3559,19 +3559,6 @@
         ]
       },
       "path": "~/WeaponArmorGui"
-    },
-    {
-      "name": "WoodSwordOverride",
-      "type": "recipe",
-      "sortid": 165,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wood_sword_override",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipes/wooden_sword.json"
-        ]
-      }
     }
   ],
   "variable_elements": [
