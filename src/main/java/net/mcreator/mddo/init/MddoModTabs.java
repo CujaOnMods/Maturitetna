@@ -30,7 +30,12 @@ public class MddoModTabs {
 				tabData.accept(MddoModBlocks.WEAPON_ARMOR_WORK_BENCH.get().asItem());
 				tabData.accept(MddoModBlocks.FOOD_WORKBENCH.get().asItem());
 				tabData.accept(MddoModBlocks.REDSTONE_WORK_BENCH.get().asItem());
-			}).withSearchBar().build());
+				tabData.accept(MddoModItems.GOLDEN_CHORUS.get());
+				tabData.accept(MddoModBlocks.ENDER_WORK_BENCH.get().asItem());
+				tabData.accept(MddoModBlocks.COOKING_STAND_WORK_BENCH.get().asItem());
+			})
+
+					.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

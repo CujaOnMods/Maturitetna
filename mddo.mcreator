@@ -4219,6 +4219,323 @@
         ]
       },
       "path": "~/Redstone"
+    },
+    {
+      "name": "EnderGUI",
+      "type": "gui",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/client/gui/EnderGUIScreen.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/EnderGUIMenu.java",
+          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java"
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "EnderShulkerBox",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_shulker_box",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/EnderShulkerBoxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "EnderGUIOpen",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/EnderGUIOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "EnderEnderChest",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_ender_chest",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/EnderEnderChestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "EnderPurpurSlab",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_purpur_slab",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/EnderPurpurSlabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "EnderPurpurStair",
+      "type": "procedure",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_purpur_stair",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/EnderPurpurStairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "GoldenChorusFruitRightClick",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_chorus_fruit_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/GoldenChorusFruitRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GOldenChorusConsumeCherge",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g_olden_chorus_consume_cherge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/GOldenChorusConsumeChergeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenChorus",
+      "type": "item",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_chorus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/item/GoldenChorusItem.java",
+          "src/main/resources/assets/mddo/models/item/golden_chorus.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderGoldenChorusFruit",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_golden_chorus_fruit",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/EnderGoldenChorusFruitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ender"
+    },
+    {
+      "name": "EnderWorkBench",
+      "type": "block",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_work_bench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java",
+          "src/main/resources/assets/mddo/models/item/ender_work_bench.json",
+          "src/main/resources/assets/mddo/models/block/ender_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/EnderWorkBenchBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/ender_work_bench.json"
+        ]
+      }
+    },
+    {
+      "name": "CookingStand",
+      "type": "gui",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooking_stand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/CookingStandScreen.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "CookingStandSteak",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooking_stand_steak",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/CookingStandSteakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CookingstandOpen",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookingstand_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/CookingstandOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CookingStandWorkBench",
+      "type": "block",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooking_stand_work_bench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
+          "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json",
+          "src/main/resources/assets/mddo/models/item/cooking_stand_work_bench.json",
+          "src/main/resources/assets/mddo/models/block/cooking_stand_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4227,6 +4544,30 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "NX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "nz",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "GoldenChorusCharges",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "CookingValue",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -4239,12 +4580,15 @@
       "entity.mddo.better_spider": "Better Spider",
       "block.mddo.metal_working_bench": "Metal Working Bench",
       "block.mddo.stoneworking_bench": "Stoneworking Bench",
+      "block.mddo.cooking_stand_work_bench": "Cooking Stand Work Bench",
       "item_group.mddo.epi_craft": "Epi Craft",
+      "block.mddo.ender_work_bench": "Ender Work Bench",
       "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
       "block.mddo.food_workbench": "Food Workbench",
       "entity.mddo.better_skeleton": "Better Skeleton",
       "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
       "block.mddo.wwwb": "woodworking workbench",
+      "item.mddo.golden_chorus": "Golden ChorusFruit",
       "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg"
     }
   },
@@ -4277,6 +4621,10 @@
       },
       {
         "name": "Redstone",
+        "children": []
+      },
+      {
+        "name": "Ender",
         "children": []
       }
     ]

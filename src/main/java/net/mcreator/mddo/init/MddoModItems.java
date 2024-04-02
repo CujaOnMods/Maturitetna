@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.mddo.item.WoodenHammerItem;
+import net.mcreator.mddo.item.GoldenChorusItem;
 import net.mcreator.mddo.MddoMod;
 
 public class MddoModItems {
@@ -28,6 +29,9 @@ public class MddoModItems {
 	public static final RegistryObject<Item> WEAPON_ARMOR_WORK_BENCH = block(MddoModBlocks.WEAPON_ARMOR_WORK_BENCH);
 	public static final RegistryObject<Item> FOOD_WORKBENCH = block(MddoModBlocks.FOOD_WORKBENCH);
 	public static final RegistryObject<Item> REDSTONE_WORK_BENCH = block(MddoModBlocks.REDSTONE_WORK_BENCH);
+	public static final RegistryObject<Item> GOLDEN_CHORUS = REGISTRY.register("golden_chorus", () -> new GoldenChorusItem());
+	public static final RegistryObject<Item> ENDER_WORK_BENCH = block(MddoModBlocks.ENDER_WORK_BENCH);
+	public static final RegistryObject<Item> COOKING_STAND_WORK_BENCH = block(MddoModBlocks.COOKING_STAND_WORK_BENCH);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

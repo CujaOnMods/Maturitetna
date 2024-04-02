@@ -17,6 +17,8 @@ import net.mcreator.mddo.block.entity.StoneworkingBenchBlockEntity;
 import net.mcreator.mddo.block.entity.RedstoneWorkBenchBlockEntity;
 import net.mcreator.mddo.block.entity.MetalWorkingBenchBlockEntity;
 import net.mcreator.mddo.block.entity.FoodWorkbenchBlockEntity;
+import net.mcreator.mddo.block.entity.EnderWorkBenchBlockEntity;
+import net.mcreator.mddo.block.entity.CookingStandWorkBenchBlockEntity;
 import net.mcreator.mddo.MddoMod;
 
 public class MddoModBlockEntities {
@@ -27,6 +29,8 @@ public class MddoModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> WEAPON_ARMOR_WORK_BENCH = register("weapon_armor_work_bench", MddoModBlocks.WEAPON_ARMOR_WORK_BENCH, WeaponArmorWorkBenchBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FOOD_WORKBENCH = register("food_workbench", MddoModBlocks.FOOD_WORKBENCH, FoodWorkbenchBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> REDSTONE_WORK_BENCH = register("redstone_work_bench", MddoModBlocks.REDSTONE_WORK_BENCH, RedstoneWorkBenchBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ENDER_WORK_BENCH = register("ender_work_bench", MddoModBlocks.ENDER_WORK_BENCH, EnderWorkBenchBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> COOKING_STAND_WORK_BENCH = register("cooking_stand_work_bench", MddoModBlocks.COOKING_STAND_WORK_BENCH, CookingStandWorkBenchBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

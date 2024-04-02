@@ -1,0 +1,9 @@
+{
+  "parent": "mddo:custom/stoneworking",
+  "textures": {
+    "all": "mddo:block/water_je16",
+    "particle": "mddo:block/water_je16",
+    "0": "mddo:block/stoneworking"
+  },
+  "render_type": "solid"
+}

@@ -17,6 +17,8 @@ import net.mcreator.mddo.client.gui.StoneworkingGuiScreen;
 import net.mcreator.mddo.client.gui.RedstoneWorkBenchGuiScreen;
 import net.mcreator.mddo.client.gui.MetalWorkbenchScreen;
 import net.mcreator.mddo.client.gui.FoodGUIScreen;
+import net.mcreator.mddo.client.gui.EnderGUIScreen;
+import net.mcreator.mddo.client.gui.CookingStandScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class MddoModScreens {
@@ -29,6 +31,8 @@ public class MddoModScreens {
 			MenuScreens.register(MddoModMenus.WEAPON_ARMOR_GUI.get(), WeaponArmorGUIScreen::new);
 			MenuScreens.register(MddoModMenus.FOOD_GUI.get(), FoodGUIScreen::new);
 			MenuScreens.register(MddoModMenus.REDSTONE_WORK_BENCH_GUI.get(), RedstoneWorkBenchGuiScreen::new);
+			MenuScreens.register(MddoModMenus.ENDER_GUI.get(), EnderGUIScreen::new);
+			MenuScreens.register(MddoModMenus.COOKING_STAND.get(), CookingStandScreen::new);
 		});
 	}
 }
