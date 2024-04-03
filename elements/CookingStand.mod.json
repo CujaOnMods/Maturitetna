@@ -57,6 +57,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveCookingInput1"
+          },
           "x": 168,
           "y": 93
         }
@@ -87,6 +90,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveCookingInput3"
+          },
           "x": 168,
           "y": 45
         }
@@ -117,6 +123,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveCookingInput5"
+          },
           "x": 276,
           "y": 92
         }
@@ -147,14 +156,14 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemoveCookingInput7"
+          },
           "x": 276,
           "y": 45
         }
       }
     ],
-    "onTick": {
-      "name": "CookingstandOpen"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

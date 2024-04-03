@@ -23,7 +23,7 @@ public class CookingStandSteakProcedure {
 		MddoModVariables.MapVariables.get(world).syncData(world);
 		while (MddoModVariables.MapVariables.get(world).CookingValue >= 1) {
 			if (Items.BEEF == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
-				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 1;
+				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 0.25;
 				MddoModVariables.MapVariables.get(world).syncData(world);
 				for (int index1 = 0; index1 < 300; index1++) {
 					MddoModVariables.MapVariables.get(world).CookingTimer = MddoModVariables.MapVariables.get(world).CookingTimer - 1;
@@ -42,7 +42,7 @@ public class CookingStandSteakProcedure {
 				return MddoModVariables.MapVariables.get(world).nadaljuj;
 			}
 			if (Items.BEEF == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem()) {
-				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 1;
+				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 0.25;
 				MddoModVariables.MapVariables.get(world).syncData(world);
 				for (int index2 = 0; index2 < 300; index2++) {
 					MddoModVariables.MapVariables.get(world).CookingTimer = MddoModVariables.MapVariables.get(world).CookingTimer - 1;
@@ -61,7 +61,7 @@ public class CookingStandSteakProcedure {
 				return MddoModVariables.MapVariables.get(world).nadaljuj;
 			}
 			if (Items.BEEF == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem()) {
-				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 1;
+				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 0.25;
 				MddoModVariables.MapVariables.get(world).syncData(world);
 				for (int index3 = 0; index3 < 300; index3++) {
 					MddoModVariables.MapVariables.get(world).CookingTimer = MddoModVariables.MapVariables.get(world).CookingTimer - 1;
@@ -80,7 +80,7 @@ public class CookingStandSteakProcedure {
 				return MddoModVariables.MapVariables.get(world).nadaljuj;
 			}
 			if (Items.BEEF == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY).getItem()) {
-				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 1;
+				MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue - 0.25;
 				MddoModVariables.MapVariables.get(world).syncData(world);
 				for (int index4 = 0; index4 < 300; index4++) {
 					MddoModVariables.MapVariables.get(world).CookingTimer = MddoModVariables.MapVariables.get(world).CookingTimer - 1;

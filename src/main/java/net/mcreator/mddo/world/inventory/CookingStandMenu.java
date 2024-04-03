@@ -4,9 +4,6 @@ package net.mcreator.mddo.world.inventory;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -22,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.procedures.CookingstandOpenProcedure;
 import net.mcreator.mddo.network.CookingStandSlotMessage;
 import net.mcreator.mddo.init.MddoModMenus;
 import net.mcreator.mddo.MddoMod;
@@ -31,7 +27,6 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class CookingStandMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -100,6 +95,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 2;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -109,6 +110,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 43, 9) {
 			private final int slot = 4;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(4, 0, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -122,6 +129,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 6;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(6, 0, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -131,6 +144,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 9) {
 			private final int slot = 8;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(8, 0, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -290,17 +309,5 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
-	}
-
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof CookingStandMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			CookingstandOpenProcedure.execute(world, entity);
-		}
 	}
 }

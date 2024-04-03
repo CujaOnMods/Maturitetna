@@ -212,7 +212,7 @@
       "value": "WOOD"
     },
     "tickRate": 20,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

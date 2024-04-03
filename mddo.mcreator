@@ -4559,6 +4559,82 @@
           }
         ]
       }
+    },
+    {
+      "name": "RemoveCookingInput1",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_cooking_input_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RemoveCookingInput1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveCookingInput3",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_cooking_input_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RemoveCookingInput3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveCookingInput5",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_cooking_input_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RemoveCookingInput5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveCookingInput7",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_cooking_input_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/RemoveCookingInput7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
