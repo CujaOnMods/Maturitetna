@@ -21,7 +21,7 @@ public class CookingStandSteakProcedure {
 		double previousRecipe = 0;
 		boolean condition = false;
 		if (Items.COAL == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
-			MddoModVariables.MapVariables.get(world).CookingValue = 8;
+			MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue + 8;
 			MddoModVariables.MapVariables.get(world).syncData(world);
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);
@@ -29,7 +29,7 @@ public class CookingStandSteakProcedure {
 			}
 		}
 		if (Items.CHARCOAL == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
-			MddoModVariables.MapVariables.get(world).CookingValue = 8;
+			MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue + 8;
 			MddoModVariables.MapVariables.get(world).syncData(world);
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);
@@ -37,7 +37,7 @@ public class CookingStandSteakProcedure {
 			}
 		}
 		if (Items.STICK == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
-			MddoModVariables.MapVariables.get(world).CookingValue = 0.5;
+			MddoModVariables.MapVariables.get(world).CookingValue = MddoModVariables.MapVariables.get(world).CookingValue + 0.5;
 			MddoModVariables.MapVariables.get(world).syncData(world);
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);

@@ -4529,10 +4529,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
-          "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json",
           "src/main/resources/assets/mddo/models/item/cooking_stand_work_bench.json",
           "src/main/resources/assets/mddo/models/block/cooking_stand_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java"
+          "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json"
         ]
       }
     }
