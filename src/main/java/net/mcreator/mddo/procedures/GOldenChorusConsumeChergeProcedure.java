@@ -22,36 +22,42 @@ public class GOldenChorusConsumeChergeProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingHurtEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+			execute(event, event.getEntity().level(), event.getEntity());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
 			if (MddoModVariables.MapVariables.get(world).GoldenChorusCharges >= 1) {
 				MddoModVariables.MapVariables.get(world).GoldenChorusCharges = MddoModVariables.MapVariables.get(world).GoldenChorusCharges - 1;
 				MddoModVariables.MapVariables.get(world).syncData(world);
-				{
-					Entity _ent = entity;
-					_ent.teleportTo(MddoModVariables.MapVariables.get(world).Goldenx, MddoModVariables.MapVariables.get(world).GoldenY, MddoModVariables.MapVariables.get(world).GOldenZ);
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(MddoModVariables.MapVariables.get(world).Goldenx, MddoModVariables.MapVariables.get(world).GoldenY, MddoModVariables.MapVariables.get(world).GOldenZ, _ent.getYRot(), _ent.getXRot());
+				while (true) {
+					MddoModVariables.MapVariables.get(world).Goldenx = entity.getX() + Mth.nextInt(RandomSource.create(), -16, 16);
+					MddoModVariables.MapVariables.get(world).syncData(world);
+					MddoModVariables.MapVariables.get(world).GoldenY = entity.getY() + Mth.nextInt(RandomSource.create(), -16, 16);
+					MddoModVariables.MapVariables.get(world).syncData(world);
+					MddoModVariables.MapVariables.get(world).GOldenZ = entity.getZ() + Mth.nextInt(RandomSource.create(), -16, 16);
+					MddoModVariables.MapVariables.get(world).syncData(world);
+					if (world.isEmptyBlock(BlockPos.containing(MddoModVariables.MapVariables.get(world).Goldenx, MddoModVariables.MapVariables.get(world).GoldenY, MddoModVariables.MapVariables.get(world).GOldenZ))) {
+						if (world.isEmptyBlock(BlockPos.containing(MddoModVariables.MapVariables.get(world).Goldenx, MddoModVariables.MapVariables.get(world).GoldenY + 1, MddoModVariables.MapVariables.get(world).GOldenZ))) {
+							{
+								Entity _ent = entity;
+								_ent.teleportTo(MddoModVariables.MapVariables.get(world).Goldenx, MddoModVariables.MapVariables.get(world).GoldenY, MddoModVariables.MapVariables.get(world).GOldenZ);
+								if (_ent instanceof ServerPlayer _serverPlayer)
+									_serverPlayer.connection.teleport(MddoModVariables.MapVariables.get(world).Goldenx, MddoModVariables.MapVariables.get(world).GoldenY, MddoModVariables.MapVariables.get(world).GOldenZ, _ent.getYRot(),
+											_ent.getXRot());
+							}
+							break;
+						}
+					}
 				}
 			}
-		}
-		if (world.isEmptyBlock(BlockPos.containing(x, y, z))) {
-			MddoModVariables.MapVariables.get(world).Goldenx = entity.getX() + Mth.nextInt(RandomSource.create(), -16, 16);
-			MddoModVariables.MapVariables.get(world).syncData(world);
-			MddoModVariables.MapVariables.get(world).GoldenY = entity.getY() + Mth.nextInt(RandomSource.create(), 0, 16);
-			MddoModVariables.MapVariables.get(world).syncData(world);
-			MddoModVariables.MapVariables.get(world).GOldenZ = entity.getZ() + Mth.nextInt(RandomSource.create(), -16, 16);
-			MddoModVariables.MapVariables.get(world).syncData(world);
 		}
 	}
 }
