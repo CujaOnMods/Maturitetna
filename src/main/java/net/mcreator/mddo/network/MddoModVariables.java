@@ -88,10 +88,11 @@ public class MddoModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "mddo_mapvars";
 		public boolean nadaljuj = false;
-		public double NX = 0;
-		public double nz = 0;
 		public double GoldenChorusCharges = 0;
 		public double CookingValue = 0;
+		public double Goldenx = 0;
+		public double GoldenY = 0;
+		public double GOldenZ = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -101,19 +102,21 @@ public class MddoModVariables {
 
 		public void read(CompoundTag nbt) {
 			nadaljuj = nbt.getBoolean("nadaljuj");
-			NX = nbt.getDouble("NX");
-			nz = nbt.getDouble("nz");
 			GoldenChorusCharges = nbt.getDouble("GoldenChorusCharges");
 			CookingValue = nbt.getDouble("CookingValue");
+			Goldenx = nbt.getDouble("Goldenx");
+			GoldenY = nbt.getDouble("GoldenY");
+			GOldenZ = nbt.getDouble("GOldenZ");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("nadaljuj", nadaljuj);
-			nbt.putDouble("NX", NX);
-			nbt.putDouble("nz", nz);
 			nbt.putDouble("GoldenChorusCharges", GoldenChorusCharges);
 			nbt.putDouble("CookingValue", CookingValue);
+			nbt.putDouble("Goldenx", Goldenx);
+			nbt.putDouble("GoldenY", GoldenY);
+			nbt.putDouble("GOldenZ", GOldenZ);
 			return nbt;
 		}
 

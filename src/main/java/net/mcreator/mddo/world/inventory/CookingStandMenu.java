@@ -23,9 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.CookingstandOpenProcedure;
-import net.mcreator.mddo.network.CookingStandSlotMessage;
 import net.mcreator.mddo.init.MddoModMenus;
-import net.mcreator.mddo.MddoMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -86,30 +84,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 34) {
 			private final int slot = 0;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(0, 0, 0);
-			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 8, 58) {
 			private final int slot = 1;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(1, 0, 0);
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 57) {
 			private final int slot = 2;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -118,21 +98,9 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 8, 9) {
 			private final int slot = 3;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(3, 0, 0);
-			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 43, 9) {
 			private final int slot = 4;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(4, 1, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -141,21 +109,9 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 115, 57) {
 			private final int slot = 5;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(5, 0, 0);
-			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 56) {
 			private final int slot = 6;
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(6, 1, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -164,21 +120,9 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 114, 9) {
 			private final int slot = 7;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(7, 0, 0);
-			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 9) {
 			private final int slot = 8;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(8, 0, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -326,13 +270,6 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			MddoMod.PACKET_HANDLER.sendToServer(new CookingStandSlotMessage(slotid, x, y, z, ctype, meta));
-			CookingStandSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

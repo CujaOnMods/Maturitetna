@@ -4396,6 +4396,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -4467,7 +4479,6 @@
       "registry_name": "cooking_stand",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/CookingStandScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java"
         ]
@@ -4546,18 +4557,6 @@
       "value": "false"
     },
     {
-      "name": "NX",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "nz",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
       "name": "GoldenChorusCharges",
       "type": "number",
       "scope": "map",
@@ -4565,6 +4564,24 @@
     },
     {
       "name": "CookingValue",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Goldenx",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "GoldenY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "GOldenZ",
       "type": "number",
       "scope": "map",
       "value": "0"

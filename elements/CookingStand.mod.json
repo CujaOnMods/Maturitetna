@@ -24,9 +24,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "RemoveOutput"
-          },
           "x": 204,
           "y": 70
         }
@@ -45,9 +42,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "RemoveOutput"
-          },
           "x": 133,
           "y": 94
         }
@@ -60,9 +54,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onTakenFromSlot": {
-            "name": "WWBCtakeout"
-          },
           "x": 168,
           "y": 93
         }
@@ -81,9 +72,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "RemoveOutput"
-          },
           "x": 133,
           "y": 45
         }
@@ -96,9 +84,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onTakenFromSlot": {
-            "name": "WWBCtakeout"
-          },
           "x": 168,
           "y": 45
         }
@@ -117,9 +102,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "RemoveOutput"
-          },
           "x": 240,
           "y": 93
         }
@@ -132,9 +114,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onTakenFromSlot": {
-            "name": "WWBCtakeout"
-          },
           "x": 276,
           "y": 92
         }
@@ -153,9 +132,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "RemoveOutput"
-          },
           "x": 239,
           "y": 45
         }
@@ -168,9 +144,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "WWBCtakeout"
-          },
           "x": 276,
           "y": 45
         }
