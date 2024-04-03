@@ -23,7 +23,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.CookingstandOpenProcedure;
+import net.mcreator.mddo.network.CookingStandSlotMessage;
 import net.mcreator.mddo.init.MddoModMenus;
+import net.mcreator.mddo.MddoMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -84,6 +86,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 34) {
 			private final int slot = 0;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 8, 58) {
 			private final int slot = 1;
@@ -270,6 +278,13 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			MddoMod.PACKET_HANDLER.sendToServer(new CookingStandSlotMessage(slotid, x, y, z, ctype, meta));
+			CookingStandSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

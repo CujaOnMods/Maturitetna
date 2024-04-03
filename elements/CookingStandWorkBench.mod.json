@@ -212,7 +212,7 @@
       "value": "WOOD"
     },
     "tickRate": 20,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -258,7 +258,7 @@
     "hasInventory": true,
     "guiBoundTo": "CookingStand",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 11,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
