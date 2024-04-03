@@ -24,6 +24,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "CookingStandFuel"
+          },
           "x": 204,
           "y": 70
         }

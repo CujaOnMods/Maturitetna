@@ -4467,6 +4467,7 @@
       "registry_name": "cooking_stand",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/CookingStandScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java"
         ]
@@ -4533,6 +4534,29 @@
           "src/main/resources/assets/mddo/models/block/cooking_stand_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json"
+        ]
+      }
+    },
+    {
+      "name": "CookingStandFuel",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooking_stand_fuel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/CookingStandFuelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
