@@ -94,6 +94,9 @@ public class MddoModVariables {
 		public double GoldenY = 0;
 		public double GOldenZ = 0;
 		public double CookingTimer = 0;
+		public double CookingTimer2 = 0;
+		public double CookingNumber3 = 0;
+		public double CookingNumber4 = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -109,6 +112,9 @@ public class MddoModVariables {
 			GoldenY = nbt.getDouble("GoldenY");
 			GOldenZ = nbt.getDouble("GOldenZ");
 			CookingTimer = nbt.getDouble("CookingTimer");
+			CookingTimer2 = nbt.getDouble("CookingTimer2");
+			CookingNumber3 = nbt.getDouble("CookingNumber3");
+			CookingNumber4 = nbt.getDouble("CookingNumber4");
 		}
 
 		@Override
@@ -120,6 +126,9 @@ public class MddoModVariables {
 			nbt.putDouble("GoldenY", GoldenY);
 			nbt.putDouble("GOldenZ", GOldenZ);
 			nbt.putDouble("CookingTimer", CookingTimer);
+			nbt.putDouble("CookingTimer2", CookingTimer2);
+			nbt.putDouble("CookingNumber3", CookingNumber3);
+			nbt.putDouble("CookingNumber4", CookingNumber4);
 			return nbt;
 		}
 
