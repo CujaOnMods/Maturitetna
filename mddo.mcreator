@@ -146,8 +146,8 @@
       "registry_name": "wooden_hammer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/wooden_hammer.json",
-          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java"
+          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java",
+          "src/main/resources/assets/mddo/models/item/wooden_hammer.json"
         ]
       }
     },
@@ -4657,6 +4657,126 @@
           }
         ]
       }
+    },
+    {
+      "name": "CoalDust",
+      "type": "item",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/coal_dust.json",
+          "src/main/java/net/mcreator/mddo/item/CoalDustItem.java"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "CopperDust",
+      "type": "item",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/copper_dust.json",
+          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "IronDust",
+      "type": "item",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/iron_dust.json",
+          "src/main/java/net/mcreator/mddo/item/IronDustItem.java"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "LapisDust",
+      "type": "item",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/item/LapisDustItem.java",
+          "src/main/resources/assets/mddo/models/item/lapis_dust.json"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "EmeraldDust",
+      "type": "item",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/item/EmeraldDustItem.java",
+          "src/main/resources/assets/mddo/models/item/emerald_dust.json"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "GoldDust",
+      "type": "item",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/gold_dust.json",
+          "src/main/java/net/mcreator/mddo/item/GoldDustItem.java"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "DiamondDust",
+      "type": "item",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/item/DiamondDustItem.java",
+          "src/main/resources/assets/mddo/models/item/diamond_dust.json"
+        ]
+      },
+      "path": "~/Dusts"
+    },
+    {
+      "name": "QuartzDust",
+      "type": "item",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/quartz_dust.json",
+          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java"
+        ]
+      },
+      "path": "~/Dusts"
     }
   ],
   "variable_elements": [
@@ -4726,21 +4846,29 @@
     "en_us": {
       "block.mddo.redstone_work_bench": "Redstone Work Bench",
       "item.mddo.wooden_hammer": "Hammer",
-      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
-      "entity.mddo.betterzombie": "Betterzombie",
-      "entity.mddo.better_spider": "Better Spider",
+      "item.mddo.quartz_dust": "Quartz dust",
+      "item.mddo.iron_dust": "Iron dust",
       "block.mddo.metal_working_bench": "Metal Working Bench",
-      "block.mddo.stoneworking_bench": "Stoneworking Bench",
-      "block.mddo.cooking_stand_work_bench": "Cooking Stand Work Bench",
+      "item.mddo.lapis_dust": "Lapis dust",
       "item_group.mddo.epi_craft": "Epi Craft",
       "block.mddo.ender_work_bench": "Ender Work Bench",
-      "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
       "block.mddo.food_workbench": "Food Workbench",
+      "block.mddo.wwwb": "woodworking workbench",
+      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
+      "item.mddo.gold_dust": "Gold dust",
+      "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
+      "item.mddo.copper_dust": "Copper dust",
+      "entity.mddo.betterzombie": "Betterzombie",
+      "item.mddo.diamond_dust": "Diamon dust",
+      "entity.mddo.better_spider": "Better Spider",
+      "block.mddo.cooking_stand_work_bench": "Cooking Stand Work Bench",
+      "block.mddo.stoneworking_bench": "Stoneworking Bench",
+      "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
+      "item.mddo.emerald_dust": "Emerald dust",
       "entity.mddo.better_skeleton": "Better Skeleton",
       "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
-      "block.mddo.wwwb": "woodworking workbench",
-      "item.mddo.golden_chorus": "Golden ChorusFruit",
-      "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg"
+      "item.mddo.coal_dust": "Coal Dust",
+      "item.mddo.golden_chorus": "Golden ChorusFruit"
     }
   },
   "foldersRoot": {
@@ -4776,6 +4904,10 @@
       },
       {
         "name": "Ender",
+        "children": []
+      },
+      {
+        "name": "Dusts",
         "children": []
       }
     ]

@@ -33,6 +33,14 @@ public class MddoModTabs {
 				tabData.accept(MddoModItems.GOLDEN_CHORUS.get());
 				tabData.accept(MddoModBlocks.ENDER_WORK_BENCH.get().asItem());
 				tabData.accept(MddoModBlocks.COOKING_STAND_WORK_BENCH.get().asItem());
+				tabData.accept(MddoModItems.COAL_DUST.get());
+				tabData.accept(MddoModItems.COPPER_DUST.get());
+				tabData.accept(MddoModItems.IRON_DUST.get());
+				tabData.accept(MddoModItems.LAPIS_DUST.get());
+				tabData.accept(MddoModItems.EMERALD_DUST.get());
+				tabData.accept(MddoModItems.GOLD_DUST.get());
+				tabData.accept(MddoModItems.DIAMOND_DUST.get());
+				tabData.accept(MddoModItems.QUARTZ_DUST.get());
 			})
 
 					.build());

@@ -14,7 +14,15 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.mddo.item.WoodenHammerItem;
+import net.mcreator.mddo.item.QuartzDustItem;
+import net.mcreator.mddo.item.LapisDustItem;
+import net.mcreator.mddo.item.IronDustItem;
 import net.mcreator.mddo.item.GoldenChorusItem;
+import net.mcreator.mddo.item.GoldDustItem;
+import net.mcreator.mddo.item.EmeraldDustItem;
+import net.mcreator.mddo.item.DiamondDustItem;
+import net.mcreator.mddo.item.CopperDustItem;
+import net.mcreator.mddo.item.CoalDustItem;
 import net.mcreator.mddo.MddoMod;
 
 public class MddoModItems {
@@ -32,6 +40,14 @@ public class MddoModItems {
 	public static final RegistryObject<Item> GOLDEN_CHORUS = REGISTRY.register("golden_chorus", () -> new GoldenChorusItem());
 	public static final RegistryObject<Item> ENDER_WORK_BENCH = block(MddoModBlocks.ENDER_WORK_BENCH);
 	public static final RegistryObject<Item> COOKING_STAND_WORK_BENCH = block(MddoModBlocks.COOKING_STAND_WORK_BENCH);
+	public static final RegistryObject<Item> COAL_DUST = REGISTRY.register("coal_dust", () -> new CoalDustItem());
+	public static final RegistryObject<Item> COPPER_DUST = REGISTRY.register("copper_dust", () -> new CopperDustItem());
+	public static final RegistryObject<Item> IRON_DUST = REGISTRY.register("iron_dust", () -> new IronDustItem());
+	public static final RegistryObject<Item> LAPIS_DUST = REGISTRY.register("lapis_dust", () -> new LapisDustItem());
+	public static final RegistryObject<Item> EMERALD_DUST = REGISTRY.register("emerald_dust", () -> new EmeraldDustItem());
+	public static final RegistryObject<Item> GOLD_DUST = REGISTRY.register("gold_dust", () -> new GoldDustItem());
+	public static final RegistryObject<Item> DIAMOND_DUST = REGISTRY.register("diamond_dust", () -> new DiamondDustItem());
+	public static final RegistryObject<Item> QUARTZ_DUST = REGISTRY.register("quartz_dust", () -> new QuartzDustItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
