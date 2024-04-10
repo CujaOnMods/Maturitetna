@@ -4481,7 +4481,6 @@
       "locked_code": false,
       "registry_name": "cooking_stand_steak",
       "metadata": {
-        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/mddo/procedures/CookingStandSteakProcedure.java"
         ],
@@ -4635,6 +4634,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "CookingSTandOpenTimer",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooking_s_tand_open_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/CookingSTandOpenTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4676,6 +4698,24 @@
     },
     {
       "name": "CookingTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "CookingTimer2",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "CookingNumber3",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "CookingNumber4",
       "type": "number",
       "scope": "map",
       "value": "0"
