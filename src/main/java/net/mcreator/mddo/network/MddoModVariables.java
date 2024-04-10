@@ -89,11 +89,17 @@ public class MddoModVariables {
 		public static final String DATA_NAME = "mddo_mapvars";
 		public boolean nadaljuj = false;
 		public double GoldenChorusCharges = 0;
-		public double CookingValue = 0;
+		public double Fuel = 0;
 		public double Goldenx = 0;
 		public double GoldenY = 0;
 		public double GOldenZ = 0;
-		public double CookingTimer = 0;
+		public double CookingTimer1 = 0;
+		public double CookingTimer2 = 0;
+		public double CookingNumber3 = 0;
+		public double CookingNumber4 = 0;
+		public double whichInput = 0;
+		public double whichSlot = 0;
+		public String whichSlot1 = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -104,22 +110,34 @@ public class MddoModVariables {
 		public void read(CompoundTag nbt) {
 			nadaljuj = nbt.getBoolean("nadaljuj");
 			GoldenChorusCharges = nbt.getDouble("GoldenChorusCharges");
-			CookingValue = nbt.getDouble("CookingValue");
+			Fuel = nbt.getDouble("Fuel");
 			Goldenx = nbt.getDouble("Goldenx");
 			GoldenY = nbt.getDouble("GoldenY");
 			GOldenZ = nbt.getDouble("GOldenZ");
-			CookingTimer = nbt.getDouble("CookingTimer");
+			CookingTimer1 = nbt.getDouble("CookingTimer1");
+			CookingTimer2 = nbt.getDouble("CookingTimer2");
+			CookingNumber3 = nbt.getDouble("CookingNumber3");
+			CookingNumber4 = nbt.getDouble("CookingNumber4");
+			whichInput = nbt.getDouble("whichInput");
+			whichSlot = nbt.getDouble("whichSlot");
+			whichSlot1 = nbt.getString("whichSlot1");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("nadaljuj", nadaljuj);
 			nbt.putDouble("GoldenChorusCharges", GoldenChorusCharges);
-			nbt.putDouble("CookingValue", CookingValue);
+			nbt.putDouble("Fuel", Fuel);
 			nbt.putDouble("Goldenx", Goldenx);
 			nbt.putDouble("GoldenY", GoldenY);
 			nbt.putDouble("GOldenZ", GOldenZ);
-			nbt.putDouble("CookingTimer", CookingTimer);
+			nbt.putDouble("CookingTimer1", CookingTimer1);
+			nbt.putDouble("CookingTimer2", CookingTimer2);
+			nbt.putDouble("CookingNumber3", CookingNumber3);
+			nbt.putDouble("CookingNumber4", CookingNumber4);
+			nbt.putDouble("whichInput", whichInput);
+			nbt.putDouble("whichSlot", whichSlot);
+			nbt.putString("whichSlot1", whichSlot1);
 			return nbt;
 		}
 

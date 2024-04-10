@@ -84,7 +84,7 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 34) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 35) {
 			private final int slot = 0;
 
 			@Override
@@ -93,17 +93,11 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 				slotChanged(0, 0, 0);
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 8, 58) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 9, 58) {
 			private final int slot = 1;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 57) {
 			private final int slot = 2;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(2, 0, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -117,12 +111,6 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 4;
 
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(4, 0, 0);
-			}
-
-			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -130,14 +118,8 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 115, 57) {
 			private final int slot = 5;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 56) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 57) {
 			private final int slot = 6;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(6, 0, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -149,12 +131,6 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 9) {
 			private final int slot = 8;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(8, 0, 0);
-			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
