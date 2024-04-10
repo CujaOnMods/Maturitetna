@@ -12,6 +12,10 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.CookingStandMenu;
+import net.mcreator.mddo.procedures.RemoveCookingInput7Procedure;
+import net.mcreator.mddo.procedures.RemoveCookingInput5Procedure;
+import net.mcreator.mddo.procedures.RemoveCookingInput3Procedure;
+import net.mcreator.mddo.procedures.RemoveCookingInput1Procedure;
 import net.mcreator.mddo.procedures.CookingStandFuelProcedure;
 import net.mcreator.mddo.MddoMod;
 
@@ -73,6 +77,22 @@ public class CookingStandSlotMessage {
 		if (slot == 0 && changeType == 0) {
 
 			CookingStandFuelProcedure.execute(world, entity);
+		}
+		if (slot == 2 && changeType == 0) {
+
+			RemoveCookingInput1Procedure.execute(entity);
+		}
+		if (slot == 4 && changeType == 0) {
+
+			RemoveCookingInput3Procedure.execute(entity);
+		}
+		if (slot == 6 && changeType == 0) {
+
+			RemoveCookingInput5Procedure.execute(entity);
+		}
+		if (slot == 8 && changeType == 0) {
+
+			RemoveCookingInput7Procedure.execute(entity);
 		}
 	}
 

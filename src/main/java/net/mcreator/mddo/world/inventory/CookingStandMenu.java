@@ -100,6 +100,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 2;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -109,6 +115,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 43, 9) {
 			private final int slot = 4;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(4, 0, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -122,6 +134,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 6;
 
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(6, 0, 0);
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -131,6 +149,12 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 9) {
 			private final int slot = 8;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(8, 0, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
