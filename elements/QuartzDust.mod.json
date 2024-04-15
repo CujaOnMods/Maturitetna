@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "woodhammertecture",
+    "texture": "quartsdust",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

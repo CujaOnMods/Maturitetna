@@ -4606,8 +4606,8 @@
       "registry_name": "copper_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/copper_dust.json",
-          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java",
+          "src/main/resources/assets/mddo/models/item/copper_dust.json"
         ]
       },
       "path": "~/Dusts"
@@ -4666,8 +4666,8 @@
       "registry_name": "gold_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/gold_dust.json",
-          "src/main/java/net/mcreator/mddo/item/GoldDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/GoldDustItem.java",
+          "src/main/resources/assets/mddo/models/item/gold_dust.json"
         ]
       },
       "path": "~/Dusts"
@@ -4696,8 +4696,8 @@
       "registry_name": "quartz_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/quartz_dust.json",
-          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java",
+          "src/main/resources/assets/mddo/models/item/quartz_dust.json"
         ]
       },
       "path": "~/Dusts"
