@@ -2,15 +2,15 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "oretabletexture",
+    "texture": "redstonetexture",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "oreworking:default",
-    "rotationMode": 0,
+    "customModelName": "redstoneworking:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -25,11 +25,101 @@
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.0,
+        "my": 14.0,
         "mz": 0.0,
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 9.0,
+        "mz": 1.0,
+        "Mx": 15.0,
+        "My": 14.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 16.0,
+        "mz": 12.0,
+        "Mx": 10.0,
+        "My": 18.0,
+        "Mz": 13.0,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 16.0,
+        "mz": 5.0,
+        "Mx": 13.0,
+        "My": 19.0,
+        "Mz": 6.0,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 16.0,
+        "mz": 5.0,
+        "Mx": 14.0,
+        "My": 17.0,
+        "Mz": 6.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 16.0,
+        "mz": 11.0,
+        "Mx": 5.0,
+        "My": 19.0,
+        "Mz": 14.0,
+        "subtract": false
+      },
+      {
+        "mx": 7.0,
+        "my": 16.0,
+        "mz": 12.0,
+        "Mx": 8.0,
+        "My": 18.0,
+        "Mz": 13.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 0.0,
+        "mz": 13.0,
+        "Mx": 3.0,
+        "My": 9.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 13.0,
+        "my": 0.0,
+        "mz": 1.0,
+        "Mx": 15.0,
+        "My": 9.0,
+        "Mz": 3.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 0.0,
+        "mz": 1.0,
+        "Mx": 3.0,
+        "My": 9.0,
+        "Mz": 3.0,
+        "subtract": false
+      },
+      {
+        "mx": 13.0,
+        "my": 0.0,
+        "mz": 13.0,
+        "Mx": 15.0,
+        "My": 9.0,
+        "Mz": 15.0,
         "subtract": false
       }
     ],
@@ -40,7 +130,7 @@
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:EpiCraft"
     },

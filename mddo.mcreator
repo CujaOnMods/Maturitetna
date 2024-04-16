@@ -3941,8 +3941,8 @@
         "files": [
           "src/main/resources/assets/mddo/blockstates/food_workbench.json",
           "src/main/java/net/mcreator/mddo/block/FoodWorkbenchBlock.java",
-          "src/main/resources/assets/mddo/models/item/food_workbench.json",
           "src/main/java/net/mcreator/mddo/block/entity/FoodWorkbenchBlockEntity.java",
+          "src/main/resources/assets/mddo/models/item/food_workbench.json",
           "src/main/resources/assets/mddo/models/block/food_workbench.json"
         ]
       }
@@ -3956,11 +3956,11 @@
       "registry_name": "redstone_work_bench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/redstone_work_bench.json",
-          "src/main/resources/assets/mddo/models/item/redstone_work_bench.json",
           "src/main/resources/assets/mddo/models/block/redstone_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java",
-          "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java"
+          "src/main/resources/assets/mddo/models/item/redstone_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java"
         ]
       }
     },
@@ -4450,11 +4450,11 @@
       "registry_name": "ender_work_bench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java",
-          "src/main/resources/assets/mddo/models/item/ender_work_bench.json",
           "src/main/resources/assets/mddo/models/block/ender_work_bench.json",
+          "src/main/resources/assets/mddo/blockstates/ender_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/EnderWorkBenchBlockEntity.java",
-          "src/main/resources/assets/mddo/blockstates/ender_work_bench.json"
+          "src/main/resources/assets/mddo/models/item/ender_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java"
         ]
       }
     },
@@ -4529,10 +4529,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
-          "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json",
           "src/main/resources/assets/mddo/models/item/cooking_stand_work_bench.json",
           "src/main/resources/assets/mddo/models/block/cooking_stand_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java"
+          "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json"
         ]
       }
     },
