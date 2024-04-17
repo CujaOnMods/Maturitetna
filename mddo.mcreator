@@ -9,10 +9,10 @@
       "registry_name": "betterzombie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json",
           "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java",
-          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json"
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
+          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json",
+          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -26,11 +26,11 @@
       "registry_name": "better_skeleton",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
           "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java",
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json",
-          "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json"
+          "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
+          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json"
         ]
       },
       "path": "~/Better_mobs"
