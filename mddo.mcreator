@@ -4701,6 +4701,45 @@
         ]
       },
       "path": "~/Dusts"
+    },
+    {
+      "name": "Bedbaje",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedbaje",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/BedbajeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tend",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tend",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/tend.json",
+          "src/main/java/net/mcreator/mddo/block/TendBlock.java",
+          "src/main/resources/assets/mddo/blockstates/tend.json",
+          "src/main/resources/assets/mddo/models/block/tend.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4795,6 +4834,7 @@
       "item_group.mddo.epi_craft": "Epi Craft",
       "block.mddo.ender_work_bench": "Ender Work Bench",
       "block.mddo.food_workbench": "Food Workbench",
+      "block.mddo.tend": "Tend",
       "block.mddo.wwwb": "woodworking workbench",
       "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
       "item.mddo.gold_dust": "Gold dust",

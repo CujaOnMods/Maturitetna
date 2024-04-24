@@ -1,0 +1,9 @@
+{
+  "parent": "mddo:custom/stone_oven",
+  "textures": {
+    "all": "mddo:block/foodtexture",
+    "particle": "mddo:block/foodtexture",
+    "0": "mddo:block/oventexture"
+  },
+  "render_type": "solid"
+}
