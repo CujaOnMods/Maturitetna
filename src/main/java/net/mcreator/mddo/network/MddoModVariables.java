@@ -100,6 +100,7 @@ public class MddoModVariables {
 		public double whichInput = 0;
 		public double whichSlot = 0;
 		public String whichSlot1 = "\"\"";
+		public double days = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -121,6 +122,7 @@ public class MddoModVariables {
 			whichInput = nbt.getDouble("whichInput");
 			whichSlot = nbt.getDouble("whichSlot");
 			whichSlot1 = nbt.getString("whichSlot1");
+			days = nbt.getDouble("days");
 		}
 
 		@Override
@@ -138,6 +140,7 @@ public class MddoModVariables {
 			nbt.putDouble("whichInput", whichInput);
 			nbt.putDouble("whichSlot", whichSlot);
 			nbt.putString("whichSlot1", whichSlot1);
+			nbt.putDouble("days", days);
 			return nbt;
 		}
 

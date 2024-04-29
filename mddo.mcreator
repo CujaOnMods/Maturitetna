@@ -4701,6 +4701,57 @@
         ]
       },
       "path": "~/Dusts"
+    },
+    {
+      "name": "Sleep",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/SleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tent",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tent",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/block/tent.json",
+          "src/main/java/net/mcreator/mddo/block/TentBlock.java",
+          "src/main/resources/assets/mddo/models/item/tent.json",
+          "src/main/resources/assets/mddo/blockstates/tent.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4781,6 +4832,12 @@
       "type": "string",
       "scope": "map",
       "value": "\"\""
+    },
+    {
+      "name": "days",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -4789,6 +4846,7 @@
       "block.mddo.redstone_work_bench": "Redstone Work Bench",
       "item.mddo.wooden_hammer": "Hammer",
       "item.mddo.quartz_dust": "Quartz dust",
+      "item.mddo.tent": "Tent",
       "item.mddo.iron_dust": "Iron dust",
       "block.mddo.metal_working_bench": "Metal Working Bench",
       "item.mddo.lapis_dust": "Lapis dust",
@@ -4801,6 +4859,7 @@
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "item.mddo.copper_dust": "Copper dust",
       "entity.mddo.betterzombie": "Betterzombie",
+      "block.mddo.tent": "Tent",
       "item.mddo.diamond_dust": "Diamon dust",
       "entity.mddo.better_spider": "Better Spider",
       "block.mddo.cooking_stand_work_bench": "Cooking Stand Work Bench",
