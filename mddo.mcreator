@@ -4703,6 +4703,22 @@
       "path": "~/Dusts"
     },
     {
+      "name": "Tent",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tent",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/block/tent.json",
+          "src/main/java/net/mcreator/mddo/block/TentBlock.java",
+          "src/main/resources/assets/mddo/models/item/tent.json",
+          "src/main/resources/assets/mddo/blockstates/tent.json"
+        ]
+      }
+    },
+    {
       "name": "Sleep",
       "type": "procedure",
       "sortid": 225,
@@ -4738,18 +4754,41 @@
       }
     },
     {
-      "name": "Tent",
+      "name": "Tend",
       "type": "block",
       "sortid": 226,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tent",
+      "registry_name": "tend",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/block/tent.json",
-          "src/main/java/net/mcreator/mddo/block/TentBlock.java",
-          "src/main/resources/assets/mddo/models/item/tent.json",
-          "src/main/resources/assets/mddo/blockstates/tent.json"
+          "src/main/resources/assets/mddo/blockstates/tend.json",
+          "src/main/java/net/mcreator/mddo/block/TendBlock.java",
+          "src/main/resources/assets/mddo/models/block/tend.json",
+          "src/main/resources/assets/mddo/models/item/tend.json"
+        ]
+      }
+    },
+    {
+      "name": "Bedbaje",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedbaje",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/BedbajeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -4859,7 +4898,6 @@
       "item.mddo.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "item.mddo.copper_dust": "Copper dust",
       "entity.mddo.betterzombie": "Betterzombie",
-      "block.mddo.tent": "Tent",
       "item.mddo.diamond_dust": "Diamon dust",
       "entity.mddo.better_spider": "Better Spider",
       "block.mddo.cooking_stand_work_bench": "Cooking Stand Work Bench",
@@ -4884,7 +4922,15 @@
         "children": []
       },
       {
+        "name": "Ender",
+        "children": []
+      },
+      {
         "name": "WW_C_B_Procedures",
+        "children": []
+      },
+      {
+        "name": "Dusts",
         "children": []
       },
       {
@@ -4901,14 +4947,6 @@
       },
       {
         "name": "WeaponArmorGui",
-        "children": []
-      },
-      {
-        "name": "Ender",
-        "children": []
-      },
-      {
-        "name": "Dusts",
         "children": []
       }
     ]

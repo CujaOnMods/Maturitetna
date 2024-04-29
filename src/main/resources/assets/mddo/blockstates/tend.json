@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mddo:block/tend"
+    },
+    "facing=east": {
+      "model": "mddo:block/tend",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mddo:block/tend",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mddo:block/tend",
+      "y": 270
+    }
+  }
+}
