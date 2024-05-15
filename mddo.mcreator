@@ -44,10 +44,10 @@
       "registry_name": "better_spider",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java",
           "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
-          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
-          "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java"
+          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -180,9 +180,9 @@
       "registry_name": "wwbc",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/WWBCScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
-          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -221,11 +221,11 @@
       "registry_name": "wwwb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
           "src/main/resources/assets/mddo/models/item/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
           "src/main/resources/assets/mddo/models/block/wwwb.json",
-          "src/main/resources/assets/mddo/blockstates/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java"
+          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
+          "src/main/resources/assets/mddo/blockstates/wwwb.json"
         ]
       }
     },
@@ -2107,11 +2107,11 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/stoneworking_bench.json",
-          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
           "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json",
-          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java"
+          "src/main/resources/assets/mddo/models/item/stoneworking_bench.json",
+          "src/main/resources/assets/mddo/models/block/stoneworking_bench.json"
         ]
       }
     },
@@ -2124,8 +2124,8 @@
       "registry_name": "stoneworking_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/StoneworkingGuiMenu.java",
+          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
           "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java"
         ]
       },
@@ -2425,9 +2425,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
-          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
           "src/main/resources/assets/mddo/models/block/metal_working_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
           "src/main/resources/assets/mddo/models/item/metal_working_bench.json"
         ]
       }
@@ -2467,8 +2467,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java",
-          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java"
+          "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2808,11 +2808,11 @@
       "registry_name": "weapon_armor_work_bench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java",
           "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
-          "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
           "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json",
-          "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java"
+          "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
+          "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json"
         ]
       }
     },
@@ -4048,9 +4048,9 @@
       "registry_name": "food_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/FoodGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/FoodGUIMenu.java",
-          "src/main/java/net/mcreator/mddo/network/FoodGUISlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/FoodGUIMenu.java"
         ]
       },
       "path": "~/StoneWorkingProcedures"
@@ -4230,8 +4230,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/client/gui/EnderGUIScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/EnderGUIMenu.java",
-          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java"
+          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java",
+          "src/main/java/net/mcreator/mddo/world/inventory/EnderGUIMenu.java"
         ]
       },
       "path": "~/Ender"
@@ -4411,8 +4411,8 @@
       "registry_name": "golden_chorus",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/GoldenChorusItem.java",
-          "src/main/resources/assets/mddo/models/item/golden_chorus.json"
+          "src/main/resources/assets/mddo/models/item/golden_chorus.json",
+          "src/main/java/net/mcreator/mddo/item/GoldenChorusItem.java"
         ]
       }
     },
@@ -4703,22 +4703,6 @@
       "path": "~/Dusts"
     },
     {
-      "name": "Tent",
-      "type": "block",
-      "sortid": 226,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "tent",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mddo/models/block/tent.json",
-          "src/main/java/net/mcreator/mddo/block/TentBlock.java",
-          "src/main/resources/assets/mddo/models/item/tent.json",
-          "src/main/resources/assets/mddo/blockstates/tent.json"
-        ]
-      }
-    },
-    {
       "name": "Sleep",
       "type": "procedure",
       "sortid": 225,
@@ -4757,7 +4741,7 @@
       "name": "Tend",
       "type": "block",
       "sortid": 226,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tend",
       "metadata": {
@@ -4770,20 +4754,67 @@
       }
     },
     {
-      "name": "Bedbaje",
+      "name": "TendPlaced",
       "type": "procedure",
-      "sortid": 225,
-      "compiles": false,
+      "sortid": 227,
+      "compiles": true,
       "locked_code": false,
-      "registry_name": "bedbaje",
+      "registry_name": "tend_placed",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/procedures/BedbajeProcedure.java"
+          "src/main/java/net/mcreator/mddo/procedures/TendPlacedProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TendDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tend_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/TendDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -4892,6 +4923,7 @@
       "item_group.mddo.epi_craft": "Epi Craft",
       "block.mddo.ender_work_bench": "Ender Work Bench",
       "block.mddo.food_workbench": "Food Workbench",
+      "block.mddo.tend": "Tend",
       "block.mddo.wwwb": "woodworking workbench",
       "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
       "item.mddo.gold_dust": "Gold dust",

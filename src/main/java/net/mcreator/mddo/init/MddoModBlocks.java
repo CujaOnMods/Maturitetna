@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.mddo.block.WeaponArmorWorkBenchBlock;
 import net.mcreator.mddo.block.WWWBBlock;
-import net.mcreator.mddo.block.TentBlock;
 import net.mcreator.mddo.block.TendBlock;
 import net.mcreator.mddo.block.StoneworkingBenchBlock;
 import net.mcreator.mddo.block.RedstoneWorkBenchBlock;
@@ -32,6 +31,5 @@ public class MddoModBlocks {
 	public static final RegistryObject<Block> REDSTONE_WORK_BENCH = REGISTRY.register("redstone_work_bench", () -> new RedstoneWorkBenchBlock());
 	public static final RegistryObject<Block> ENDER_WORK_BENCH = REGISTRY.register("ender_work_bench", () -> new EnderWorkBenchBlock());
 	public static final RegistryObject<Block> COOKING_STAND_WORK_BENCH = REGISTRY.register("cooking_stand_work_bench", () -> new CookingStandWorkBenchBlock());
-	public static final RegistryObject<Block> TENT = REGISTRY.register("tent", () -> new TentBlock());
 	public static final RegistryObject<Block> TEND = REGISTRY.register("tend", () -> new TendBlock());
 }

@@ -41,7 +41,6 @@ public class MddoModTabs {
 				tabData.accept(MddoModItems.GOLD_DUST.get());
 				tabData.accept(MddoModItems.DIAMOND_DUST.get());
 				tabData.accept(MddoModItems.QUARTZ_DUST.get());
-				tabData.accept(MddoModBlocks.TENT.get().asItem());
 				tabData.accept(MddoModBlocks.TEND.get().asItem());
 			})
 

@@ -1,9 +1,0 @@
-{
-  "parent": "mddo:custom/endblock",
-  "textures": {
-    "all": "mddo:block/endtexture",
-    "particle": "mddo:block/endtexture",
-    "0": "mddo:block/endtexture"
-  },
-  "render_type": "solid"
-}
