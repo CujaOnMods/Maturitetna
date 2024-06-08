@@ -4926,6 +4926,57 @@
           "src/main/resources/data/mddo/recipes/tend_recipe.json"
         ]
       }
+    },
+    {
+      "name": "Tent2",
+      "type": "block",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tent_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mddo/models/item/tent_2.json",
+          "src/main/java/net/mcreator/mddo/block/Tent2Block.java",
+          "src/main/resources/assets/mddo/blockstates/tent_2.json",
+          "src/main/resources/assets/mddo/models/block/tent_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Tend2destroyedByPlayer",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tend_2destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mddo/procedures/Tend2destroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5043,7 +5094,8 @@
       "entity.mddo.better_skeleton": "Better Skeleton",
       "block.mddo.weapon_armor_work_bench": "Weapon Armor Work Bench",
       "item.mddo.coal_dust": "Coal Dust",
-      "item.mddo.golden_chorus": "Golden ChorusFruit"
+      "item.mddo.golden_chorus": "Golden ChorusFruit",
+      "block.mddo.tent_2": "Tent 2"
     }
   },
   "foldersRoot": {

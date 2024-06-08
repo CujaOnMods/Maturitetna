@@ -11,6 +11,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.mddo.init.MddoModBlocks;
+
 public class TendPlacedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((new Object() {
@@ -23,7 +25,7 @@ public class TendPlacedProcedure {
 			}
 		}.getDirection(blockstate)) == Direction.NORTH) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Blocks.AIR) {
-				world.setBlock(BlockPos.containing(x, y, z + 1), Blocks.WHITE_WOOL.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z + 1), MddoModBlocks.TENT_2.get().defaultBlockState(), 3);
 				{
 					Direction _dir = (new Object() {
 						public Direction getDirection(BlockPos pos) {
@@ -49,7 +51,7 @@ public class TendPlacedProcedure {
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-			} else if (!((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Blocks.WHITE_WOOL)) {
+			} else if (!((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == MddoModBlocks.TENT_2.get())) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -67,7 +69,7 @@ public class TendPlacedProcedure {
 				}
 			}.getDirection(blockstate)) == Direction.SOUTH) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Blocks.AIR) {
-					world.setBlock(BlockPos.containing(x, y, z - 1), Blocks.WHITE_WOOL.defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(x, y, z - 1), MddoModBlocks.TENT_2.get().defaultBlockState(), 3);
 					{
 						Direction _dir = (new Object() {
 							public Direction getDirection(BlockPos pos) {
@@ -93,7 +95,7 @@ public class TendPlacedProcedure {
 								world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 						}
 					}
-				} else if (!((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Blocks.WHITE_WOOL)) {
+				} else if (!((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == MddoModBlocks.TENT_2.get())) {
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -113,7 +115,7 @@ public class TendPlacedProcedure {
 					}
 				}.getDirection(blockstate)) == Direction.WEST) {
 					if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Blocks.AIR) {
-						world.setBlock(BlockPos.containing(x + 1, y, z), Blocks.WHITE_WOOL.defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x + 1, y, z), MddoModBlocks.TENT_2.get().defaultBlockState(), 3);
 						{
 							Direction _dir = (new Object() {
 								public Direction getDirection(BlockPos pos) {
@@ -139,7 +141,7 @@ public class TendPlacedProcedure {
 									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
-					} else if (!((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Blocks.WHITE_WOOL)) {
+					} else if (!((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == MddoModBlocks.TENT_2.get())) {
 						{
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
@@ -159,7 +161,7 @@ public class TendPlacedProcedure {
 						}
 					}.getDirection(blockstate)) == Direction.EAST) {
 						if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Blocks.AIR) {
-							world.setBlock(BlockPos.containing(x - 1, y, z), Blocks.WHITE_WOOL.defaultBlockState(), 3);
+							world.setBlock(BlockPos.containing(x - 1, y, z), MddoModBlocks.TENT_2.get().defaultBlockState(), 3);
 							{
 								Direction _dir = (new Object() {
 									public Direction getDirection(BlockPos pos) {
@@ -185,7 +187,7 @@ public class TendPlacedProcedure {
 										world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 								}
 							}
-						} else if (!((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Blocks.WHITE_WOOL)) {
+						} else if (!((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == MddoModBlocks.TENT_2.get())) {
 							{
 								BlockPos _pos = BlockPos.containing(x, y, z);
 								Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
