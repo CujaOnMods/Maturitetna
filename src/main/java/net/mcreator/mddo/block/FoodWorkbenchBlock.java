@@ -51,7 +51,7 @@ public class FoodWorkbenchBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public FoodWorkbenchBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -132,7 +132,7 @@ public class FoodWorkbenchBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Food Workbench");
+					return Component.literal("Brick oven");
 				}
 
 				@Override

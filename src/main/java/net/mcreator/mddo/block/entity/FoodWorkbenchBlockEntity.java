@@ -94,7 +94,7 @@ public class FoodWorkbenchBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Food Workbench");
+		return Component.literal("Brick oven");
 	}
 
 	@Override

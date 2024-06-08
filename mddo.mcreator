@@ -4822,6 +4822,110 @@
           }
         ]
       }
+    },
+    {
+      "name": "MetalbenchRecipe",
+      "type": "recipe",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalbench_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/metalbench_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WeaponRecipe",
+      "type": "recipe",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/weapon_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldenChorusRecipe",
+      "type": "recipe",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_chorus_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/golden_chorus_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EndRecipe",
+      "type": "recipe",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/end_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneRecipe",
+      "type": "recipe",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/redstone_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "HammerRecipe",
+      "type": "recipe",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/hammer_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FoodRecipe",
+      "type": "recipe",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/food_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TendRecipe",
+      "type": "recipe",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tend_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/tend_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4922,7 +5026,7 @@
       "item.mddo.lapis_dust": "Lapis dust",
       "item_group.mddo.epi_craft": "Epi Craft",
       "block.mddo.ender_work_bench": "Ender Work Bench",
-      "block.mddo.food_workbench": "Food Workbench",
+      "block.mddo.food_workbench": "Brick oven",
       "block.mddo.tend": "Tend",
       "block.mddo.wwwb": "woodworking workbench",
       "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",

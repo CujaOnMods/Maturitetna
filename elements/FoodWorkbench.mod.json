@@ -240,7 +240,7 @@
         "subtract": false
       }
     ],
-    "name": "Food Workbench",
+    "name": "Brick oven",
     "specialInformation": {
       "fixedValue": []
     },
@@ -251,7 +251,7 @@
     "creativeTab": {
       "value": "CUSTOM:EpiCraft"
     },
-    "destroyTool": "axe",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -263,7 +263,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
