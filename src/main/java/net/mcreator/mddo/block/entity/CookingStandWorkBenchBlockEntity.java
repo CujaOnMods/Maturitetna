@@ -94,7 +94,7 @@ public class CookingStandWorkBenchBlockEntity extends RandomizableContainerBlock
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Cooking Stand Work Bench");
+		return Component.literal("Brick oven");
 	}
 
 	@Override
