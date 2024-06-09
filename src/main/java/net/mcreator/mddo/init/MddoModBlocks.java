@@ -34,4 +34,6 @@ public class MddoModBlocks {
 	public static final RegistryObject<Block> COOKING_STAND_WORK_BENCH = REGISTRY.register("cooking_stand_work_bench", () -> new CookingStandWorkBenchBlock());
 	public static final RegistryObject<Block> TEND = REGISTRY.register("tend", () -> new TendBlock());
 	public static final RegistryObject<Block> TENT_2 = REGISTRY.register("tent_2", () -> new Tent2Block());
+	// Start of user code block custom blocks
+	// End of user code block custom blocks
 }

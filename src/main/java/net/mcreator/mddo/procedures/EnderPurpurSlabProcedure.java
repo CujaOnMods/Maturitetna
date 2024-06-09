@@ -80,7 +80,7 @@ public class EnderPurpurSlabProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.PURPUR_SLAB);
+												ItemStack _setstack = new ItemStack(Blocks.PURPUR_SLAB).copy();
 												_setstack.setCount(6);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -161,7 +161,7 @@ public class EnderPurpurSlabProcedure {
 												}
 											}.getAmount(8) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Blocks.PURPUR_SLAB);
+													ItemStack _setstack = new ItemStack(Blocks.PURPUR_SLAB).copy();
 													_setstack.setCount(6);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();
@@ -243,7 +243,7 @@ public class EnderPurpurSlabProcedure {
 													}
 												}.getAmount(5) == 0) {
 													if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-														ItemStack _setstack = new ItemStack(Blocks.PURPUR_SLAB);
+														ItemStack _setstack = new ItemStack(Blocks.PURPUR_SLAB).copy();
 														_setstack.setCount(6);
 														((Slot) _slots.get(10)).set(_setstack);
 														_player.containerMenu.broadcastChanges();

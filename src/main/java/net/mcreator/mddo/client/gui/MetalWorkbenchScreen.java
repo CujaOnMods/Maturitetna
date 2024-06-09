@@ -68,11 +68,6 @@ public class MetalWorkbenchScreen extends AbstractContainerScreen<MetalWorkbench
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

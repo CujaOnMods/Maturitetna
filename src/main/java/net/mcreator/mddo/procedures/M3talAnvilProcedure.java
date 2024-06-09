@@ -45,7 +45,7 @@ public class M3talAnvilProcedure {
 											}
 										}.getAmount(5) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.ANVIL);
+												ItemStack _setstack = new ItemStack(Blocks.ANVIL).copy();
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();

@@ -68,11 +68,6 @@ public class CookingStandScreen extends AbstractContainerScreen<CookingStandMenu
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

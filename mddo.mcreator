@@ -223,6 +223,7 @@
         "files": [
           "src/main/resources/assets/mddo/models/item/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/data/mddo/loot_tables/blocks/wwwb.json",
           "src/main/resources/assets/mddo/models/block/wwwb.json",
           "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/wwwb.json"
@@ -2107,6 +2108,7 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
+          "src/main/resources/data/mddo/loot_tables/blocks/stoneworking_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
           "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/mddo/blockstates/stoneworking_bench.json",
@@ -2428,6 +2430,7 @@
           "src/main/resources/assets/mddo/blockstates/metal_working_bench.json",
           "src/main/resources/assets/mddo/models/block/metal_working_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
+          "src/main/resources/data/mddo/loot_tables/blocks/metal_working_bench.json",
           "src/main/resources/assets/mddo/models/item/metal_working_bench.json"
         ]
       }
@@ -2812,6 +2815,7 @@
           "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/weapon_armor_work_bench.json",
           "src/main/resources/assets/mddo/models/item/weapon_armor_work_bench.json",
+          "src/main/resources/data/mddo/loot_tables/blocks/weapon_armor_work_bench.json",
           "src/main/resources/assets/mddo/models/block/weapon_armor_work_bench.json"
         ]
       }
@@ -3939,6 +3943,7 @@
       "registry_name": "food_workbench",
       "metadata": {
         "files": [
+          "src/main/resources/data/mddo/loot_tables/blocks/food_workbench.json",
           "src/main/resources/assets/mddo/blockstates/food_workbench.json",
           "src/main/java/net/mcreator/mddo/block/FoodWorkbenchBlock.java",
           "src/main/java/net/mcreator/mddo/block/entity/FoodWorkbenchBlockEntity.java",
@@ -3957,6 +3962,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java",
+          "src/main/resources/data/mddo/loot_tables/blocks/redstone_work_bench.json",
           "src/main/resources/assets/mddo/blockstates/redstone_work_bench.json",
           "src/main/resources/assets/mddo/models/block/redstone_work_bench.json",
           "src/main/resources/assets/mddo/models/item/redstone_work_bench.json",
@@ -4454,6 +4460,7 @@
           "src/main/resources/assets/mddo/blockstates/ender_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/EnderWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/models/item/ender_work_bench.json",
+          "src/main/resources/data/mddo/loot_tables/blocks/ender_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java"
         ]
       }
@@ -4531,6 +4538,7 @@
           "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
           "src/main/resources/assets/mddo/models/item/cooking_stand_work_bench.json",
           "src/main/resources/assets/mddo/models/block/cooking_stand_work_bench.json",
+          "src/main/resources/data/mddo/loot_tables/blocks/cooking_stand_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java",
           "src/main/resources/assets/mddo/blockstates/cooking_stand_work_bench.json"
         ]
@@ -4748,6 +4756,7 @@
         "files": [
           "src/main/resources/assets/mddo/blockstates/tend.json",
           "src/main/java/net/mcreator/mddo/block/TendBlock.java",
+          "src/main/resources/data/mddo/loot_tables/blocks/tend.json",
           "src/main/resources/assets/mddo/models/block/tend.json",
           "src/main/resources/assets/mddo/models/item/tend.json"
         ]
@@ -4939,7 +4948,8 @@
           "src/main/resources/assets/mddo/models/item/tent_2.json",
           "src/main/java/net/mcreator/mddo/block/Tent2Block.java",
           "src/main/resources/assets/mddo/blockstates/tent_2.json",
-          "src/main/resources/assets/mddo/models/block/tent_2.json"
+          "src/main/resources/assets/mddo/models/block/tent_2.json",
+          "src/main/resources/data/mddo/loot_tables/blocks/tent_2.json"
         ]
       }
     },
@@ -5066,6 +5076,19 @@
     }
   ],
   "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:CookingStandWorkBench",
+      "~CUSTOM:EnderWorkBench",
+      "~CUSTOM:WeaponArmorWorkBench",
+      "~CUSTOM:MetalWorkingBench",
+      "~CUSTOM:StoneworkingBench",
+      "~CUSTOM:WWWB"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:FoodWorkbench"
+    ]
+  },
   "language_map": {
     "en_us": {
       "block.mddo.redstone_work_bench": "Redstone Work Bench",
@@ -5146,7 +5169,6 @@
     "author": "Uporabnik, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
@@ -5157,8 +5179,7 @@
     ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.mddo",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.mcreator.mddo"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400118518
 }

@@ -19,9 +19,9 @@ import net.mcreator.mddo.client.renderer.BetterSkeletonRenderer;
 public class MddoModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+		event.registerEntityRenderer(MddoModEntities.BETTERZOMBIE.get(), BetterzombieRenderer::new);
 		event.registerEntityRenderer(MddoModEntities.BETTER_SKELETON.get(), BetterSkeletonRenderer::new);
 		event.registerEntityRenderer(MddoModEntities.BETTER_SKELETON_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(MddoModEntities.BETTERZOMBIE.get(), BetterzombieRenderer::new);
 		event.registerEntityRenderer(MddoModEntities.BETTER_SPIDER.get(), BetterSpiderRenderer::new);
 	}
 }

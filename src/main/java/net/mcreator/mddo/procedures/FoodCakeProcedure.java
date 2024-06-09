@@ -27,7 +27,7 @@ public class FoodCakeProcedure {
 										if (Items.WHEAT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY)
 												.getItem()) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.CAKE);
+												ItemStack _setstack = new ItemStack(Items.CAKE).copy();
 												_setstack.setCount(2);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();

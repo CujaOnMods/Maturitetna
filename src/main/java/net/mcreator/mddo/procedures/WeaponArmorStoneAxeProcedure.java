@@ -63,7 +63,7 @@ public class WeaponArmorStoneAxeProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.STONE_AXE);
+												ItemStack _setstack = new ItemStack(Items.STONE_AXE).copy();
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -126,7 +126,7 @@ public class WeaponArmorStoneAxeProcedure {
 												}
 											}.getAmount(8) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Items.STONE_AXE);
+													ItemStack _setstack = new ItemStack(Items.STONE_AXE).copy();
 													_setstack.setCount(1);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();
