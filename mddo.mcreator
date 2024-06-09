@@ -4987,6 +4987,110 @@
           }
         ]
       }
+    },
+    {
+      "name": "EmeraldD",
+      "type": "recipe",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/emerald_d.json"
+        ]
+      }
+    },
+    {
+      "name": "IronD",
+      "type": "recipe",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/iron_d.json"
+        ]
+      }
+    },
+    {
+      "name": "Coal",
+      "type": "recipe",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/coal.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldD",
+      "type": "recipe",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/gold_d.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondD",
+      "type": "recipe",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/diamond_d.json"
+        ]
+      }
+    },
+    {
+      "name": "Lapis",
+      "type": "recipe",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/lapis.json"
+        ]
+      }
+    },
+    {
+      "name": "Copper",
+      "type": "recipe",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/copper.json"
+        ]
+      }
+    },
+    {
+      "name": "Quartz",
+      "type": "recipe",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/quartz.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5082,8 +5186,8 @@
       "~CUSTOM:EnderWorkBench",
       "~CUSTOM:WeaponArmorWorkBench",
       "~CUSTOM:MetalWorkingBench",
-      "~CUSTOM:StoneworkingBench",
-      "~CUSTOM:WWWB"
+      "~CUSTOM:WWWB",
+      "~CUSTOM:StoneworkingBench"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:FoodWorkbench"
@@ -5181,5 +5285,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.mddo"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202300452316
 }
