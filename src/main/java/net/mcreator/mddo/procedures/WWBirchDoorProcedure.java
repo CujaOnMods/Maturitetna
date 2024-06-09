@@ -55,7 +55,7 @@ public class WWBirchDoorProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.BIRCH_DOOR);
+												ItemStack _setstack = new ItemStack(Blocks.BIRCH_DOOR).copy();
 												_setstack.setCount(3);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -112,7 +112,7 @@ public class WWBirchDoorProcedure {
 												}
 											}.getAmount(6) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Blocks.BIRCH_DOOR);
+													ItemStack _setstack = new ItemStack(Blocks.BIRCH_DOOR).copy();
 													_setstack.setCount(3);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();

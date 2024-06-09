@@ -81,7 +81,7 @@ public class RedstoneTripWireHookProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.TRIPWIRE_HOOK);
+												ItemStack _setstack = new ItemStack(Blocks.TRIPWIRE_HOOK).copy();
 												_setstack.setCount(6);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -162,7 +162,7 @@ public class RedstoneTripWireHookProcedure {
 												}
 											}.getAmount(8) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Blocks.TRIPWIRE_HOOK);
+													ItemStack _setstack = new ItemStack(Blocks.TRIPWIRE_HOOK).copy();
 													_setstack.setCount(6);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();
@@ -244,7 +244,7 @@ public class RedstoneTripWireHookProcedure {
 													}
 												}.getAmount(7) == 0) {
 													if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-														ItemStack _setstack = new ItemStack(Blocks.TRIPWIRE_HOOK);
+														ItemStack _setstack = new ItemStack(Blocks.TRIPWIRE_HOOK).copy();
 														_setstack.setCount(6);
 														((Slot) _slots.get(10)).set(_setstack);
 														_player.containerMenu.broadcastChanges();

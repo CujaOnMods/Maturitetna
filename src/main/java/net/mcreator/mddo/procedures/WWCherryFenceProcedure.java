@@ -55,7 +55,7 @@ public class WWCherryFenceProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.CHERRY_FENCE);
+												ItemStack _setstack = new ItemStack(Blocks.CHERRY_FENCE).copy();
 												_setstack.setCount(3);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -111,7 +111,7 @@ public class WWCherryFenceProcedure {
 												}
 											}.getAmount(2) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Blocks.CHERRY_FENCE);
+													ItemStack _setstack = new ItemStack(Blocks.CHERRY_FENCE).copy();
 													_setstack.setCount(3);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();

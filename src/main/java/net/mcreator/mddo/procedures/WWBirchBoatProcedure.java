@@ -64,7 +64,7 @@ public class WWBirchBoatProcedure {
 											}
 										}.getAmount(4) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.BIRCH_BOAT);
+												ItemStack _setstack = new ItemStack(Items.BIRCH_BOAT).copy();
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -129,7 +129,7 @@ public class WWBirchBoatProcedure {
 												}
 											}.getAmount(8) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Items.BIRCH_BOAT);
+													ItemStack _setstack = new ItemStack(Items.BIRCH_BOAT).copy();
 													_setstack.setCount(1);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();

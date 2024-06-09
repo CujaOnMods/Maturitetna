@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "mddo:wwwb",
-    "mddo:stoneworking_bench",
-    "mddo:metal_working_bench",
-    "mddo:weapon_armor_work_bench",
+    "mddo:cooking_stand_work_bench",
     "mddo:ender_work_bench",
-    "mddo:cooking_stand_work_bench"
+    "mddo:weapon_armor_work_bench",
+    "mddo:metal_working_bench",
+    "mddo:stoneworking_bench",
+    "mddo:wwwb"
   ]
 }

@@ -56,7 +56,7 @@ public class WWDarkOakDoorProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.DARK_OAK_DOOR);
+												ItemStack _setstack = new ItemStack(Blocks.DARK_OAK_DOOR).copy();
 												_setstack.setCount(3);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -114,7 +114,7 @@ public class WWDarkOakDoorProcedure {
 												}
 											}.getAmount(6) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Blocks.DARK_OAK_DOOR);
+													ItemStack _setstack = new ItemStack(Blocks.DARK_OAK_DOOR).copy();
 													_setstack.setCount(3);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();

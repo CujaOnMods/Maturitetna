@@ -33,7 +33,7 @@ public class FoodNotchAppleProcedure {
 												.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY)
 														.getItem()) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE);
+												ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE).copy();
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();

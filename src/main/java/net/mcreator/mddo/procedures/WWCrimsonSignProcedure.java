@@ -49,7 +49,7 @@ public class WWCrimsonSignProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.CRIMSON_SIGN);
+												ItemStack _setstack = new ItemStack(Items.CRIMSON_SIGN).copy();
 												_setstack.setCount(6);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();

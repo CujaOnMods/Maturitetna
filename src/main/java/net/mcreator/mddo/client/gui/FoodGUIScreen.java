@@ -68,11 +68,6 @@ public class FoodGUIScreen extends AbstractContainerScreen<FoodGUIMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

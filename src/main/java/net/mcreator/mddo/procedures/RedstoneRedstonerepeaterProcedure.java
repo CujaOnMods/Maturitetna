@@ -55,7 +55,7 @@ public class RedstoneRedstonerepeaterProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Items.REPEATER);
+												ItemStack _setstack = new ItemStack(Items.REPEATER).copy();
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -112,7 +112,7 @@ public class RedstoneRedstonerepeaterProcedure {
 												}
 											}.getAmount(2) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Items.REPEATER);
+													ItemStack _setstack = new ItemStack(Items.REPEATER).copy();
 													_setstack.setCount(1);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();
