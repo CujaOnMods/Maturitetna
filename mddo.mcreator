@@ -4451,7 +4451,7 @@
       "name": "EnderWorkBench",
       "type": "block",
       "sortid": 206,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ender_work_bench",
       "metadata": {
@@ -4530,7 +4530,7 @@
       "name": "CookingStandWorkBench",
       "type": "block",
       "sortid": 210,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cooking_stand_work_bench",
       "metadata": {
