@@ -5091,6 +5091,19 @@
           "src/main/resources/data/mddo/recipes/quartz.json"
         ]
       }
+    },
+    {
+      "name": "FoodBenchRecipe",
+      "type": "recipe",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_bench_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/food_bench_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5186,8 +5199,8 @@
       "~CUSTOM:EnderWorkBench",
       "~CUSTOM:WeaponArmorWorkBench",
       "~CUSTOM:MetalWorkingBench",
-      "~CUSTOM:WWWB",
-      "~CUSTOM:StoneworkingBench"
+      "~CUSTOM:StoneworkingBench",
+      "~CUSTOM:WWWB"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:FoodWorkbench"
@@ -5285,5 +5298,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.mddo"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400118518
 }

@@ -15,34 +15,34 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "Items.LEATHER"
+        "value": ""
       },
       {
-        "value": "Items.BED"
+        "value": "Blocks.CRAFTING_TABLE"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "Items.COAL#1"
       },
       {
-        "value": "Items.STICK"
+        "value": ""
       },
       {
-        "value": "Items.LEATHER"
+        "value": "Items.FISH"
       },
       {
-        "value": "Items.STICK"
+        "value": "Blocks.REEDS"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "CUSTOM:FoodWorkbench"
     },
-    "name": "tend_recipe",
+    "name": "food_bench_recipe",
     "namespace": "mod"
   }
 }
