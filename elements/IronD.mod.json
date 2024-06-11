@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:IronDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:IronDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.IRON_INGOT"
     },
-    "name": "tend_recipe",
+    "name": "iron_d",
     "namespace": "mod"
   }
 }

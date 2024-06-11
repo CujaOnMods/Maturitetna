@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:QuartzDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:QuartzDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.QUARTZ"
     },
-    "name": "tend_recipe",
+    "name": "quartz",
     "namespace": "mod"
   }
 }

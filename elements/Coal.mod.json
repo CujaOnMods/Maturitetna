@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:CoalDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:CoalDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.COAL#0"
     },
-    "name": "tend_recipe",
+    "name": "coal",
     "namespace": "mod"
   }
 }

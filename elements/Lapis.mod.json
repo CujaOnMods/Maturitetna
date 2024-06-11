@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:LapisDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:LapisDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.DYE#4"
     },
-    "name": "tend_recipe",
+    "name": "lapis",
     "namespace": "mod"
   }
 }

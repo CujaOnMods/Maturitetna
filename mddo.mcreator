@@ -11,8 +11,8 @@
         "files": [
           "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json",
-          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json"
+          "src/main/resources/assets/mddo/models/item/betterzombie_spawn_egg.json",
+          "src/main/resources/data/mddo/forge/biome_modifier/betterzombie_biome_modifier.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -26,11 +26,11 @@
       "registry_name": "better_skeleton",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json",
           "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java",
           "src/main/resources/assets/mddo/models/item/better_skeleton_spawn_egg.json",
-          "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java"
+          "src/main/resources/data/mddo/forge/biome_modifier/better_skeleton_biome_modifier.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -44,10 +44,10 @@
       "registry_name": "better_spider",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json",
           "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java",
+          "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
-          "src/main/resources/data/mddo/forge/biome_modifier/better_spider_biome_modifier.json"
+          "src/main/resources/assets/mddo/models/item/better_spider_spawn_egg.json"
         ]
       },
       "path": "~/Better_mobs"
@@ -146,8 +146,8 @@
       "registry_name": "wooden_hammer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/wooden_hammer.json",
-          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java"
+          "src/main/java/net/mcreator/mddo/item/WoodenHammerItem.java",
+          "src/main/resources/assets/mddo/models/item/wooden_hammer.json"
         ]
       }
     },
@@ -180,9 +180,9 @@
       "registry_name": "wwbc",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/WWBCScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
-          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2127,8 +2127,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/world/inventory/StoneworkingGuiMenu.java",
-          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java",
-          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java"
+          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
+          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java"
         ]
       },
       "path": "~/WWStoneworkingBenchGUI"
@@ -2469,9 +2469,9 @@
       "registry_name": "metal_workbench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java",
-          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2571,9 +2571,9 @@
       "registry_name": "weapon_armor_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java",
+          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -4054,8 +4054,8 @@
       "registry_name": "food_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java",
           "src/main/java/net/mcreator/mddo/network/FoodGUISlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/FoodGUIMenu.java"
         ]
       },
@@ -4119,8 +4119,8 @@
       "registry_name": "redstone_work_bench_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/RedstoneWorkBenchGuiSlotMessage.java",
           "src/main/java/net/mcreator/mddo/world/inventory/RedstoneWorkBenchGuiMenu.java",
+          "src/main/java/net/mcreator/mddo/network/RedstoneWorkBenchGuiSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/RedstoneWorkBenchGuiScreen.java"
         ]
       },
@@ -4235,8 +4235,8 @@
       "registry_name": "ender_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/EnderGUIScreen.java",
+          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/world/inventory/EnderGUIMenu.java"
         ]
       },
@@ -4474,9 +4474,9 @@
       "registry_name": "cooking_stand",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java",
+          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/CookingStandScreen.java",
-          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java"
         ]
       }
     },
@@ -4614,8 +4614,8 @@
       "registry_name": "copper_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/copper_dust.json",
-          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java",
+          "src/main/resources/assets/mddo/models/item/copper_dust.json"
         ]
       },
       "path": "~/Dusts"
@@ -4629,8 +4629,8 @@
       "registry_name": "iron_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/IronDustItem.java",
-          "src/main/resources/assets/mddo/models/item/iron_dust.json"
+          "src/main/resources/assets/mddo/models/item/iron_dust.json",
+          "src/main/java/net/mcreator/mddo/item/IronDustItem.java"
         ]
       },
       "path": "~/Dusts"
@@ -4644,8 +4644,8 @@
       "registry_name": "lapis_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/lapis_dust.json",
-          "src/main/java/net/mcreator/mddo/item/LapisDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/LapisDustItem.java",
+          "src/main/resources/assets/mddo/models/item/lapis_dust.json"
         ]
       },
       "path": "~/Dusts"
@@ -4704,8 +4704,8 @@
       "registry_name": "quartz_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mddo/models/item/quartz_dust.json",
-          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java",
+          "src/main/resources/assets/mddo/models/item/quartz_dust.json"
         ]
       },
       "path": "~/Dusts"
@@ -4987,6 +4987,123 @@
           }
         ]
       }
+    },
+    {
+      "name": "EmeraldD",
+      "type": "recipe",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/emerald_d.json"
+        ]
+      }
+    },
+    {
+      "name": "IronD",
+      "type": "recipe",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/iron_d.json"
+        ]
+      }
+    },
+    {
+      "name": "Coal",
+      "type": "recipe",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/coal.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldD",
+      "type": "recipe",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/gold_d.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondD",
+      "type": "recipe",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/diamond_d.json"
+        ]
+      }
+    },
+    {
+      "name": "Lapis",
+      "type": "recipe",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/lapis.json"
+        ]
+      }
+    },
+    {
+      "name": "Copper",
+      "type": "recipe",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/copper.json"
+        ]
+      }
+    },
+    {
+      "name": "Quartz",
+      "type": "recipe",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/quartz.json"
+        ]
+      }
+    },
+    {
+      "name": "FoodBenchRecipe",
+      "type": "recipe",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_bench_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mddo/recipes/food_bench_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5082,8 +5199,8 @@
       "~CUSTOM:EnderWorkBench",
       "~CUSTOM:WeaponArmorWorkBench",
       "~CUSTOM:MetalWorkingBench",
-      "~CUSTOM:StoneworkingBench",
-      "~CUSTOM:WWWB"
+      "~CUSTOM:WWWB",
+      "~CUSTOM:StoneworkingBench"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:FoodWorkbench"
@@ -5100,7 +5217,7 @@
       "item.mddo.lapis_dust": "Lapis dust",
       "item_group.mddo.epi_craft": "Epi Craft",
       "block.mddo.ender_work_bench": "Ender Work Bench",
-      "block.mddo.food_workbench": "Brick oven",
+      "block.mddo.food_workbench": "Food workbench",
       "block.mddo.tend": "Tend",
       "block.mddo.wwwb": "woodworking workbench",
       "item.mddo.better_spider_spawn_egg": "Better Spider Spawn Egg",
@@ -5110,7 +5227,7 @@
       "entity.mddo.betterzombie": "Betterzombie",
       "item.mddo.diamond_dust": "Diamon dust",
       "entity.mddo.better_spider": "Better Spider",
-      "block.mddo.cooking_stand_work_bench": "Cooking Stand Work Bench",
+      "block.mddo.cooking_stand_work_bench": "Brick oven",
       "block.mddo.stoneworking_bench": "Stoneworking Bench",
       "item.mddo.betterzombie_spawn_egg": "Betterzombie Spawn Egg",
       "item.mddo.emerald_dust": "Emerald dust",
@@ -5181,5 +5298,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.mddo"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202300452316
 }

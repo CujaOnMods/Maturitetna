@@ -294,7 +294,7 @@
         "subtract": false
       }
     ],
-    "name": "Cooking Stand Work Bench",
+    "name": "Brick oven",
     "specialInformation": {
       "fixedValue": []
     },
@@ -317,7 +317,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "DECORATED_POT"
     },
     "tickRate": 20,
     "tickRandomly": false,

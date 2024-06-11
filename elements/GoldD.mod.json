@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:GoldDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:GoldDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.GOLD_INGOT"
     },
-    "name": "tend_recipe",
+    "name": "gold_d",
     "namespace": "mod"
   }
 }

@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:EmeraldDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:EmeraldDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.EMERALD"
     },
-    "name": "tend_recipe",
+    "name": "emerald_d",
     "namespace": "mod"
   }
 }

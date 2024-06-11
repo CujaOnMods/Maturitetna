@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:CopperDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:CopperDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.COPPER_INGOT"
     },
-    "name": "tend_recipe",
+    "name": "copper",
     "namespace": "mod"
   }
 }

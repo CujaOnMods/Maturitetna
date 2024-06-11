@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.BED"
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:DiamondDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:DiamondDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tend"
+      "value": "Items.DIAMOND"
     },
-    "name": "tend_recipe",
+    "name": "diamond_d",
     "namespace": "mod"
   }
 }
