@@ -54,7 +54,7 @@ public class MetalIronBarsProcedure {
 											}
 										}.getAmount(8) == 0) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(Blocks.IRON_BARS);
+												ItemStack _setstack = new ItemStack(Blocks.IRON_BARS).copy();
 												_setstack.setCount(16);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
@@ -108,7 +108,7 @@ public class MetalIronBarsProcedure {
 												}
 											}.getAmount(2) == 0) {
 												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-													ItemStack _setstack = new ItemStack(Blocks.IRON_BARS);
+													ItemStack _setstack = new ItemStack(Blocks.IRON_BARS).copy();
 													_setstack.setCount(16);
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();

@@ -49,14 +49,11 @@ public class MddoModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MddoModItems.BETTER_SKELETON_SPAWN_EGG.get());
 			tabData.accept(MddoModItems.BETTERZOMBIE_SPAWN_EGG.get());
 			tabData.accept(MddoModItems.BETTER_SPIDER_SPAWN_EGG.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MddoModItems.WOODEN_HAMMER.get());
 		}
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"133\" y=\"-275\"><field name=\"trigger\">entity_joins_world</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"entity_is_tagged_in\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"tag\"><block type=\"text\"><field name=\"TEXT\">minecraft:skeletons</field></block></value></block></value><statement name=\"DO0\"><block inline=\"true\" type=\"entity_despawn\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"spawn_entity\"><field name=\"entity\">CUSTOM:BetterSkeleton</field><value name=\"x\"><block type=\"entity_pos_x\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"y\"><block type=\"entity_pos_y\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"z\"><block type=\"entity_pos_z\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value></block></next></block></statement></block></next></block></xml>"

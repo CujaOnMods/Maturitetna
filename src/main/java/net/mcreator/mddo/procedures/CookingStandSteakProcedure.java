@@ -20,7 +20,7 @@ public class CookingStandSteakProcedure {
 				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.COOKED_BEEF);
+				ItemStack _setstack = new ItemStack(Items.COOKED_BEEF).copy();
 				_setstack.setCount((int) (new Object() {
 					public int getAmount(int sltid) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {

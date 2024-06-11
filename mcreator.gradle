@@ -7,6 +7,7 @@ compileJava.dependsOn mcreatorLink
 
 dependencies { implementation files("lib/mcreator_link.jar") }
 
+
 repositories {
   maven {
     name = "Progwml6's maven"

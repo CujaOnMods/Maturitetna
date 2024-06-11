@@ -68,11 +68,6 @@ public class WWBCScreen extends AbstractContainerScreen<WWBCMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

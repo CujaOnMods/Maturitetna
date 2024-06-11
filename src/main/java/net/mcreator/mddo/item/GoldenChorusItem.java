@@ -2,26 +2,17 @@
 package net.mcreator.mddo.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.mddo.procedures.GoldenChorusFruitRightClickProcedure;
-
-import java.util.List;
 
 public class GoldenChorusItem extends Item {
 	public GoldenChorusItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.1f).alwaysEat().build()));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
