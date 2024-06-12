@@ -31,7 +31,7 @@ public class MetalWorkbenchScreen extends AbstractContainerScreen<MetalWorkbench
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/metal_workbench.png");
+	private static final ResourceLocation texture = new ResourceLocation("epicraft:textures/screens/metal_workbench.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

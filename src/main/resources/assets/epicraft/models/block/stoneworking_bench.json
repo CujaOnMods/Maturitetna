@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/stoneworking",
+  "textures": {
+    "all": "epicraft:block/stoneworking",
+    "particle": "epicraft:block/stoneworking",
+    "0": "epicraft:block/stoneworking"
+  },
+  "render_type": "solid"
+}

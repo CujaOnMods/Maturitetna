@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.mddo.world.inventory.MetalWorkbenchMenu;
 import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -115,6 +115,6 @@ public class MetalWorkbenchSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MddoMod.addNetworkMessage(MetalWorkbenchSlotMessage.class, MetalWorkbenchSlotMessage::buffer, MetalWorkbenchSlotMessage::new, MetalWorkbenchSlotMessage::handler);
+		EpicraftMod.addNetworkMessage(MetalWorkbenchSlotMessage.class, MetalWorkbenchSlotMessage::buffer, MetalWorkbenchSlotMessage::new, MetalWorkbenchSlotMessage::handler);
 	}
 }

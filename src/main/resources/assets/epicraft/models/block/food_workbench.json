@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/foodbench",
+  "textures": {
+    "all": "epicraft:block/foodtexture",
+    "particle": "epicraft:block/foodtexture",
+    "0": "epicraft:block/foodtexture"
+  },
+  "render_type": "solid"
+}

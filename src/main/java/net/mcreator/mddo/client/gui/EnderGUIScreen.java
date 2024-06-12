@@ -31,7 +31,7 @@ public class EnderGUIScreen extends AbstractContainerScreen<EnderGUIMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/ender_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("epicraft:textures/screens/ender_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

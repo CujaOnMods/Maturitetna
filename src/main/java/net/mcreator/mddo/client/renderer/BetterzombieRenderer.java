@@ -18,6 +18,6 @@ public class BetterzombieRenderer extends HumanoidMobRenderer<BetterzombieEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(BetterzombieEntity entity) {
-		return new ResourceLocation("mddo:textures/entities/zombie.png");
+		return new ResourceLocation("epicraft:textures/entities/zombie.png");
 	}
 }

@@ -24,8 +24,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.StoneGuiOpenProcedure;
 import net.mcreator.mddo.network.StoneworkingGuiSlotMessage;
-import net.mcreator.mddo.init.MddoModMenus;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.init.EpicraftModMenus;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class StoneworkingGuiMenu extends AbstractContainerMenu implements Suppli
 	private BlockEntity boundBlockEntity = null;
 
 	public StoneworkingGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MddoModMenus.STONEWORKING_GUI.get(), id);
+		super(EpicraftModMenus.STONEWORKING_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(11);
@@ -331,7 +331,7 @@ public class StoneworkingGuiMenu extends AbstractContainerMenu implements Suppli
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			MddoMod.PACKET_HANDLER.sendToServer(new StoneworkingGuiSlotMessage(slotid, x, y, z, ctype, meta));
+			EpicraftMod.PACKET_HANDLER.sendToServer(new StoneworkingGuiSlotMessage(slotid, x, y, z, ctype, meta));
 			StoneworkingGuiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}

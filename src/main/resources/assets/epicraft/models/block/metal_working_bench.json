@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/oreworking",
+  "textures": {
+    "all": "epicraft:block/oretabletexture",
+    "particle": "epicraft:block/oretabletexture",
+    "0": "epicraft:block/oretabletexture"
+  },
+  "render_type": "solid"
+}

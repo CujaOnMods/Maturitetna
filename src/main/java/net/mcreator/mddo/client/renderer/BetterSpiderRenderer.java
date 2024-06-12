@@ -16,6 +16,6 @@ public class BetterSpiderRenderer extends MobRenderer<BetterSpiderEntity, Spider
 
 	@Override
 	public ResourceLocation getTextureLocation(BetterSpiderEntity entity) {
-		return new ResourceLocation("mddo:textures/entities/spajda.png");
+		return new ResourceLocation("epicraft:textures/entities/spajda.png");
 	}
 }

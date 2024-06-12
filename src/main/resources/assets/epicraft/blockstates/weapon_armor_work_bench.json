@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "epicraft:block/weapon_armor_work_bench"
+    },
+    "facing=east": {
+      "model": "epicraft:block/weapon_armor_work_bench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "epicraft:block/weapon_armor_work_bench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "epicraft:block/weapon_armor_work_bench",
+      "y": 270
+    }
+  }
+}

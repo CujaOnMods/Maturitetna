@@ -18,6 +18,6 @@ public class BetterSkeletonRenderer extends HumanoidMobRenderer<BetterSkeletonEn
 
 	@Override
 	public ResourceLocation getTextureLocation(BetterSkeletonEntity entity) {
-		return new ResourceLocation("mddo:textures/entities/skeleton.png");
+		return new ResourceLocation("epicraft:textures/entities/skeleton.png");
 	}
 }

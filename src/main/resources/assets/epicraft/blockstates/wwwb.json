@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "epicraft:block/wwwb"
+    },
+    "facing=east": {
+      "model": "epicraft:block/wwwb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "epicraft:block/wwwb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "epicraft:block/wwwb",
+      "y": 270
+    }
+  }
+}

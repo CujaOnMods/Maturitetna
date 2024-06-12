@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/tent1",
+  "textures": {
+    "all": "epicraft:block/tent1",
+    "particle": "epicraft:block/tent1",
+    "0": "epicraft:block/tent1"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "epicraft:block/metal_working_bench"
+    },
+    "facing=east": {
+      "model": "epicraft:block/metal_working_bench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "epicraft:block/metal_working_bench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "epicraft:block/metal_working_bench",
+      "y": 270
+    }
+  }
+}

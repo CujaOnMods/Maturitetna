@@ -31,7 +31,7 @@ public class StoneworkingGuiScreen extends AbstractContainerScreen<StoneworkingG
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/stoneworking_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("epicraft:textures/screens/stoneworking_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

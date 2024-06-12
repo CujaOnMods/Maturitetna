@@ -1,9 +1,0 @@
-{
-  "parent": "mddo:custom/tent1",
-  "textures": {
-    "all": "mddo:block/tent1",
-    "particle": "mddo:block/tent1",
-    "0": "mddo:block/tent1"
-  },
-  "render_type": "solid"
-}

@@ -31,7 +31,7 @@ public class WWBCScreen extends AbstractContainerScreen<WWBCMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/wwbc.png");
+	private static final ResourceLocation texture = new ResourceLocation("epicraft:textures/screens/wwbc.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

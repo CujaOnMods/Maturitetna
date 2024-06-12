@@ -24,8 +24,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.CookingstandOpenProcedure;
 import net.mcreator.mddo.network.CookingStandSlotMessage;
-import net.mcreator.mddo.init.MddoModMenus;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.init.EpicraftModMenus;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 	private BlockEntity boundBlockEntity = null;
 
 	public CookingStandMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MddoModMenus.COOKING_STAND.get(), id);
+		super(EpicraftModMenus.COOKING_STAND.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(9);
@@ -283,7 +283,7 @@ public class CookingStandMenu extends AbstractContainerMenu implements Supplier<
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			MddoMod.PACKET_HANDLER.sendToServer(new CookingStandSlotMessage(slotid, x, y, z, ctype, meta));
+			EpicraftMod.PACKET_HANDLER.sendToServer(new CookingStandSlotMessage(slotid, x, y, z, ctype, meta));
 			CookingStandSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}

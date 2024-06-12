@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "epicraft:block/stoneworking_bench"
+    },
+    "facing=east": {
+      "model": "epicraft:block/stoneworking_bench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "epicraft:block/stoneworking_bench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "epicraft:block/stoneworking_bench",
+      "y": 270
+    }
+  }
+}

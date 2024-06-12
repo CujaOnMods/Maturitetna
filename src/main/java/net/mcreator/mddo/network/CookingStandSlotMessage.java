@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.CookingStandMenu;
 import net.mcreator.mddo.procedures.CookingStandFuelProcedure;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -78,6 +78,6 @@ public class CookingStandSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MddoMod.addNetworkMessage(CookingStandSlotMessage.class, CookingStandSlotMessage::buffer, CookingStandSlotMessage::new, CookingStandSlotMessage::handler);
+		EpicraftMod.addNetworkMessage(CookingStandSlotMessage.class, CookingStandSlotMessage::buffer, CookingStandSlotMessage::new, CookingStandSlotMessage::handler);
 	}
 }

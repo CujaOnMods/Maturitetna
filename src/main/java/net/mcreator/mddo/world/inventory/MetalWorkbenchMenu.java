@@ -24,8 +24,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.MetalGUIOpenProcedure;
 import net.mcreator.mddo.network.MetalWorkbenchSlotMessage;
-import net.mcreator.mddo.init.MddoModMenus;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.init.EpicraftModMenus;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class MetalWorkbenchMenu extends AbstractContainerMenu implements Supplie
 	private BlockEntity boundBlockEntity = null;
 
 	public MetalWorkbenchMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MddoModMenus.METAL_WORKBENCH.get(), id);
+		super(EpicraftModMenus.METAL_WORKBENCH.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(11);
@@ -325,7 +325,7 @@ public class MetalWorkbenchMenu extends AbstractContainerMenu implements Supplie
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			MddoMod.PACKET_HANDLER.sendToServer(new MetalWorkbenchSlotMessage(slotid, x, y, z, ctype, meta));
+			EpicraftMod.PACKET_HANDLER.sendToServer(new MetalWorkbenchSlotMessage(slotid, x, y, z, ctype, meta));
 			MetalWorkbenchSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}

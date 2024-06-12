@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/stone_oven",
+  "textures": {
+    "all": "epicraft:block/oventexture",
+    "particle": "epicraft:block/oventexture",
+    "0": "epicraft:block/oventexture"
+  },
+  "render_type": "solid"
+}

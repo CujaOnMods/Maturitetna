@@ -34,11 +34,11 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.init.MddoModEntities;
+import net.mcreator.mddo.init.EpicraftModEntities;
 
 public class BetterzombieEntity extends Zombie {
 	public BetterzombieEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MddoModEntities.BETTERZOMBIE.get(), world);
+		this(EpicraftModEntities.BETTERZOMBIE.get(), world);
 	}
 
 	public BetterzombieEntity(EntityType<BetterzombieEntity> type, Level world) {
@@ -101,9 +101,9 @@ public class BetterzombieEntity extends Zombie {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MddoModEntities.BETTERZOMBIE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(EpicraftModEntities.BETTERZOMBIE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-		DungeonHooks.addDungeonMob(MddoModEntities.BETTERZOMBIE.get(), 180);
+		DungeonHooks.addDungeonMob(EpicraftModEntities.BETTERZOMBIE.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

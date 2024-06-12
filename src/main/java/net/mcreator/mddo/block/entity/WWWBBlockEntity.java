@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.WWBCMenu;
-import net.mcreator.mddo.init.MddoModBlockEntities;
+import net.mcreator.mddo.init.EpicraftModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class WWWBBlockEntity extends RandomizableContainerBlockEntity implements
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public WWWBBlockEntity(BlockPos position, BlockState state) {
-		super(MddoModBlockEntities.WWWB.get(), position, state);
+		super(EpicraftModBlockEntities.WWWB.get(), position, state);
 	}
 
 	@Override

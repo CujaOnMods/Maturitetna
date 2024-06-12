@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/redstoneworking",
+  "textures": {
+    "all": "epicraft:block/redstonetexture",
+    "particle": "epicraft:block/redstonetexture",
+    "0": "epicraft:block/redstonetexture"
+  },
+  "render_type": "solid"
+}

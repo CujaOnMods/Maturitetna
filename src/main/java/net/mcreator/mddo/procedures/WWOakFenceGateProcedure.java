@@ -8,7 +8,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mddo.network.MddoModVariables;
+import net.mcreator.mddo.network.EpicraftModVariables;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -61,9 +61,9 @@ public class WWOakFenceGateProcedure {
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
 											}
-											MddoModVariables.MapVariables.get(world).nadaljuj = false;
-											MddoModVariables.MapVariables.get(world).syncData(world);
-											return MddoModVariables.MapVariables.get(world).nadaljuj;
+											EpicraftModVariables.MapVariables.get(world).nadaljuj = false;
+											EpicraftModVariables.MapVariables.get(world).syncData(world);
+											return EpicraftModVariables.MapVariables.get(world).nadaljuj;
 										}
 									}
 								}
@@ -117,9 +117,9 @@ public class WWOakFenceGateProcedure {
 													((Slot) _slots.get(10)).set(_setstack);
 													_player.containerMenu.broadcastChanges();
 												}
-												MddoModVariables.MapVariables.get(world).nadaljuj = false;
-												MddoModVariables.MapVariables.get(world).syncData(world);
-												return MddoModVariables.MapVariables.get(world).nadaljuj;
+												EpicraftModVariables.MapVariables.get(world).nadaljuj = false;
+												EpicraftModVariables.MapVariables.get(world).syncData(world);
+												return EpicraftModVariables.MapVariables.get(world).nadaljuj;
 											}
 										}
 									}
@@ -130,8 +130,8 @@ public class WWOakFenceGateProcedure {
 				}
 			}
 		}
-		MddoModVariables.MapVariables.get(world).nadaljuj = true;
-		MddoModVariables.MapVariables.get(world).syncData(world);
-		return MddoModVariables.MapVariables.get(world).nadaljuj;
+		EpicraftModVariables.MapVariables.get(world).nadaljuj = true;
+		EpicraftModVariables.MapVariables.get(world).syncData(world);
+		return EpicraftModVariables.MapVariables.get(world).nadaljuj;
 	}
 }

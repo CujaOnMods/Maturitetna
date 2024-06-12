@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.EnderGUIMenu;
-import net.mcreator.mddo.init.MddoModBlockEntities;
+import net.mcreator.mddo.init.EpicraftModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class EnderWorkBenchBlockEntity extends RandomizableContainerBlockEntity 
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public EnderWorkBenchBlockEntity(BlockPos position, BlockState state) {
-		super(MddoModBlockEntities.ENDER_WORK_BENCH.get(), position, state);
+		super(EpicraftModBlockEntities.ENDER_WORK_BENCH.get(), position, state);
 	}
 
 	@Override

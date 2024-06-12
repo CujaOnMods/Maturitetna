@@ -13,8 +13,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.mddo.network.MddoModVariables;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.network.EpicraftModVariables;
+import net.mcreator.mddo.EpicraftMod;
 
 public class SleepProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -27,26 +27,26 @@ public class SleepProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100, 100));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 1));
-			MddoMod.queueServerWork(20, () -> {
-				MddoModVariables.MapVariables.get(world).days = world.dayTime();
-				MddoModVariables.MapVariables.get(world).syncData(world);
-				while (MddoModVariables.MapVariables.get(world).days > 24000) {
-					MddoModVariables.MapVariables.get(world).days = MddoModVariables.MapVariables.get(world).days - 24000;
-					MddoModVariables.MapVariables.get(world).syncData(world);
-					if (MddoModVariables.MapVariables.get(world).days < 0) {
-						MddoModVariables.MapVariables.get(world).days = 0;
-						MddoModVariables.MapVariables.get(world).syncData(world);
+			EpicraftMod.queueServerWork(20, () -> {
+				EpicraftModVariables.MapVariables.get(world).days = world.dayTime();
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+				while (EpicraftModVariables.MapVariables.get(world).days > 24000) {
+					EpicraftModVariables.MapVariables.get(world).days = EpicraftModVariables.MapVariables.get(world).days - 24000;
+					EpicraftModVariables.MapVariables.get(world).syncData(world);
+					if (EpicraftModVariables.MapVariables.get(world).days < 0) {
+						EpicraftModVariables.MapVariables.get(world).days = 0;
+						EpicraftModVariables.MapVariables.get(world).syncData(world);
 					}
 				}
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((MddoModVariables.MapVariables.get(world).days + "")), false);
-				MddoModVariables.MapVariables.get(world).days = 24000 - MddoModVariables.MapVariables.get(world).days;
-				MddoModVariables.MapVariables.get(world).syncData(world);
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((EpicraftModVariables.MapVariables.get(world).days + "")), false);
+				EpicraftModVariables.MapVariables.get(world).days = 24000 - EpicraftModVariables.MapVariables.get(world).days;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							(("time add " + MddoModVariables.MapVariables.get(world).days) + "t"));
+							(("time add " + EpicraftModVariables.MapVariables.get(world).days) + "t"));
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((("time add " + MddoModVariables.MapVariables.get(world).days) + "t")), false);
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((("time add " + EpicraftModVariables.MapVariables.get(world).days) + "t")), false);
 				entity.setInvisible(false);
 			});
 		}

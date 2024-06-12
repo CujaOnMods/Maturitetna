@@ -5,7 +5,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mddo.network.MddoModVariables;
+import net.mcreator.mddo.network.EpicraftModVariables;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -19,16 +19,16 @@ public class StoneGuiOpenProcedure {
 			_player.containerMenu.broadcastChanges();
 		}
 		StoneFurnacE1Procedure.execute(world, entity);
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			StoneSmokerProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			StoneBlastFurnaceProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			StoneBrewingStandProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			StoneStoneCuterProcedure.execute(world, entity);
 		}
 	}

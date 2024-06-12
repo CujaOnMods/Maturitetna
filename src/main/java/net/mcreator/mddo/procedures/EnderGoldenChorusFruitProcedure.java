@@ -7,8 +7,8 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mddo.network.MddoModVariables;
-import net.mcreator.mddo.init.MddoModItems;
+import net.mcreator.mddo.network.EpicraftModVariables;
+import net.mcreator.mddo.init.EpicraftModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -30,15 +30,15 @@ public class EnderGoldenChorusFruitProcedure {
 										if (Items.GOLD_NUGGET == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY)
 												.getItem()) {
 											if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-												ItemStack _setstack = new ItemStack(MddoModItems.GOLDEN_CHORUS.get()).copy();
+												ItemStack _setstack = new ItemStack(EpicraftModItems.GOLDEN_CHORUS.get()).copy();
 												_setstack.setCount(1);
 												((Slot) _slots.get(10)).set(_setstack);
 												_player.containerMenu.broadcastChanges();
 											}
 										}
-										MddoModVariables.MapVariables.get(world).nadaljuj = false;
-										MddoModVariables.MapVariables.get(world).syncData(world);
-										return MddoModVariables.MapVariables.get(world).nadaljuj;
+										EpicraftModVariables.MapVariables.get(world).nadaljuj = false;
+										EpicraftModVariables.MapVariables.get(world).syncData(world);
+										return EpicraftModVariables.MapVariables.get(world).nadaljuj;
 									}
 								}
 							}
@@ -47,8 +47,8 @@ public class EnderGoldenChorusFruitProcedure {
 				}
 			}
 		}
-		MddoModVariables.MapVariables.get(world).nadaljuj = true;
-		MddoModVariables.MapVariables.get(world).syncData(world);
-		return MddoModVariables.MapVariables.get(world).nadaljuj;
+		EpicraftModVariables.MapVariables.get(world).nadaljuj = true;
+		EpicraftModVariables.MapVariables.get(world).syncData(world);
+		return EpicraftModVariables.MapVariables.get(world).nadaljuj;
 	}
 }

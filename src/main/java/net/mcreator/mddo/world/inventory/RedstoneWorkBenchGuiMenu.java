@@ -24,8 +24,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.procedures.RedstoneWorkBenchGuiWhileThisGUIIsOpenTickProcedure;
 import net.mcreator.mddo.network.RedstoneWorkBenchGuiSlotMessage;
-import net.mcreator.mddo.init.MddoModMenus;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.init.EpicraftModMenus;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class RedstoneWorkBenchGuiMenu extends AbstractContainerMenu implements S
 	private BlockEntity boundBlockEntity = null;
 
 	public RedstoneWorkBenchGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MddoModMenus.REDSTONE_WORK_BENCH_GUI.get(), id);
+		super(EpicraftModMenus.REDSTONE_WORK_BENCH_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(11);
@@ -325,7 +325,7 @@ public class RedstoneWorkBenchGuiMenu extends AbstractContainerMenu implements S
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			MddoMod.PACKET_HANDLER.sendToServer(new RedstoneWorkBenchGuiSlotMessage(slotid, x, y, z, ctype, meta));
+			EpicraftMod.PACKET_HANDLER.sendToServer(new RedstoneWorkBenchGuiSlotMessage(slotid, x, y, z, ctype, meta));
 			RedstoneWorkBenchGuiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}

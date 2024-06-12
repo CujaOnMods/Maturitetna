@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.mddo.world.inventory.StoneworkingGuiMenu;
 import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -120,6 +120,6 @@ public class StoneworkingGuiSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MddoMod.addNetworkMessage(StoneworkingGuiSlotMessage.class, StoneworkingGuiSlotMessage::buffer, StoneworkingGuiSlotMessage::new, StoneworkingGuiSlotMessage::handler);
+		EpicraftMod.addNetworkMessage(StoneworkingGuiSlotMessage.class, StoneworkingGuiSlotMessage::buffer, StoneworkingGuiSlotMessage::new, StoneworkingGuiSlotMessage::handler);
 	}
 }

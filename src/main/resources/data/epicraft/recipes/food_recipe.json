@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "cac"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bricks"
+    },
+    "b": {
+      "item": "minecraft:campfire"
+    },
+    "c": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "item": "epicraft:cooking_stand_work_bench",
+    "count": 1
+  }
+}

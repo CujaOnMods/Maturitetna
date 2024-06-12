@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/endblock",
+  "textures": {
+    "all": "epicraft:block/endtexture",
+    "particle": "epicraft:block/endtexture",
+    "0": "epicraft:block/endtexture"
+  },
+  "render_type": "solid"
+}

@@ -3,9 +3,9 @@ loaderVersion="[47,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="mddo"
+modId="epicraft"
 version="1.0.0"
-displayName="mddo"
+displayName="EpiCraft"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Uporabnik, MCreator"
@@ -13,24 +13,12 @@ authors="Uporabnik, MCreator"
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.mddo]]
+[[dependencies.epicraft]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.mddo]]
-    modId="mcreator_link"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
-[[dependencies.mddo]]
-    modId="jei"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

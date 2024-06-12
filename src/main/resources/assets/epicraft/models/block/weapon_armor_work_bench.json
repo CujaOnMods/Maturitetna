@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/weaponbench",
+  "textures": {
+    "all": "epicraft:block/weapontabletexture",
+    "particle": "epicraft:block/weapontabletexture",
+    "0": "epicraft:block/weapontabletexture"
+  },
+  "render_type": "solid"
+}

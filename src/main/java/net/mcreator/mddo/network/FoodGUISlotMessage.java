@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.mddo.world.inventory.FoodGUIMenu;
 import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -115,6 +115,6 @@ public class FoodGUISlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MddoMod.addNetworkMessage(FoodGUISlotMessage.class, FoodGUISlotMessage::buffer, FoodGUISlotMessage::new, FoodGUISlotMessage::handler);
+		EpicraftMod.addNetworkMessage(FoodGUISlotMessage.class, FoodGUISlotMessage::buffer, FoodGUISlotMessage::new, FoodGUISlotMessage::handler);
 	}
 }

@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.MetalWorkbenchMenu;
-import net.mcreator.mddo.init.MddoModBlockEntities;
+import net.mcreator.mddo.init.EpicraftModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class MetalWorkingBenchBlockEntity extends RandomizableContainerBlockEnti
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public MetalWorkingBenchBlockEntity(BlockPos position, BlockState state) {
-		super(MddoModBlockEntities.METAL_WORKING_BENCH.get(), position, state);
+		super(EpicraftModBlockEntities.METAL_WORKING_BENCH.get(), position, state);
 	}
 
 	@Override

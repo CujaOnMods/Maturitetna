@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.FoodGUIMenu;
-import net.mcreator.mddo.init.MddoModBlockEntities;
+import net.mcreator.mddo.init.EpicraftModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class FoodWorkbenchBlockEntity extends RandomizableContainerBlockEntity i
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public FoodWorkbenchBlockEntity(BlockPos position, BlockState state) {
-		super(MddoModBlockEntities.FOOD_WORKBENCH.get(), position, state);
+		super(EpicraftModBlockEntities.FOOD_WORKBENCH.get(), position, state);
 	}
 
 	@Override

@@ -6,7 +6,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mddo.network.MddoModVariables;
+import net.mcreator.mddo.network.EpicraftModVariables;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -35,24 +35,24 @@ public class CookingstandOpenProcedure {
 					return 0;
 				}
 			}.getAmount(2) < 64) {
-				if (MddoModVariables.MapVariables.get(world).Fuel >= 0.01) {
-					if (MddoModVariables.MapVariables.get(world).CookingTimer1 > 1) {
-						MddoModVariables.MapVariables.get(world).CookingTimer1 = MddoModVariables.MapVariables.get(world).CookingTimer1 - 1;
-						MddoModVariables.MapVariables.get(world).syncData(world);
-						MddoModVariables.MapVariables.get(world).Fuel = MddoModVariables.MapVariables.get(world).Fuel - 0.01;
-						MddoModVariables.MapVariables.get(world).syncData(world);
+				if (EpicraftModVariables.MapVariables.get(world).Fuel >= 0.01) {
+					if (EpicraftModVariables.MapVariables.get(world).CookingTimer1 > 1) {
+						EpicraftModVariables.MapVariables.get(world).CookingTimer1 = EpicraftModVariables.MapVariables.get(world).CookingTimer1 - 1;
+						EpicraftModVariables.MapVariables.get(world).syncData(world);
+						EpicraftModVariables.MapVariables.get(world).Fuel = EpicraftModVariables.MapVariables.get(world).Fuel - 0.01;
+						EpicraftModVariables.MapVariables.get(world).syncData(world);
 					} else {
-						if (MddoModVariables.MapVariables.get(world).CookingTimer1 == 1) {
-							MddoModVariables.MapVariables.get(world).CookingTimer1 = MddoModVariables.MapVariables.get(world).CookingTimer1 - 1;
-							MddoModVariables.MapVariables.get(world).syncData(world);
-							MddoModVariables.MapVariables.get(world).Fuel = MddoModVariables.MapVariables.get(world).Fuel - 0.01;
-							MddoModVariables.MapVariables.get(world).syncData(world);
-							MddoModVariables.MapVariables.get(world).whichSlot = 1;
-							MddoModVariables.MapVariables.get(world).syncData(world);
+						if (EpicraftModVariables.MapVariables.get(world).CookingTimer1 == 1) {
+							EpicraftModVariables.MapVariables.get(world).CookingTimer1 = EpicraftModVariables.MapVariables.get(world).CookingTimer1 - 1;
+							EpicraftModVariables.MapVariables.get(world).syncData(world);
+							EpicraftModVariables.MapVariables.get(world).Fuel = EpicraftModVariables.MapVariables.get(world).Fuel - 0.01;
+							EpicraftModVariables.MapVariables.get(world).syncData(world);
+							EpicraftModVariables.MapVariables.get(world).whichSlot = 1;
+							EpicraftModVariables.MapVariables.get(world).syncData(world);
 							CookingStandSteakProcedure.execute(world, entity);
 						} else {
-							MddoModVariables.MapVariables.get(world).whichSlot = 1;
-							MddoModVariables.MapVariables.get(world).syncData(world);
+							EpicraftModVariables.MapVariables.get(world).whichSlot = 1;
+							EpicraftModVariables.MapVariables.get(world).syncData(world);
 							SetCookingTimerProcedure.execute(world, entity);
 						}
 					}

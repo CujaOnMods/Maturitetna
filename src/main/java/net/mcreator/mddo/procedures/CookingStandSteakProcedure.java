@@ -7,7 +7,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mddo.network.MddoModVariables;
+import net.mcreator.mddo.network.EpicraftModVariables;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class CookingStandSteakProcedure {
 		if (entity == null)
 			return;
 		if (Items.BEEF == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_BEEF).copy();
@@ -30,17 +30,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.PORKCHOP == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_PORKCHOP).copy();
@@ -53,17 +53,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.CHICKEN == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_CHICKEN).copy();
@@ -76,17 +76,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.RABBIT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_RABBIT).copy();
@@ -99,17 +99,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.MUTTON == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_MUTTON).copy();
@@ -122,17 +122,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.POTATO == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.BAKED_POTATO).copy();
@@ -145,17 +145,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.COD == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_COD).copy();
@@ -168,17 +168,17 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}
 		if (Items.SALMON == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).getItem()
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
 				: ItemStack.EMPTY).getItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.COOKED_SALMON).copy();
@@ -191,12 +191,12 @@ public class CookingStandSteakProcedure {
 						}
 						return 0;
 					}
-				}.getAmount((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
-				((Slot) _slots.get((int) (MddoModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
+				}.getAmount((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1)) + 1));
+				((Slot) _slots.get((int) (EpicraftModVariables.MapVariables.get(world).whichSlot + 1))).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get((int) MddoModVariables.MapVariables.get(world).whichSlot)).remove(1);
+				((Slot) _slots.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).remove(1);
 				_player.containerMenu.broadcastChanges();
 			}
 		}

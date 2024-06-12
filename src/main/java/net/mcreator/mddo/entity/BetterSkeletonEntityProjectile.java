@@ -16,12 +16,12 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.mddo.init.MddoModEntities;
+import net.mcreator.mddo.init.EpicraftModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class BetterSkeletonEntityProjectile extends AbstractArrow implements ItemSupplier {
 	public BetterSkeletonEntityProjectile(PlayMessages.SpawnEntity packet, Level world) {
-		super(MddoModEntities.BETTER_SKELETON_PROJECTILE.get(), world);
+		super(EpicraftModEntities.BETTER_SKELETON_PROJECTILE.get(), world);
 	}
 
 	public BetterSkeletonEntityProjectile(EntityType<? extends BetterSkeletonEntityProjectile> type, Level world) {

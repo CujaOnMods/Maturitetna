@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.mddo.world.inventory.WWBCMenu;
 import net.mcreator.mddo.procedures.WWBCtakeoutProcedure;
 import net.mcreator.mddo.procedures.RemoveOutputProcedure;
-import net.mcreator.mddo.MddoMod;
+import net.mcreator.mddo.EpicraftMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -120,6 +120,6 @@ public class WWBCSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MddoMod.addNetworkMessage(WWBCSlotMessage.class, WWBCSlotMessage::buffer, WWBCSlotMessage::new, WWBCSlotMessage::handler);
+		EpicraftMod.addNetworkMessage(WWBCSlotMessage.class, WWBCSlotMessage::buffer, WWBCSlotMessage::new, WWBCSlotMessage::handler);
 	}
 }

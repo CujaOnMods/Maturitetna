@@ -36,11 +36,11 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.init.MddoModEntities;
+import net.mcreator.mddo.init.EpicraftModEntities;
 
 public class BetterSkeletonEntity extends Skeleton implements RangedAttackMob {
 	public BetterSkeletonEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MddoModEntities.BETTER_SKELETON.get(), world);
+		this(EpicraftModEntities.BETTER_SKELETON.get(), world);
 	}
 
 	public BetterSkeletonEntity(EntityType<BetterSkeletonEntity> type, Level world) {
@@ -109,7 +109,7 @@ public class BetterSkeletonEntity extends Skeleton implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		BetterSkeletonEntityProjectile entityarrow = new BetterSkeletonEntityProjectile(MddoModEntities.BETTER_SKELETON_PROJECTILE.get(), this, this.level());
+		BetterSkeletonEntityProjectile entityarrow = new BetterSkeletonEntityProjectile(EpicraftModEntities.BETTER_SKELETON_PROJECTILE.get(), this, this.level());
 		double d0 = target.getY() + target.getEyeHeight() - 1.1;
 		double d1 = target.getX() - this.getX();
 		double d3 = target.getZ() - this.getZ();
@@ -118,7 +118,7 @@ public class BetterSkeletonEntity extends Skeleton implements RangedAttackMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MddoModEntities.BETTER_SKELETON.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(EpicraftModEntities.BETTER_SKELETON.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 

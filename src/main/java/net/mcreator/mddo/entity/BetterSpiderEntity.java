@@ -35,11 +35,11 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.init.MddoModEntities;
+import net.mcreator.mddo.init.EpicraftModEntities;
 
 public class BetterSpiderEntity extends Spider {
 	public BetterSpiderEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MddoModEntities.BETTER_SPIDER.get(), world);
+		this(EpicraftModEntities.BETTER_SPIDER.get(), world);
 	}
 
 	public BetterSpiderEntity(EntityType<BetterSpiderEntity> type, Level world) {
@@ -105,9 +105,9 @@ public class BetterSpiderEntity extends Spider {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MddoModEntities.BETTER_SPIDER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(EpicraftModEntities.BETTER_SPIDER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-		DungeonHooks.addDungeonMob(MddoModEntities.BETTER_SPIDER.get(), 180);
+		DungeonHooks.addDungeonMob(EpicraftModEntities.BETTER_SPIDER.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

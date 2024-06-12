@@ -1,9 +1,0 @@
-{
-  "parent": "mddo:custom/redstoneworking",
-  "textures": {
-    "all": "mddo:block/redstonetexture",
-    "particle": "mddo:block/redstonetexture",
-    "0": "mddo:block/redstonetexture"
-  },
-  "render_type": "solid"
-}

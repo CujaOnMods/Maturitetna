@@ -1,0 +1,9 @@
+{
+  "parent": "epicraft:custom/woodworkingtable",
+  "textures": {
+    "all": "epicraft:block/woodworking2",
+    "particle": "epicraft:block/woodworking2",
+    "0": "epicraft:block/woodworking2"
+  },
+  "render_type": "solid"
+}

@@ -14,7 +14,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.init.MddoModEntities;
+import net.mcreator.mddo.init.EpicraftModEntities;
 
 import javax.annotation.Nullable;
 
@@ -36,7 +36,7 @@ public class DespawnzombieProcedure {
 			if (!entity.level().isClientSide())
 				entity.discard();
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = MddoModEntities.BETTERZOMBIE.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EpicraftModEntities.BETTERZOMBIE.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}

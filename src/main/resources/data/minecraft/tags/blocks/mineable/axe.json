@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "mddo:cooking_stand_work_bench",
-    "mddo:ender_work_bench",
-    "mddo:weapon_armor_work_bench",
-    "mddo:metal_working_bench",
-    "mddo:stoneworking_bench",
-    "mddo:wwwb"
+    "epicraft:cooking_stand_work_bench",
+    "epicraft:ender_work_bench",
+    "epicraft:weapon_armor_work_bench",
+    "epicraft:metal_working_bench",
+    "epicraft:stoneworking_bench",
+    "epicraft:wwwb"
   ]
 }

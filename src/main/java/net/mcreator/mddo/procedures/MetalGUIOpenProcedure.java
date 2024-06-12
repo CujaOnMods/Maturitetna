@@ -5,7 +5,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.mddo.network.MddoModVariables;
+import net.mcreator.mddo.network.EpicraftModVariables;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -19,19 +19,19 @@ public class MetalGUIOpenProcedure {
 			_player.containerMenu.broadcastChanges();
 		}
 		M3talAnvilProcedure.execute(world, entity);
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			MetalIronBarsProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			MetalLanternProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			MetalbucketProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			MetalCauldronProcedure.execute(world, entity);
 		}
-		if (MddoModVariables.MapVariables.get(world).nadaljuj) {
+		if (EpicraftModVariables.MapVariables.get(world).nadaljuj) {
 			MetalMinecartProcedure.execute(world, entity);
 		}
 	}

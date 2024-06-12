@@ -31,7 +31,7 @@ public class WeaponArmorGUIScreen extends AbstractContainerScreen<WeaponArmorGUI
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mddo:textures/screens/weapon_armor_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("epicraft:textures/screens/weapon_armor_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

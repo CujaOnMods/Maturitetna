@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "epicraft:blocks/weapon_armor_work_bench",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "epicraft:weapon_armor_work_bench"
+        }
+      ]
+    }
+  ]
+}

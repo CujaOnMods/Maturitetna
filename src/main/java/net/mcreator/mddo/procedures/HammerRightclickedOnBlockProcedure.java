@@ -9,7 +9,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mddo.init.MddoModItems;
+import net.mcreator.mddo.init.EpicraftModItems;
 
 public class HammerRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
@@ -23,7 +23,7 @@ public class HammerRightclickedOnBlockProcedure {
 				KateriItem = Math.random();
 				if (KateriItem >= 0 && KateriItem < 0.125) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.COAL_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.COAL_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -37,7 +37,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.125 && KateriItem < 0.25) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.COPPER_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.COPPER_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -51,7 +51,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.25 && KateriItem < 0.375) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.IRON_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.IRON_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -65,7 +65,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.375 && KateriItem < 0.5) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.LAPIS_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.LAPIS_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -79,7 +79,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.5 && KateriItem < 0.625) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.EMERALD_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.EMERALD_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -93,7 +93,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.625 && KateriItem < 0.75) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.GOLD_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.GOLD_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -107,7 +107,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.75 && KateriItem < 0.875) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.DIAMOND_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.DIAMOND_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -121,7 +121,7 @@ public class HammerRightclickedOnBlockProcedure {
 				}
 				if (KateriItem >= 0.875 && KateriItem <= 1) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(MddoModItems.QUARTZ_DUST.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModItems.QUARTZ_DUST.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
