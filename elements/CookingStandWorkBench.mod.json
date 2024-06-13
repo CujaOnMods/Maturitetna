@@ -391,9 +391,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "CookingStandWorkBenchBlockDestroyedByPlayer"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

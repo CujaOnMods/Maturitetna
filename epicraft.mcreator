@@ -5104,37 +5104,6 @@
           "src/main/resources/data/epicraft/recipes/food_bench_recipe.json"
         ]
       }
-    },
-    {
-      "name": "CookingStandWorkBenchBlockDestroyedByPlayer",
-      "type": "procedure",
-      "sortid": 248,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cooking_stand_work_bench_block_destroyed_by_player",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mddo/procedures/CookingStandWorkBenchBlockDestroyedByPlayerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [
