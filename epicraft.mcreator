@@ -9,9 +9,9 @@
       "registry_name": "betterzombie",
       "metadata": {
         "files": [
+          "src/main/resources/assets/epicraft/models/item/betterzombie_spawn_egg.json",
           "src/main/java/net/mcreator/mddo/entity/BetterzombieEntity.java",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterzombieRenderer.java",
-          "src/main/resources/assets/epicraft/models/item/betterzombie_spawn_egg.json",
           "src/main/resources/data/epicraft/forge/biome_modifier/betterzombie_biome_modifier.json"
         ]
       },
@@ -26,10 +26,10 @@
       "registry_name": "better_skeleton",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
           "src/main/resources/assets/epicraft/models/item/better_skeleton_spawn_egg.json",
           "src/main/resources/data/epicraft/forge/biome_modifier/better_skeleton_biome_modifier.json",
-          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntity.java",
+          "src/main/java/net/mcreator/mddo/entity/BetterSkeletonEntityProjectile.java",
           "src/main/java/net/mcreator/mddo/client/renderer/BetterSkeletonRenderer.java"
         ]
       },
@@ -45,8 +45,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/entity/BetterSpiderEntity.java",
-          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
           "src/main/resources/assets/epicraft/models/item/better_spider_spawn_egg.json",
+          "src/main/java/net/mcreator/mddo/client/renderer/BetterSpiderRenderer.java",
           "src/main/resources/data/epicraft/forge/biome_modifier/better_spider_biome_modifier.json"
         ]
       },
@@ -180,9 +180,9 @@
       "registry_name": "wwbc",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/WWBCScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java",
-          "src/main/java/net/mcreator/mddo/network/WWBCSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/WWBCMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -221,12 +221,12 @@
       "registry_name": "wwwb",
       "metadata": {
         "files": [
-          "src/main/resources/data/epicraft/loot_tables/blocks/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
           "src/main/resources/assets/epicraft/models/item/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/data/epicraft/loot_tables/blocks/wwwb.json",
           "src/main/resources/assets/epicraft/models/block/wwwb.json",
-          "src/main/resources/assets/epicraft/blockstates/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java"
+          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
+          "src/main/resources/assets/epicraft/blockstates/wwwb.json"
         ]
       }
     },
@@ -2108,12 +2108,12 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/blockstates/stoneworking_bench.json",
-          "src/main/resources/data/epicraft/loot_tables/blocks/stoneworking_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
+          "src/main/resources/data/epicraft/loot_tables/blocks/stoneworking_bench.json",
           "src/main/resources/assets/epicraft/models/item/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/epicraft/models/block/stoneworking_bench.json",
-          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java"
+          "src/main/resources/assets/epicraft/blockstates/stoneworking_bench.json"
         ]
       }
     },
@@ -2127,8 +2127,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mddo/world/inventory/StoneworkingGuiMenu.java",
-          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java",
-          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java"
+          "src/main/java/net/mcreator/mddo/client/gui/StoneworkingGuiScreen.java",
+          "src/main/java/net/mcreator/mddo/network/StoneworkingGuiSlotMessage.java"
         ]
       },
       "path": "~/WWStoneworkingBenchGUI"
@@ -2426,12 +2426,12 @@
       "registry_name": "metal_working_bench",
       "metadata": {
         "files": [
+          "src/main/resources/data/epicraft/loot_tables/blocks/metal_working_bench.json",
           "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
+          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
           "src/main/resources/assets/epicraft/blockstates/metal_working_bench.json",
           "src/main/resources/assets/epicraft/models/block/metal_working_bench.json",
-          "src/main/resources/data/epicraft/loot_tables/blocks/metal_working_bench.json",
-          "src/main/resources/assets/epicraft/models/item/metal_working_bench.json",
-          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java"
+          "src/main/resources/assets/epicraft/models/item/metal_working_bench.json"
         ]
       }
     },
@@ -2469,9 +2469,9 @@
       "registry_name": "metal_workbench",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/MetalWorkbenchScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java",
-          "src/main/java/net/mcreator/mddo/network/MetalWorkbenchSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/MetalWorkbenchMenu.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2571,9 +2571,9 @@
       "registry_name": "weapon_armor_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/WeaponArmorGUIScreen.java",
-          "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/WeaponArmorGUIMenu.java",
+          "src/main/java/net/mcreator/mddo/network/WeaponArmorGUISlotMessage.java"
         ]
       },
       "path": "~/WW_C_B_GUI"
@@ -2812,11 +2812,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/epicraft/models/item/weapon_armor_work_bench.json",
-          "src/main/resources/data/epicraft/loot_tables/blocks/weapon_armor_work_bench.json",
           "src/main/resources/assets/epicraft/blockstates/weapon_armor_work_bench.json",
-          "src/main/resources/assets/epicraft/models/block/weapon_armor_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/WeaponArmorWorkBenchBlock.java",
-          "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java"
+          "src/main/java/net/mcreator/mddo/block/entity/WeaponArmorWorkBenchBlockEntity.java",
+          "src/main/resources/assets/epicraft/models/block/weapon_armor_work_bench.json",
+          "src/main/resources/data/epicraft/loot_tables/blocks/weapon_armor_work_bench.json"
         ]
       }
     },
@@ -3943,12 +3943,12 @@
       "registry_name": "food_workbench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/item/food_workbench.json",
-          "src/main/java/net/mcreator/mddo/block/FoodWorkbenchBlock.java",
           "src/main/resources/data/epicraft/loot_tables/blocks/food_workbench.json",
-          "src/main/java/net/mcreator/mddo/block/entity/FoodWorkbenchBlockEntity.java",
+          "src/main/resources/assets/epicraft/blockstates/food_workbench.json",
+          "src/main/resources/assets/epicraft/models/item/food_workbench.json",
           "src/main/resources/assets/epicraft/models/block/food_workbench.json",
-          "src/main/resources/assets/epicraft/blockstates/food_workbench.json"
+          "src/main/java/net/mcreator/mddo/block/FoodWorkbenchBlock.java",
+          "src/main/java/net/mcreator/mddo/block/entity/FoodWorkbenchBlockEntity.java"
         ]
       }
     },
@@ -3961,12 +3961,12 @@
       "registry_name": "redstone_work_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/item/redstone_work_bench.json",
+          "src/main/resources/assets/epicraft/models/block/redstone_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java",
           "src/main/resources/data/epicraft/loot_tables/blocks/redstone_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java",
+          "src/main/resources/assets/epicraft/models/item/redstone_work_bench.json",
           "src/main/resources/assets/epicraft/blockstates/redstone_work_bench.json",
-          "src/main/resources/assets/epicraft/models/block/redstone_work_bench.json"
+          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java"
         ]
       }
     },
@@ -4054,8 +4054,8 @@
       "registry_name": "food_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java",
           "src/main/java/net/mcreator/mddo/network/FoodGUISlotMessage.java",
+          "src/main/java/net/mcreator/mddo/client/gui/FoodGUIScreen.java",
           "src/main/java/net/mcreator/mddo/world/inventory/FoodGUIMenu.java"
         ]
       },
@@ -4119,8 +4119,8 @@
       "registry_name": "redstone_work_bench_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/RedstoneWorkBenchGuiSlotMessage.java",
           "src/main/java/net/mcreator/mddo/world/inventory/RedstoneWorkBenchGuiMenu.java",
+          "src/main/java/net/mcreator/mddo/network/RedstoneWorkBenchGuiSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/RedstoneWorkBenchGuiScreen.java"
         ]
       },
@@ -4235,8 +4235,8 @@
       "registry_name": "ender_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/EnderGUIScreen.java",
+          "src/main/java/net/mcreator/mddo/network/EnderGUISlotMessage.java",
           "src/main/java/net/mcreator/mddo/world/inventory/EnderGUIMenu.java"
         ]
       },
@@ -4456,12 +4456,12 @@
       "registry_name": "ender_work_bench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java",
-          "src/main/resources/data/epicraft/loot_tables/blocks/ender_work_bench.json",
+          "src/main/resources/assets/epicraft/blockstates/ender_work_bench.json",
+          "src/main/resources/assets/epicraft/models/item/ender_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/EnderWorkBenchBlockEntity.java",
           "src/main/resources/assets/epicraft/models/block/ender_work_bench.json",
-          "src/main/resources/assets/epicraft/models/item/ender_work_bench.json",
-          "src/main/resources/assets/epicraft/blockstates/ender_work_bench.json"
+          "src/main/resources/data/epicraft/loot_tables/blocks/ender_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java"
         ]
       }
     },
@@ -4474,9 +4474,9 @@
       "registry_name": "cooking_stand",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java",
+          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java",
           "src/main/java/net/mcreator/mddo/client/gui/CookingStandScreen.java",
-          "src/main/java/net/mcreator/mddo/network/CookingStandSlotMessage.java"
+          "src/main/java/net/mcreator/mddo/world/inventory/CookingStandMenu.java"
         ]
       }
     },
@@ -4535,12 +4535,12 @@
       "registry_name": "cooking_stand_work_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/block/cooking_stand_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
+          "src/main/resources/assets/epicraft/models/item/cooking_stand_work_bench.json",
           "src/main/resources/assets/epicraft/blockstates/cooking_stand_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java",
-          "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
           "src/main/resources/data/epicraft/loot_tables/blocks/cooking_stand_work_bench.json",
-          "src/main/resources/assets/epicraft/models/item/cooking_stand_work_bench.json"
+          "src/main/resources/assets/epicraft/models/block/cooking_stand_work_bench.json"
         ]
       }
     },
@@ -4599,8 +4599,8 @@
       "registry_name": "coal_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/CoalDustItem.java",
-          "src/main/resources/assets/epicraft/models/item/coal_dust.json"
+          "src/main/resources/assets/epicraft/models/item/coal_dust.json",
+          "src/main/java/net/mcreator/mddo/item/CoalDustItem.java"
         ]
       },
       "path": "~/Dusts"
@@ -4614,8 +4614,8 @@
       "registry_name": "copper_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java",
-          "src/main/resources/assets/epicraft/models/item/copper_dust.json"
+          "src/main/resources/assets/epicraft/models/item/copper_dust.json",
+          "src/main/java/net/mcreator/mddo/item/CopperDustItem.java"
         ]
       },
       "path": "~/Dusts"
@@ -4644,8 +4644,8 @@
       "registry_name": "lapis_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/item/lapis_dust.json",
-          "src/main/java/net/mcreator/mddo/item/LapisDustItem.java"
+          "src/main/java/net/mcreator/mddo/item/LapisDustItem.java",
+          "src/main/resources/assets/epicraft/models/item/lapis_dust.json"
         ]
       },
       "path": "~/Dusts"
@@ -4674,8 +4674,8 @@
       "registry_name": "gold_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/GoldDustItem.java",
-          "src/main/resources/assets/epicraft/models/item/gold_dust.json"
+          "src/main/resources/assets/epicraft/models/item/gold_dust.json",
+          "src/main/java/net/mcreator/mddo/item/GoldDustItem.java"
         ]
       },
       "path": "~/Dusts"
@@ -4704,8 +4704,8 @@
       "registry_name": "quartz_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java",
-          "src/main/resources/assets/epicraft/models/item/quartz_dust.json"
+          "src/main/resources/assets/epicraft/models/item/quartz_dust.json",
+          "src/main/java/net/mcreator/mddo/item/QuartzDustItem.java"
         ]
       },
       "path": "~/Dusts"
@@ -4754,11 +4754,11 @@
       "registry_name": "tend",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/block/tend.json",
-          "src/main/resources/assets/epicraft/blockstates/tend.json",
           "src/main/java/net/mcreator/mddo/block/TendBlock.java",
-          "src/main/resources/data/epicraft/loot_tables/blocks/tend.json",
-          "src/main/resources/assets/epicraft/models/item/tend.json"
+          "src/main/resources/assets/epicraft/blockstates/tend.json",
+          "src/main/resources/assets/epicraft/models/block/tend.json",
+          "src/main/resources/assets/epicraft/models/item/tend.json",
+          "src/main/resources/data/epicraft/loot_tables/blocks/tend.json"
         ]
       }
     },
@@ -4945,11 +4945,11 @@
       "registry_name": "tent_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/item/tent_2.json",
           "src/main/java/net/mcreator/mddo/block/Tent2Block.java",
+          "src/main/resources/assets/epicraft/blockstates/tent_2.json",
           "src/main/resources/assets/epicraft/models/block/tent_2.json",
           "src/main/resources/data/epicraft/loot_tables/blocks/tent_2.json",
-          "src/main/resources/assets/epicraft/blockstates/tent_2.json"
+          "src/main/resources/assets/epicraft/models/item/tent_2.json"
         ]
       }
     },
