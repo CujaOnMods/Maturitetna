@@ -66,10 +66,8 @@ public class CookingStandScreen extends AbstractContainerScreen<CookingStandMenu
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_fuel"), 77, 22, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_input"), 4, 45, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_input1"), 111, 45, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_input2"), 110, 26, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_input3"), 4, 27, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_input"), 7, 34, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.epicraft.cooking_stand.label_input1"), 113, 34, -12829636, false);
 	}
 
 	@Override

@@ -177,8 +177,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 130,
-          "y": 82
+          "x": 133,
+          "y": 71
         }
       },
       {
@@ -192,38 +192,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 237,
-          "y": 82
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_input2",
-          "text": {
-            "fixedValue": "Input"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 236,
-          "y": 63
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_input3",
-          "text": {
-            "fixedValue": "Input"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 130,
-          "y": 64
+          "x": 239,
+          "y": 71
         }
       }
     ],
