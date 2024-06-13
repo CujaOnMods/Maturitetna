@@ -36,5 +36,145 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
 		}
+		if (Items.PORKCHOP == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
+		if (Items.COD == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
+		if (Items.SALMON == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
+		if (Items.CHICKEN == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
+		if (Items.RABBIT == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
+		if (Items.POTATO == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
+		if (Items.MUTTON == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+				? ((Slot) _slt.get((int) EpicraftModVariables.MapVariables.get(world).whichSlot)).getItem()
+				: ItemStack.EMPTY).getItem()) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 1) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
+				EpicraftModVariables.MapVariables.get(world).syncData(world);
+			}
+		}
 	}
 }

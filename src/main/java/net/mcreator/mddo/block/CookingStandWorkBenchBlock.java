@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,7 +36,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mddo.world.inventory.CookingStandMenu;
-import net.mcreator.mddo.procedures.RemoveOutputProcedure;
+import net.mcreator.mddo.procedures.CookingStandWorkBenchBlockDestroyedByPlayerProcedure;
 import net.mcreator.mddo.block.entity.CookingStandWorkBenchBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -104,9 +105,10 @@ public class CookingStandWorkBenchBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
-		super.attack(blockstate, world, pos, entity);
-		RemoveOutputProcedure.execute(entity);
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		CookingStandWorkBenchBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
 	}
 
 	@Override
