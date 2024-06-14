@@ -23,15 +23,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -43,15 +43,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -63,15 +63,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -83,15 +83,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -103,15 +103,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -123,15 +123,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -143,15 +143,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
@@ -163,15 +163,15 @@ public class SetCookingTimerProcedure {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer1 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 2) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
 				EpicraftModVariables.MapVariables.get(world).CookingTimer2 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 3) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 5) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber3 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
-			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 4) {
+			if (EpicraftModVariables.MapVariables.get(world).whichSlot == 7) {
 				EpicraftModVariables.MapVariables.get(world).CookingNumber4 = 300;
 				EpicraftModVariables.MapVariables.get(world).syncData(world);
 			}
