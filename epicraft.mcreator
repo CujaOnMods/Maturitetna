@@ -221,12 +221,12 @@
       "registry_name": "wwwb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/item/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
           "src/main/resources/data/epicraft/loot_tables/blocks/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/WWWBBlock.java",
+          "src/main/resources/assets/epicraft/models/item/wwwb.json",
           "src/main/resources/assets/epicraft/models/block/wwwb.json",
-          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java",
-          "src/main/resources/assets/epicraft/blockstates/wwwb.json"
+          "src/main/resources/assets/epicraft/blockstates/wwwb.json",
+          "src/main/java/net/mcreator/mddo/block/entity/WWWBBlockEntity.java"
         ]
       }
     },
@@ -2108,12 +2108,12 @@
       "registry_name": "stoneworking_bench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
+          "src/main/resources/assets/epicraft/blockstates/stoneworking_bench.json",
           "src/main/resources/data/epicraft/loot_tables/blocks/stoneworking_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/StoneworkingBenchBlockEntity.java",
           "src/main/resources/assets/epicraft/models/item/stoneworking_bench.json",
-          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java",
           "src/main/resources/assets/epicraft/models/block/stoneworking_bench.json",
-          "src/main/resources/assets/epicraft/blockstates/stoneworking_bench.json"
+          "src/main/java/net/mcreator/mddo/block/StoneworkingBenchBlock.java"
         ]
       }
     },
@@ -2426,12 +2426,12 @@
       "registry_name": "metal_working_bench",
       "metadata": {
         "files": [
-          "src/main/resources/data/epicraft/loot_tables/blocks/metal_working_bench.json",
           "src/main/java/net/mcreator/mddo/block/MetalWorkingBenchBlock.java",
-          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java",
           "src/main/resources/assets/epicraft/blockstates/metal_working_bench.json",
           "src/main/resources/assets/epicraft/models/block/metal_working_bench.json",
-          "src/main/resources/assets/epicraft/models/item/metal_working_bench.json"
+          "src/main/resources/data/epicraft/loot_tables/blocks/metal_working_bench.json",
+          "src/main/resources/assets/epicraft/models/item/metal_working_bench.json",
+          "src/main/java/net/mcreator/mddo/block/entity/MetalWorkingBenchBlockEntity.java"
         ]
       }
     },
@@ -3961,12 +3961,12 @@
       "registry_name": "redstone_work_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/block/redstone_work_bench.json",
+          "src/main/resources/assets/epicraft/models/item/redstone_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/RedstoneWorkBenchBlockEntity.java",
           "src/main/resources/data/epicraft/loot_tables/blocks/redstone_work_bench.json",
-          "src/main/resources/assets/epicraft/models/item/redstone_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java",
           "src/main/resources/assets/epicraft/blockstates/redstone_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/RedstoneWorkBenchBlock.java"
+          "src/main/resources/assets/epicraft/models/block/redstone_work_bench.json"
         ]
       }
     },
@@ -4456,12 +4456,12 @@
       "registry_name": "ender_work_bench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/blockstates/ender_work_bench.json",
-          "src/main/resources/assets/epicraft/models/item/ender_work_bench.json",
+          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java",
+          "src/main/resources/data/epicraft/loot_tables/blocks/ender_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/EnderWorkBenchBlockEntity.java",
           "src/main/resources/assets/epicraft/models/block/ender_work_bench.json",
-          "src/main/resources/data/epicraft/loot_tables/blocks/ender_work_bench.json",
-          "src/main/java/net/mcreator/mddo/block/EnderWorkBenchBlock.java"
+          "src/main/resources/assets/epicraft/models/item/ender_work_bench.json",
+          "src/main/resources/assets/epicraft/blockstates/ender_work_bench.json"
         ]
       }
     },
@@ -4535,12 +4535,12 @@
       "registry_name": "cooking_stand_work_bench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
-          "src/main/resources/assets/epicraft/models/item/cooking_stand_work_bench.json",
+          "src/main/resources/assets/epicraft/models/block/cooking_stand_work_bench.json",
           "src/main/resources/assets/epicraft/blockstates/cooking_stand_work_bench.json",
           "src/main/java/net/mcreator/mddo/block/entity/CookingStandWorkBenchBlockEntity.java",
+          "src/main/java/net/mcreator/mddo/block/CookingStandWorkBenchBlock.java",
           "src/main/resources/data/epicraft/loot_tables/blocks/cooking_stand_work_bench.json",
-          "src/main/resources/assets/epicraft/models/block/cooking_stand_work_bench.json"
+          "src/main/resources/assets/epicraft/models/item/cooking_stand_work_bench.json"
         ]
       }
     },
@@ -4754,11 +4754,11 @@
       "registry_name": "tend",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mddo/block/TendBlock.java",
-          "src/main/resources/assets/epicraft/blockstates/tend.json",
           "src/main/resources/assets/epicraft/models/block/tend.json",
-          "src/main/resources/assets/epicraft/models/item/tend.json",
-          "src/main/resources/data/epicraft/loot_tables/blocks/tend.json"
+          "src/main/resources/assets/epicraft/blockstates/tend.json",
+          "src/main/java/net/mcreator/mddo/block/TendBlock.java",
+          "src/main/resources/data/epicraft/loot_tables/blocks/tend.json",
+          "src/main/resources/assets/epicraft/models/item/tend.json"
         ]
       }
     },
@@ -5204,13 +5204,16 @@
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:FoodWorkbench"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:CookingStandWorkBench"
     ]
   },
   "language_map": {
     "en_us": {
       "item.mddo.wooden_hammer": "Hammer",
-      "item.epicraft.coal_dust": "Coal Dust",
       "item.mddo.quartz_dust": "Quartz dust",
+      "item.epicraft.coal_dust": "Coal Dust",
       "item.epicraft.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "entity.epicraft.better_spider": "Better Spider",
       "block.epicraft.wwwb": "woodworking workbench",
@@ -5242,7 +5245,7 @@
       "block.mddo.redstone_work_bench": "Redstone Work Bench",
       "block.epicraft.cooking_stand_work_bench": "Brick oven",
       "item.mddo.tent": "Tent",
-      "block.epicraft.tend": "Tend",
+      "block.epicraft.tend": "Tent",
       "item.mddo.iron_dust": "Iron dust",
       "block.epicraft.stoneworking_bench": "Stoneworking Bench",
       "block.mddo.metal_working_bench": "Metal Working Bench",

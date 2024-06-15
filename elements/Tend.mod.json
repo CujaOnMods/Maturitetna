@@ -276,7 +276,7 @@
         "subtract": false
       }
     ],
-    "name": "Tend",
+    "name": "Tent",
     "specialInformation": {
       "fixedValue": []
     },
@@ -343,7 +343,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
