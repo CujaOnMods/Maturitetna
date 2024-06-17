@@ -7,8 +7,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.mddo.init.EpicraftModBlocks;
 
 public class Tend2destroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
@@ -27,6 +32,11 @@ public class Tend2destroyedByPlayerProcedure {
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 				world.destroyBlock(_pos, false);
 			}
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModBlocks.TEND.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
 		} else {
 			if ((new Object() {
 				public Direction getDirection(BlockState _bs) {
@@ -42,6 +52,11 @@ public class Tend2destroyedByPlayerProcedure {
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 					world.destroyBlock(_pos, false);
+				}
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModBlocks.TEND.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if ((new Object() {
@@ -61,6 +76,11 @@ public class Tend2destroyedByPlayerProcedure {
 						Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 						world.destroyBlock(_pos, false);
 					}
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModBlocks.TEND.get()));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				} else {
 					if ((new Object() {
 						public Direction getDirection(BlockState _bs) {
@@ -78,6 +98,11 @@ public class Tend2destroyedByPlayerProcedure {
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
 							world.destroyBlock(_pos, false);
+						}
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(EpicraftModBlocks.TEND.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				}

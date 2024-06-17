@@ -1,9 +1,9 @@
 {
-  "parent": "epicraft:custom/tent1",
+  "parent": "epicraft:custom/tent2",
   "textures": {
-    "all": "epicraft:block/tent1",
-    "particle": "epicraft:block/tent1",
-    "0": "epicraft:block/tent1"
+    "all": "epicraft:block/texture",
+    "particle": "epicraft:block/texture",
+    "0": "epicraft:block/texture"
   },
   "render_type": "solid"
 }

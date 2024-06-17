@@ -4754,11 +4754,11 @@
       "registry_name": "tend",
       "metadata": {
         "files": [
-          "src/main/resources/assets/epicraft/models/block/tend.json",
-          "src/main/resources/assets/epicraft/blockstates/tend.json",
           "src/main/java/net/mcreator/mddo/block/TendBlock.java",
-          "src/main/resources/data/epicraft/loot_tables/blocks/tend.json",
-          "src/main/resources/assets/epicraft/models/item/tend.json"
+          "src/main/resources/assets/epicraft/blockstates/tend.json",
+          "src/main/resources/assets/epicraft/models/block/tend.json",
+          "src/main/resources/assets/epicraft/models/item/tend.json",
+          "src/main/resources/data/epicraft/loot_tables/blocks/tend.json"
         ]
       }
     },
@@ -5212,8 +5212,8 @@
   "language_map": {
     "en_us": {
       "item.mddo.wooden_hammer": "Hammer",
-      "item.mddo.quartz_dust": "Quartz dust",
       "item.epicraft.coal_dust": "Coal Dust",
+      "item.mddo.quartz_dust": "Quartz dust",
       "item.epicraft.better_skeleton_spawn_egg": "Better Skeleton Spawn Egg",
       "entity.epicraft.better_spider": "Better Spider",
       "block.epicraft.wwwb": "woodworking workbench",

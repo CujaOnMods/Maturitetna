@@ -33,14 +33,14 @@ public class DespawnzombieProcedure {
 		if (entity == null)
 			return;
 		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("minecraft:zombie")))) {
-			if (!entity.level().isClientSide())
-				entity.discard();
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EpicraftModEntities.BETTERZOMBIE.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
+			if (!entity.level().isClientSide())
+				entity.discard();
 		}
 	}
 }
