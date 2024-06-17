@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:cobblestone"
-    },
-    {
       "item": "minecraft:crafting_table"
     },
     {
-      "item": "minecraft:andesite"
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:diorite"
     },
     {
       "item": "minecraft:coal"

@@ -12,31 +12,31 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Blocks.CRAFTING_TABLE"
       },
       {
         "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "Blocks.CRAFTING_TABLE"
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Items.COAL#0"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.STONE#5"
+        "value": ""
       },
       {
-        "value": "Items.COAL#0"
+        "value": ""
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
