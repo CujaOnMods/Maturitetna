@@ -12,12 +12,12 @@ import net.mcreator.mddo.entity.BetterSkeletonEntity;
 
 public class BetterSkeletonRenderer extends HumanoidMobRenderer<BetterSkeletonEntity, HumanoidModel<BetterSkeletonEntity>> {
 	public BetterSkeletonRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.6f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(BetterSkeletonEntity entity) {
-		return new ResourceLocation("epicraft:textures/entities/skeleton.png");
+		return new ResourceLocation("epicraft:textures/entities/skeleton1.png");
 	}
 }

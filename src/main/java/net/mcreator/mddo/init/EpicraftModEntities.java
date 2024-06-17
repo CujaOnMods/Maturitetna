@@ -32,7 +32,7 @@ public class EpicraftModEntities {
 	public static final RegistryObject<EntityType<BetterSkeletonEntity>> BETTER_SKELETON = register("better_skeleton",
 			EntityType.Builder.<BetterSkeletonEntity>of(BetterSkeletonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(BetterSkeletonEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.7f, 2f));
 	public static final RegistryObject<EntityType<BetterSkeletonEntityProjectile>> BETTER_SKELETON_PROJECTILE = register("projectile_better_skeleton",
 			EntityType.Builder.<BetterSkeletonEntityProjectile>of(BetterSkeletonEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
 					.setCustomClientFactory(BetterSkeletonEntityProjectile::new).sized(0.5f, 0.5f));
